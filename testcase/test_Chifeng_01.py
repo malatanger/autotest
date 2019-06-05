@@ -39,6 +39,7 @@ class Chifeng_ky_test(unittest.TestCase):
         cls.index.quit()
         logger.info('################################ End ################################')
 
+    @unittest.skip("页面变化")
     def test_01_ky_update(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
         self.index = Chifeng_pages.Chifeng_update(driver)
@@ -66,7 +67,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 text="录入信息成功！",
                 css='css->body > div.el-message.el-message--success > p',
             )
-
+    @unittest.skip("页面变化")
     def test_02_ky_select(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
         self.index = Chifeng_pages.Chifeng_select(driver)
@@ -88,7 +89,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 text=param[i]["carnum"],
                 css='css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)'
             )
-
+    @unittest.skip("页面变化")
     def test_03_wh_update(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
         self.index = Chifeng_pages.Chifeng_update(driver)
@@ -116,7 +117,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 text="录入信息成功！",
                 css='css->body > div.el-message.el-message--success > p',
             )
-
+    @unittest.skip("页面变化")
     def test_04_wh_select(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
         self.index = Chifeng_pages.Chifeng_select(driver)

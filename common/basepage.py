@@ -66,7 +66,7 @@ class pyselenium(Browser_engine):
             raise
 
     def element_wait(self, css, sec=5):
-        if not "->" in css:
+        if "->" not in css:
             raise NameError("请在定位方法以及路径之间输入“->”")
 
         by = css.split("->")[0].strip()

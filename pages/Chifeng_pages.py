@@ -165,10 +165,7 @@ class Chifeng_update(pyselenium):
         self.sleep(2)
 
     def up_feedback_click(self, feedback):
-        self.click('css->.el-dialog__body > form > div:nth-child(9) > div > div > div > input ')
-        self.sleep(2)
-        self.click('xpath->/html/body/div/div[1]/div[1]/ul/li/span[contains(text(),"{0}")]'.format(feedback))
-        self.sleep(2)
+        self.get_elements()
 
     def up_yes_click(self):
         self.click(
