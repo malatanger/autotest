@@ -41,7 +41,7 @@ class Chifeng_ky_test(unittest.TestCase):
     def test_01_jyxs_update(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
-        logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
+        logger.info("开始用例: {0}".format(function.__name__))
         self.index = Chifeng_pages.Chifeng_update(driver)
         self.menu = Chifeng_pages.Chifeng_menu(driver)
         for i in range(1, 10):

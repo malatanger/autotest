@@ -10,6 +10,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Hunan_datas.xlsx", "CarInfo")
 param = data.get_data()
@@ -39,6 +40,7 @@ class Hunan_CarInfo_test(unittest.TestCase):
         cls.index.quit()
         logger.info('################################ End ################################')
 
+    @Retry.retry()
     def test_001_SelectTheCar_area(self):
         """
         查询指定地区车辆基本信息
@@ -49,7 +51,7 @@ class Hunan_CarInfo_test(unittest.TestCase):
         self.index.F5()
         self.index.move_settings()
         self.index.baseinfo_click()
-        self.index.carinfo_zone_input(param[1]["zone"])  # 地区
+        self.index.carinfo_zone_input(param[1]["zone1"])  # 地区
         self.index.carinfo_platform_input(param[1]["platform"])  # 接入平台
         self.index.carinfo_company_input(param[1]["company"])  # 企业
         self.index.carinfo_cartype_click()
@@ -133,6 +135,12 @@ class Hunan_CarInfo_test(unittest.TestCase):
         self.index.carinfo_chooseinfo_click()
         self.index.carinfo_synch_bt_click_()
         self.index.carinfo_synch_YES_click()
+        self.index.assert_text(
+            text="同步成功",
+            css="css->.layui-layer-content.layui-layer-padding"
+        )
+    @Retry.retry()
+    def test_005(self):
         self.index.assert_text(
             text="同步成功",
             css="css->.layui-layer-content.layui-layer-padding"

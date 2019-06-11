@@ -9,12 +9,31 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 from config import report_path
 import os
+import traceback
 
 success = "SUCCESS   "
 fail = "FAIL      "
 warning = "WARNING   "
 error = "ERROR     "
 logger = Log()
+
+
+class Retry(object):
+    """重复执行测试用例"""
+    @staticmethod
+    def retry(times=3, wait_time=10):
+        def warp_func(func):
+            def fild_retry(*args, **kwargs):
+                for t in range(times):
+                    try:
+                        func(*args, **kwargs)
+                        return
+                    except Exception as e:
+                        time.sleep(wait_time)
+                        s = traceback.format_exc()
+                        logger.error("用例失败, %s \n %s" % (e, s))
+            return fild_retry
+        return warp_func
 
 
 class Browser_engine(object):
@@ -311,7 +330,8 @@ class pyselenium(Browser_engine):
                 )
             except AssertionError:
                 self.my_print(
-                    "{0} 断言类型：{1}  未通过  元素: <{2}> 断言文本：<{3}>, 用时 {4} 秒.".format(fail,asserttype, css, text, time.time() - t1)
+                    "{0} 断言类型：{1}  未通过  元素: <{2}> 断言文本：<{3}>, 用时 {4} 秒.".format(fail, asserttype, css, text,
+                                                                                time.time() - t1)
                 )
                 self.take_screenshot()
                 raise
@@ -329,7 +349,8 @@ class pyselenium(Browser_engine):
                     self.my_print("{0} 断言元素文本内容为空， 用时 {1} 秒.".format(error, time.time() - t1))
             except AssertionError:
                 self.my_print(
-                    "{0} 断言类型：{1}  未通过  元素: <{2}> 断言文本：<{3}>, 用时 {4} 秒.".format(fail,asserttype ,css, text, time.time() - t1)
+                    "{0} 断言类型：{1}  未通过  元素: <{2}> 断言文本：<{3}>, 用时 {4} 秒.".format(fail, asserttype, css, text,
+                                                                                time.time() - t1)
                 )
                 self.take_screenshot()
                 raise
@@ -372,5 +393,26 @@ class pyselenium(Browser_engine):
         except Exception:
             self.my_print("{0} 无法清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(fail, css, text, time.time() - t1))
             raise
+
+    def switch_to_frame(self, css):
+        """frame切换"""
+        t1 = time.time()
+        try:
+            self.element_wait(css)
+            iframe_el = self.get_element(css)
+            self.driver.switch_to.frame(iframe_el)
+            self.my_print("{0} 切换至frame元素: <{1}>, 用时 {2} 秒".format(success, css, time.time() - t1))
+        except Exception:
+            self.my_print("{0} 未能切换至frame元素: <{1}>, 用时 {2} 秒".format(fail, css, time.time() - t1))
+            raise
+
+    def switch_to_frame_out(self):
+        """
+        frame退出
+        """
+        t1 = time.time()
+        self.driver.switch_to.default_content()
+        self.my_print("{0} 退出frame元素, 用时 {1} 秒".format(success, time.time() - t1))
+
 
 # if __name__ == "__main__":
