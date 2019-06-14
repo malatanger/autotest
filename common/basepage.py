@@ -18,24 +18,6 @@ error = "ERROR     "
 logger = Log()
 
 
-class Retry(object):
-    """重复执行测试用例"""
-    @staticmethod
-    def retry(times=3, wait_time=10):
-        def warp_func(func):
-            def fild_retry(*args, **kwargs):
-                for t in range(times):
-                    try:
-                        func(*args, **kwargs)
-                        return
-                    except Exception as e:
-                        time.sleep(wait_time)
-                        s = traceback.format_exc()
-                        logger.error("用例失败, %s \n %s" % (e, s))
-            return fild_retry
-        return warp_func
-
-
 class Browser_engine(object):
     """浏览器引擎"""
 
@@ -286,7 +268,7 @@ class pyselenium(Browser_engine):
         )
 
     def sleep(self, secs=5):
-        """隐性等待"""
+        """强制等待"""
         time.sleep(secs)
         self.my_print(
             "{0} 等待 {1} 秒钟".format(success, secs)
@@ -401,9 +383,9 @@ class pyselenium(Browser_engine):
             self.element_wait(css)
             iframe_el = self.get_element(css)
             self.driver.switch_to.frame(iframe_el)
-            self.my_print("{0} 切换至frame元素: <{1}>, 用时 {2} 秒".format(success, css, time.time() - t1))
+            self.my_print("{0} 切换至iframe: <{1}>, 用时 {2} 秒".format(success, css, time.time() - t1))
         except Exception:
-            self.my_print("{0} 未能切换至frame元素: <{1}>, 用时 {2} 秒".format(fail, css, time.time() - t1))
+            self.my_print("{0} 未能切换至iframe: <{1}>, 用时 {2} 秒".format(fail, css, time.time() - t1))
             raise
 
     def switch_to_frame_out(self):
@@ -412,7 +394,32 @@ class pyselenium(Browser_engine):
         """
         t1 = time.time()
         self.driver.switch_to.default_content()
-        self.my_print("{0} 退出frame元素, 用时 {1} 秒".format(success, time.time() - t1))
+        self.my_print("{0} 退出iframe, 用时 {1} 秒".format(success, time.time() - t1))
 
+
+class Retry(object):
+
+    @staticmethod
+    def retry(times=3, wait_time=5):
+        def _warpper(func):
+            def warpper(*args, **kwargs):
+                raise_info = None
+                rnum = 0
+                for i in range(times):
+                    rnum += 1
+                    try:
+                        ret = func(*args, **kwargs)
+                        if rnum > 1:
+                            logger.info('{0} 重试{1}次成功'.format(success, rnum))
+                        return ret
+                    except Exception as ex:
+                        time.sleep(wait_time)
+                        raise_info = ex
+                logger.info('{0} 执行次数: {1}次, 全部失败'.format(fail, rnum))
+                raise raise_info
+
+            return warpper
+
+        return _warpper
 
 # if __name__ == "__main__":

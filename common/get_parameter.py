@@ -3,6 +3,7 @@ import xlrd
 
 
 class Data(object):
+
     def __init__(self, filepath, sheetname):
         self.data = xlrd.open_workbook(filepath)
         self.table = self.data.sheet_by_name(sheetname)
@@ -37,4 +38,3 @@ if __name__ == "__main__":
     d = Data(filePath, sheetName)
     d1 = d.get_data()
     print(d1[5]["适用车型"])
-
