@@ -8,6 +8,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Chifeng_datas.xlsx", "客车抽验")
 param = data.get_data()
@@ -51,17 +52,21 @@ class Chifeng_ky_test(unittest.TestCase):
             self.index.sleep(2)
             self.menu.kyqy_menu()
             self.index.update_click()
-            self.index.up_numeber_input(param[i]["number"])
-            self.index.up_group_input(param[i]["group"])
-            self.index.up_cc_company_input(param[i]["company"])
-            self.index.up_problem_input(param[i]["problem"])
-            self.index.up_remarks_input(param[i]["remarks"])
-            self.index.up_zone_click(param[i]["zone"])
-            self.index.up_checktime_input(param[i]["bdate"])
-            self.index.up_chagangtime_input(param[i]["btime"])
-            self.index.up_btime_input(param[i]["btime"])
-            self.index.up_etime_input(param[i]["etime"])
-            self.index.up_qy_feedback_click(param[i]["feedback"])
+            try:
+                self.index.up_numeber_input(param[i]["number"])
+                self.index.up_group_input(param[i]["group"])
+                self.index.up_cc_company_input(param[i]["company"])
+                self.index.up_problem_input(param[i]["problem"])
+                self.index.up_remarks_input(param[i]["remarks"])
+                self.index.up_zone_click(param[i]["zone"])
+                self.index.up_checktime_input(param[i]["bdate"])
+                self.index.up_chagangtime_input(param[i]["btime"])
+                self.index.up_btime_input(param[i]["btime"])
+                self.index.up_etime_input(param[i]["etime"])
+                self.index.up_qy_feedback_click(param[i]["feedback"])
+            except KeyError:
+                logger.error("参数错误")
+                raise
             self.index.sleep(2)
             self.index.up_yes_click()
             self.index.assert_text(

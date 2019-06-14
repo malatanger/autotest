@@ -330,7 +330,7 @@ class Hunan_pages_Assessment(pyselenium):
     def details_click(self):
         """点击考核明细"""
         self.js(
-            "document.querySelector('#checkmanage-index > div > div.check-manage-title > ul > li:nth-child(4) > ul').style.display='block'")
+            "document.querySelector('#checkmanage-index > div > div.check-manage-title > ul > li:nth-child(5) > ul').style.display='block'")
         self.sleep(1)
         self.click("xpath->//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]")
 

@@ -10,6 +10,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Hunan_datas.xlsx", "Assessment")
 param = data.get_data()
@@ -41,6 +42,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         logger.info('################################ End ################################')
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_001_zoneassessment_month(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -62,6 +64,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_002_zoneassessment_year(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -85,6 +88,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_003_zoneassessment_day(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -108,6 +112,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     #@unittest.skip("调试")
+    @Retry.retry()
     def test_004_Companyassessment_month(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -130,6 +135,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_005_Companyassessment_year(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -153,6 +159,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_006_Companyassessment_day(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -176,6 +183,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_007_Platformassessment_month(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -198,6 +206,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_008_Platformassessment_year(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -221,6 +230,7 @@ class Hunan_Assessment_test(unittest.TestCase):
         )
 
     # @unittest.skip("调试")
+    @Retry.retry()
     def test_009_Platformassessment_day(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -243,6 +253,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             css="css->tfoot > tr",
         )
 
+    @Retry.retry()
     def test_010_Details_Install(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -267,6 +278,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_011_Details_Online(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -292,6 +304,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_012_Details_Patform(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -314,6 +327,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_013_Details_Trail(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -337,6 +351,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_014_Details_Data(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -360,6 +375,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_015_Details_Speeding(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -383,6 +399,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_016_Details_Tired(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -406,6 +423,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_017_Details_Drift(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -429,6 +447,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_018_Details_Response(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -452,6 +471,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             asserttype='not in'
         )
 
+    @Retry.retry()
     def test_019_Zero_Zone_month(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -472,6 +492,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             css="css->tfoot > tr"
         )
 
+    @Retry.retry()
     def test_020_Zero_Zone_year(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -492,6 +513,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             css="css->tfoot > tr"
         )
 
+    @Retry.retry()
     def test_021_Zero_Zone_day(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -513,6 +535,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             css="css->tfoot > tr"
         )
 
+    @Retry.retry()
     def test_022_Zero_Company_month(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -534,6 +557,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             css="css->tfoot > tr"
         )
 
+    @Retry.retry()
     def test_023_Zero_Company_year(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,
@@ -556,6 +580,7 @@ class Hunan_Assessment_test(unittest.TestCase):
             sec=30
         )
 
+    @Retry.retry()
     def test_024_Zero_Company_day(self):
         logger.info("开始用例： {0} , 参数选择： {1}".format(
             sys._getframe().f_code.co_name,

@@ -8,6 +8,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Chifeng_datas.xlsx", "客车抽验")
 param = data.get_data()

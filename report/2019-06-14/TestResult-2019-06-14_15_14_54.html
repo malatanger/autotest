@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+.piechart{  
+    position:absolute;  ;
+    top:20px;  
+    left:300px; 
+    width: 200px;
+    float: left;
+    display:  inline;
+}
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+4:Error  
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2 || level ==4) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+    //console.log(detail_class.length)
+    if (level == 3) {
+        for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="收起"
+        }
+    }
+    else{
+            for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="详细"
+        }
+    }
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+function drawCircle(pass, fail, error){ 
+    var color = ["#6c6","#c60","#c00"];  
+    var data = [pass,fail,error]; 
+    var text_arr = ["pass", "fail", "error"];
+
+    var canvas = document.getElementById("circle");  
+    var ctx = canvas.getContext("2d");  
+    var startPoint=0;
+    var width = 20, height = 10;
+    var posX = 112 * 2 + 20, posY = 30;
+    var textX = posX + width + 5, textY = posY + 10;
+    for(var i=0;i<data.length;i++){  
+        ctx.fillStyle = color[i];  
+        ctx.beginPath();  
+        ctx.moveTo(112,84);   
+        ctx.arc(112,84,84,startPoint,startPoint+Math.PI*2*(data[i]/(data[0]+data[1]+data[2])),false);  
+        ctx.fill();  
+        startPoint += Math.PI*2*(data[i]/(data[0]+data[1]+data[2]));  
+        ctx.fillStyle = color[i];  
+        ctx.fillRect(posX, posY + 20 * i, width, height);  
+        ctx.moveTo(posX, posY + 20 * i);  
+        ctx.font = 'bold 14px';
+        ctx.fillStyle = color[i];
+        var percent = text_arr[i] + ":"+data[i];  
+        ctx.fillText(percent, textX, textY + 20 * i);  
+
+    }
+}
+</script>
+<div class="piechart">
+    <div>
+        <canvas id="circle" width="350" height="168" </canvas>
+    </div>
+</div>
+<div class='heading'>
+<h4 style="font-family: Microsoft YaHei">测试报告</h4>
+<p class='attribute'><strong>测试人员 : </strong> 井松</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-06-14 15:14:54</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:06:58.306925</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 29，通过 27，失败 1，错误 1，通过率= 93.10%</p>
+
+<p class='description'>执行人： JS</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 93.10% }</a>
+<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 1 }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 27 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 29 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+    <td>截图</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_Hunan_01.Hunan_CarInfo_test</td>
+    <td class="text-center">4</td>
+    <td class="text-center">2</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='ft1_1' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>test_001_SelectTheCar_area</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+ft1_1: 2019-06-14 15:15:02,263 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 15:15:02,789 - root - INFO - SUCCESS    刷新页面，用时0.5250298976898193
+2019-06-14 15:15:02,880 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.09000515937805176 秒.
+2019-06-14 15:15:03,020 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.139007568359375 秒.
+2019-06-14 15:15:08,023 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 15:15:08,569 - root - INFO - SUCCESS    刷新页面，用时0.5440309047698975
+2019-06-14 15:15:08,692 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.12100672721862793 秒.
+2019-06-14 15:15:08,806 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.11400651931762695 秒.
+2019-06-14 15:15:13,807 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 15:15:14,218 - root - INFO - SUCCESS    刷新页面，用时0.4110236167907715
+2019-06-14 15:15:14,284 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.06400370597839355 秒.
+2019-06-14 15:15:14,381 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.09600567817687988 秒.
+2019-06-14 15:15:19,382 - root - INFO - FAIL       执行次数: 3次, 全部失败
+Traceback (most recent call last):
+  File "E:\autotest\common\basepage.py", line 419, in warpper
+    raise raise_info
+  File "E:\autotest\common\basepage.py", line 411, in warpper
+    ret = func(*args, **kwargs)
+  File "E:\autotest\testcase\test_Hunan_01.py", line 54, in test_001_SelectTheCar_area
+    self.index.carinfo_zone_input(param[1]["zone1"])  # 地区
+KeyError: 'zone1'
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_002_SelectTheCar_platform</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_2: 2019-06-14 15:15:19,385 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 15:15:19,798 - root - INFO - SUCCESS    刷新页面，用时0.41202354431152344
+2019-06-14 15:15:19,895 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.09500551223754883 秒.
+2019-06-14 15:15:20,000 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.10500574111938477 秒.
+2019-06-14 15:15:21,153 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;input#vehicleManage_tables_div_queyFrom0_form0_text1_show&gt; 输入: 常德市, 用时 1.1510658264160156 秒.
+2019-06-14 15:15:22,269 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'常德市')]， 用时 1.1150639057159424 秒.
+2019-06-14 15:15:22,474 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text3_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.2040114402770996 秒.
+2019-06-14 15:15:23,581 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 1.106062889099121 秒.
+2019-06-14 15:15:23,665 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text2_show，内容：‘’输入成功， 用时 0.08300447463989258 秒.
+2019-06-14 15:15:23,738 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'')]， 用时 0.07200407981872559 秒.
+2019-06-14 15:15:23,829 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_select0 &gt; input， 用时 0.0890052318572998 秒.
+2019-06-14 15:15:23,902 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_checkBox0_check， 用时 0.07200407981872559 秒.
+2019-06-14 15:15:23,969 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_select2 &gt; input， 用时 0.06700372695922852 秒.
+2019-06-14 15:15:24,043 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='vehicleManage_tables_div_queyFrom0_form0_select2']/ul/li[contains(text(),'全选')]， 用时 0.07300424575805664 秒.
+2019-06-14 15:15:24,167 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.12200713157653809 秒.
+2019-06-14 15:15:25,267 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 文本内容：&lt;1 湘J53131 黄 临澧顺达旅客运输有限责任公司 临澧县运管所 宏地道路运输车辆卫星定位系统监控平台 三类以上班线客车 县际包车客运,县内包车客运,县际班车客运,县内班车客运 临澧顺达旅客运输有限责任公司 临澧县 常德市 430724003255 20170607 20190121 19 0 已安装 2019-06-14 15:14:45 转出 长沙宏地科技开发有限公司&gt;, 用时 0.05800342559814453 秒.
+2019-06-14 15:15:25,268 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 断言文本：&lt;宏地道路运输车辆卫星定位系统监控平台&gt;, 用时 1.1010627746582031 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_003_SelectTheCar_company</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_3: 2019-06-14 15:15:25,268 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 15:15:25,275 - root - INFO - SUCCESS    刷新页面，用时0.00500035285949707
+2019-06-14 15:15:25,789 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.5110292434692383 秒.
+2019-06-14 15:15:25,898 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.10800647735595703 秒.
+2019-06-14 15:15:27,054 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;input#vehicleManage_tables_div_queyFrom0_form0_text1_show&gt; 输入: 常德市, 用时 1.1550660133361816 秒.
+2019-06-14 15:15:28,140 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'常德市')]， 用时 1.0860621929168701 秒.
+2019-06-14 15:15:28,192 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text3_show，内容：‘’输入成功， 用时 0.0500028133392334 秒.
+2019-06-14 15:15:28,270 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'')]， 用时 0.07700467109680176 秒.
+2019-06-14 15:15:28,442 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text2_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 0.17100977897644043 秒.
+2019-06-14 15:15:29,541 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'常德驰鑫运输有限公司')]， 用时 1.098062515258789 秒.
+2019-06-14 15:15:29,607 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_select0 &gt; input， 用时 0.06600379943847656 秒.
+2019-06-14 15:15:29,683 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_checkBox0_check， 用时 0.07500433921813965 秒.
+2019-06-14 15:15:29,742 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_select2 &gt; input， 用时 0.05800366401672363 秒.
+2019-06-14 15:15:29,820 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='vehicleManage_tables_div_queyFrom0_form0_select2']/ul/li[contains(text(),'')]， 用时 0.07800436019897461 秒.
+2019-06-14 15:15:29,938 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.1150064468383789 秒.
+2019-06-14 15:15:31,030 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 文本内容：&lt;1 湘JA1719 黄 常德驰鑫运输有限公司 柳叶湖区运管所 宏地道路运输车辆卫星定位系统监控平台 危险品运输车 危险货物运输(1类4项),道路普通货物运输 常德驰鑫运输有限公司 柳叶湖区 常德市 430700200360 20160802 20190801 0 0 已安装 2018-07-27 09:13:07 转出 长沙宏地科技开发有限公司&gt;, 用时 0.05300307273864746 秒.
+2019-06-14 15:15:31,030 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 断言文本：&lt;常德驰鑫运输有限公司&gt;, 用时 1.0920624732971191 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_4' class='none'>
+    <td class='failCase' width='300px'><div class='testcase'>test_004_SelectTheCar_Synch</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>失败</button>
+    <div id='div_ft1_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>失败</button>
+    <div id='div_ft1_4' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+ft1_4: 2019-06-14 15:15:31,031 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 15:15:31,037 - root - INFO - SUCCESS    刷新页面，用时0.005000591278076172
+2019-06-14 15:15:31,485 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.4480259418487549 秒.
+2019-06-14 15:15:31,593 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.10600590705871582 秒.
+2019-06-14 15:15:32,747 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.1520659923553467 秒.
+2019-06-14 15:15:32,865 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.11800694465637207 秒.
+2019-06-14 15:15:33,986 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 文本内容：&lt;没有相关数据!&gt;, 用时 0.06000328063964844 秒.
+2019-06-14 15:15:33,987 - root - INFO - FAIL       断言类型：in  未通过  元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 断言文本：&lt;湘E98363&gt;, 用时 1.1200640201568604 秒.
+screenshot:  20190614151533.png
+2019-06-14 15:15:34,441 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.4540259838104248 秒.
+2019-06-14 15:15:39,441 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 15:15:39,874 - root - INFO - SUCCESS    刷新页面，用时0.4320247173309326
+2019-06-14 15:15:39,925 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.0500028133392334 秒.
+2019-06-14 15:15:40,061 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.1350078582763672 秒.
+2019-06-14 15:15:41,292 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.2310702800750732 秒.
+2019-06-14 15:15:41,446 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.1520085334777832 秒.
+2019-06-14 15:15:42,541 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 文本内容：&lt;没有相关数据!&gt;, 用时 0.05200314521789551 秒.
+2019-06-14 15:15:42,542 - root - INFO - FAIL       断言类型：in  未通过  元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 断言文本：&lt;湘E98363&gt;, 用时 1.095062494277954 秒.
+screenshot:  20190614151542.png
+2019-06-14 15:15:42,952 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.41002345085144043 秒.
+2019-06-14 15:15:47,953 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 15:15:48,425 - root - INFO - SUCCESS    刷新页面，用时0.47002673149108887
+2019-06-14 15:15:48,521 - root - INFO - SUCCESS    移动到元素: &lt;css-&gt;#home-down-icon-level&gt;, 用时 0.09600543975830078 秒.
+2019-06-14 15:15:48,628 - root - INFO - SUCCESS    点击元素：css-&gt;#base_info_level， 用时 0.10600614547729492 秒.
+2019-06-14 15:15:49,765 - root - INFO - SUCCESS    元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.1360650062561035 秒.
+2019-06-14 15:15:49,887 - root - INFO - SUCCESS    点击元素：css-&gt;#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.12000656127929688 秒.
+2019-06-14 15:15:50,963 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 文本内容：&lt;没有相关数据!&gt;, 用时 0.0500028133392334 秒.
+2019-06-14 15:15:50,965 - root - INFO - FAIL       断言类型：in  未通过  元素: &lt;css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)&gt; 断言文本：&lt;湘E98363&gt;, 用时 1.077061653137207 秒.
+screenshot:  20190614151550.png
+2019-06-14 15:15:51,368 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.4020230770111084 秒.
+2019-06-14 15:15:56,369 - root - INFO - FAIL       执行次数: 3次, 全部失败
+Traceback (most recent call last):
+  File "E:\autotest\common\basepage.py", line 419, in warpper
+    raise raise_info
+  File "E:\autotest\common\basepage.py", line 411, in warpper
+    ret = func(*args, **kwargs)
+  File "E:\autotest\testcase\test_Hunan_01.py", line 136, in test_004_SelectTheCar_Synch
+    css="css-&gt;#vehicleManage_tables_table &gt; tbody &gt; tr:nth-child(1)"
+  File "E:\autotest\common\basepage.py", line 308, in assert_text
+    assert text in page_text
+AssertionError
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="./image/20190614151550.png">
+            <img   src="./image/20190614151550.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr class='passClass warning'>
+    <td>test_Hunan_02.Hunan_Statistic_test</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_001_CarStatistic</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_1: 2019-06-14 15:16:07,323 - root - INFO - 开始用例： test_001_CarStatistic
+2019-06-14 15:16:07,980 - root - INFO - SUCCESS    刷新页面，用时0.6550374031066895
+2019-06-14 15:16:08,910 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[4]/a， 用时 0.9290530681610107 秒.
+2019-06-14 15:16:09,859 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_vehicleinstall_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.948054313659668 秒.
+2019-06-14 15:16:10,987 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 1.1260643005371094 秒.
+2019-06-14 15:16:12,271 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:16:12,303 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-08, 用时 1.315075397491455 秒.
+2019-06-14 15:16:14,303 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-14 15:16:15,442 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:16:15,467 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1620664596557617 秒.
+2019-06-14 15:16:15,562 - root - INFO - SUCCESS    点击元素：css-&gt;#report_vehicleinstall_table_div_tabs0_content_panel0_form0_vehicleTypeTree0 &gt; input， 用时 0.09400558471679688 秒.
+2019-06-14 15:16:15,661 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'两客一危')]， 用时 0.09800577163696289 秒.
+2019-06-14 15:16:15,786 - root - INFO - SUCCESS    点击元素：css-&gt;#report_vehicleinstall_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.1240072250366211 秒.
+2019-06-14 15:16:17,923 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 0 4 -4 2656 2656 100.00% 1151 1151 100.00% 0 0 0.00% 0 0 0.00% 11 11 100.00% 203 203 100.00% 1291 1291 100.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00% 0 0 0.00%&gt;, 用时 0.08000445365905762 秒.
+2019-06-14 15:16:17,924 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.13712215423584 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr class='passClass warning'>
+    <td>test_Hunan_03.Hunan_Assessment_test</td>
+    <td class="text-center">24</td>
+    <td class="text-center">24</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',24)" class="detail" id='c3'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_001_zoneassessment_month</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_1: 2019-06-14 15:16:29,411 - root - INFO - 开始用例： test_001_zoneassessment_month , 参数选择： 地区考核月度查询
+2019-06-14 15:16:29,906 - root - INFO - SUCCESS    刷新页面，用时0.4930281639099121
+2019-06-14 15:16:32,907 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:16:33,272 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.3630208969116211 秒.
+2019-06-14 15:16:36,274 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:16:36,370 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.09500551223754883 秒.
+2019-06-14 15:16:36,500 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'月度考核')]， 用时 0.1280074119567871 秒.
+2019-06-14 15:16:36,722 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.22101259231567383 秒.
+2019-06-14 15:16:37,194 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.47002696990966797 秒.
+2019-06-14 15:16:38,410 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:16:38,440 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_date0_txt&gt; 输入: 2019-03, 用时 1.2440712451934814 秒.
+2019-06-14 15:16:38,532 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.09000515937805176 秒.
+2019-06-14 15:16:38,641 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'全选')]， 用时 0.10900640487670898 秒.
+2019-06-14 15:16:38,822 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.17901015281677246 秒.
+2019-06-14 15:16:40,539 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 2644 2644 100.00% 5.00 2644 2644 100.00% 10.00 2644 0 0.00% 15.00 15808527.9 15692283.95 99.26% 39.71 99392429 99392340 100.00% 30.00 99.71 0&gt;, 用时 0.07300424575805664 秒.
+2019-06-14 15:16:40,540 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 1.7160980701446533 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_002_zoneassessment_year</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_2: 2019-06-14 15:16:40,540 - root - INFO - 开始用例： test_002_zoneassessment_year , 参数选择： 地区考核年度查询
+2019-06-14 15:16:40,553 - root - INFO - SUCCESS    刷新页面，用时0.012000560760498047
+2019-06-14 15:16:43,556 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:16:43,997 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.44002509117126465 秒.
+2019-06-14 15:16:46,998 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:16:47,067 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.06800389289855957 秒.
+2019-06-14 15:16:47,196 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'年度考核')]， 用时 0.128007173538208 秒.
+2019-06-14 15:16:50,196 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:16:50,332 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.13600802421569824 秒.
+2019-06-14 15:16:50,788 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.45502591133117676 秒.
+2019-06-14 15:16:52,004 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:16:52,033 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_date1_txt&gt; 输入: 2018, 用时 1.2440712451934814 秒.
+2019-06-14 15:16:52,118 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.08400487899780273 秒.
+2019-06-14 15:16:52,204 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'全选')]， 用时 0.08500480651855469 秒.
+2019-06-14 15:16:52,339 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.13300752639770508 秒.
+2019-06-14 15:16:58,578 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 2713 2713 100.00% 5.00 2713 2713 100.00% 10.00 2713 8 0.29% 14.12 187208136.96 184478779.92 98.54% 39.42 1047486012 1047022454 99.96% 29.99 98.53&gt;, 用时 0.06800389289855957 秒.
+2019-06-14 15:16:58,580 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 6.238356590270996 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_3' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_003_zoneassessment_day</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_3: 2019-06-14 15:16:58,581 - root - INFO - 开始用例： test_003_zoneassessment_day , 参数选择： 地区考核当月实时查询
+2019-06-14 15:16:59,001 - root - INFO - SUCCESS    刷新页面，用时0.4190239906311035
+2019-06-14 15:17:02,004 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:17:02,365 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.356020450592041 秒.
+2019-06-14 15:17:05,369 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:17:05,451 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.08100485801696777 秒.
+2019-06-14 15:17:05,620 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'当月实时考核')]， 用时 0.16800928115844727 秒.
+2019-06-14 15:17:08,621 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:17:08,789 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.16800951957702637 秒.
+2019-06-14 15:17:09,218 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.4280242919921875 秒.
+2019-06-14 15:17:10,448 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:17:10,483 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-08, 用时 1.2650723457336426 秒.
+2019-06-14 15:17:11,635 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:17:11,664 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.179067611694336 秒.
+2019-06-14 15:17:11,732 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.06700396537780762 秒.
+2019-06-14 15:17:11,819 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[contains(text(),'全选')]， 用时 0.0870048999786377 秒.
+2019-06-14 15:17:11,949 - root - INFO - SUCCESS    点击元素：css-&gt;#report_zoneCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.12900733947753906 秒.
+2019-06-14 15:17:13,329 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 2656 2656 100.00% 5.00 2656 2387 89.87% 8.99 2387 0 0.00% 15.00 1676013.53 1669787.7 99.63% 39.85 10189911 10189911 100.00% 30.00 98.84&gt;, 用时 0.07800459861755371 秒.
+2019-06-14 15:17:13,330 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 1.3800792694091797 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_4' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_004_Companyassessment_month</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
+    <div id='div_pt3_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
+    <div id='div_pt3_4' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_4: 2019-06-14 15:17:13,331 - root - INFO - 开始用例： test_004_Companyassessment_month , 参数选择： 企业考核月度查询
+2019-06-14 15:17:13,746 - root - INFO - SUCCESS    刷新页面，用时0.41402363777160645
+2019-06-14 15:17:13,854 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.10700607299804688 秒.
+2019-06-14 15:17:16,856 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:17:16,865 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(2) &gt; ul').style.display='block', 用时 0.009000539779663086 秒.
+2019-06-14 15:17:17,865 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:17:17,951 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_companyRank']/a/span[contains(text(),'企业考核排名')]， 用时 0.08600497245788574 秒.
+2019-06-14 15:17:19,034 - root - INFO - SUCCESS    元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text0_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 1.081061840057373 秒.
+2019-06-14 15:17:19,541 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德驰鑫运输有限公司')]， 用时 0.5070288181304932 秒.
+2019-06-14 15:17:19,620 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.07900476455688477 秒.
+2019-06-14 15:17:19,726 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'月度考核')]， 用时 0.10400581359863281 秒.
+2019-06-14 15:17:19,829 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text1_show&gt; 输入: 湖南省, 用时 0.10300588607788086 秒.
+2019-06-14 15:17:50,853 - root - INFO - FAIL       未能点击元素xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')].
+2019-06-14 15:17:55,854 - root - INFO - 开始用例： test_004_Companyassessment_month , 参数选择： 企业考核月度查询
+2019-06-14 15:17:56,392 - root - INFO - SUCCESS    刷新页面，用时0.5360302925109863
+2019-06-14 15:17:56,516 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.12100672721862793 秒.
+2019-06-14 15:17:59,516 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:17:59,524 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(2) &gt; ul').style.display='block', 用时 0.008000373840332031 秒.
+2019-06-14 15:18:00,525 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:00,619 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_companyRank']/a/span[contains(text(),'企业考核排名')]， 用时 0.09300518035888672 秒.
+2019-06-14 15:18:00,992 - root - INFO - SUCCESS    元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text0_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 0.3720214366912842 秒.
+2019-06-14 15:18:01,417 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德驰鑫运输有限公司')]， 用时 0.42302441596984863 秒.
+2019-06-14 15:18:01,498 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.08100438117980957 秒.
+2019-06-14 15:18:01,588 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'月度考核')]， 用时 0.09000539779663086 秒.
+2019-06-14 15:18:01,699 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text1_show&gt; 输入: 湖南省, 用时 0.10900616645812988 秒.
+2019-06-14 15:18:02,119 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.41802382469177246 秒.
+2019-06-14 15:18:03,271 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:03,305 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_date0_txt&gt; 输入: 2019-03, 用时 1.185067892074585 秒.
+2019-06-14 15:18:03,384 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.07800436019897461 秒.
+2019-06-14 15:18:03,456 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.07200407981872559 秒.
+2019-06-14 15:18:03,589 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.13100767135620117 秒.
+2019-06-14 15:18:05,808 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 160 160 100.00% 5.00 160 160 100.00% 5.00 963263.53 956452.28 99.29% 14.89 5142258 5142258 100.00% 15.00 160 0 0.00% 10.00 0 0 0 20.00 0 0 0 20.00 30 30 100.00 10.00 99.89 0&gt;, 用时 0.059003353118896484 秒.
+2019-06-14 15:18:05,811 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.2211267948150635 秒.
+2019-06-14 15:18:05,813 - root - INFO - SUCCESS    重试2次成功
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_5' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_005_Companyassessment_year</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_5: 2019-06-14 15:18:05,814 - root - INFO - 开始用例： test_005_Companyassessment_year , 参数选择： 企业考核年度查询
+2019-06-14 15:18:05,831 - root - INFO - SUCCESS    刷新页面，用时0.016001224517822266
+2019-06-14 15:18:06,582 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.7500426769256592 秒.
+2019-06-14 15:18:09,582 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:18:09,590 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(2) &gt; ul').style.display='block', 用时 0.0070002079010009766 秒.
+2019-06-14 15:18:10,590 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:10,707 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_companyRank']/a/span[contains(text(),'企业考核排名')]， 用时 0.1150064468383789 秒.
+2019-06-14 15:18:11,103 - root - INFO - SUCCESS    元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text0_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 0.3950226306915283 秒.
+2019-06-14 15:18:11,535 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德驰鑫运输有限公司')]， 用时 0.43102502822875977 秒.
+2019-06-14 15:18:11,605 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.06800365447998047 秒.
+2019-06-14 15:18:11,698 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'年度考核')]， 用时 0.09200525283813477 秒.
+2019-06-14 15:18:11,820 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text1_show&gt; 输入: 湖南省, 用时 0.11900687217712402 秒.
+2019-06-14 15:18:12,273 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4520258903503418 秒.
+2019-06-14 15:18:13,435 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:13,462 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_date1_txt&gt; 输入: 2018, 用时 1.1890678405761719 秒.
+2019-06-14 15:18:13,531 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.06800365447998047 秒.
+2019-06-14 15:18:13,607 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.0740044116973877 秒.
+2019-06-14 15:18:13,740 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.13200736045837402 秒.
+2019-06-14 15:18:15,680 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 160 160 100.00% 5.00 160 160 100.00% 5.00 9425167.15 9335238.4 99.05% 14.86 59225430 59225430 100.00% 15.00 160 0 0.00% 10.00 0 0 0 20.00 0 0 0 20.00 173 159 91.91 9.19 99.05&gt;, 用时 0.09600543975830078 秒.
+2019-06-14 15:18:15,681 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 1.9411110877990723 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_6' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_006_Companyassessment_day</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_6: 2019-06-14 15:18:15,682 - root - INFO - 开始用例： test_006_Companyassessment_day , 参数选择： 企业考核当月实时查询
+2019-06-14 15:18:15,691 - root - INFO - SUCCESS    刷新页面，用时0.008000612258911133
+2019-06-14 15:18:16,309 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.616034984588623 秒.
+2019-06-14 15:18:19,311 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:18:19,319 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(2) &gt; ul').style.display='block', 用时 0.008000373840332031 秒.
+2019-06-14 15:18:20,319 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:20,424 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_companyRank']/a/span[contains(text(),'企业考核排名')]， 用时 0.10500597953796387 秒.
+2019-06-14 15:18:20,958 - root - INFO - SUCCESS    元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text0_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 0.5310304164886475 秒.
+2019-06-14 15:18:21,417 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德驰鑫运输有限公司')]， 用时 0.4580261707305908 秒.
+2019-06-14 15:18:21,509 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.09100508689880371 秒.
+2019-06-14 15:18:21,627 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'当月实时考核')]， 用时 0.11600661277770996 秒.
+2019-06-14 15:18:21,830 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_text1_show&gt; 输入: 湖南省, 用时 0.2020115852355957 秒.
+2019-06-14 15:18:22,339 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.5070290565490723 秒.
+2019-06-14 15:18:23,562 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:23,589 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-08, 用时 1.2490713596343994 秒.
+2019-06-14 15:18:24,736 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:24,774 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.184067964553833 秒.
+2019-06-14 15:18:24,861 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.0870048999786377 秒.
+2019-06-14 15:18:25,006 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_companyCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.14300823211669922 秒.
+2019-06-14 15:18:25,213 - root - INFO - SUCCESS    点击元素：css-&gt;#report_companyCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.20601201057434082 秒.
+2019-06-14 15:18:27,958 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 160 160 100.00% 5.00 160 150 93.75% 4.69 112054.59 110973.12 99.03% 14.86 526560 526560 100.00% 15.00 150 0 0.00% 10.00 0 0 0 20.00 0 0 0 20.00 4 4 100.00 10.00 99.55&gt;, 用时 0.059003353118896484 秒.
+2019-06-14 15:18:27,958 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.745156764984131 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_7' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_007_Platformassessment_month</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_7: 2019-06-14 15:18:27,959 - root - INFO - 开始用例： test_007_Platformassessment_month , 参数选择： 服务商考核月度查询
+2019-06-14 15:18:28,398 - root - INFO - SUCCESS    刷新页面，用时0.43802523612976074
+2019-06-14 15:18:28,526 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.1260073184967041 秒.
+2019-06-14 15:18:31,527 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:18:31,540 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(3) &gt; ul').style.display='block', 用时 0.012000560760498047 秒.
+2019-06-14 15:18:32,540 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:32,628 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_providerRank']/a/span[contains(text(),'服务商考核排名')]， 用时 0.0870048999786377 秒.
+2019-06-14 15:18:33,202 - root - INFO - SUCCESS    元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text1_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.5720329284667969 秒.
+2019-06-14 15:18:33,648 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.44402527809143066 秒.
+2019-06-14 15:18:33,712 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.0630035400390625 秒.
+2019-06-14 15:18:33,831 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'月度考核')]， 用时 0.11800646781921387 秒.
+2019-06-14 15:18:33,961 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 湖南省, 用时 0.1280074119567871 秒.
+2019-06-14 15:18:34,383 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4210240840911865 秒.
+2019-06-14 15:18:35,590 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:35,649 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_date0_txt&gt; 输入: 2019-03, 用时 1.2650723457336426 秒.
+2019-06-14 15:18:35,759 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.10800623893737793 秒.
+2019-06-14 15:18:35,885 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.12500715255737305 秒.
+2019-06-14 15:18:36,075 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_button0_btn， 用时 0.1890106201171875 秒.
+2019-06-14 15:18:38,409 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 2678400 2651237 98.99% 19.80 4588 4588 100.00% 10.00 25750265.02 25533793.91 99.16% 24.79 146749018 146749018 100.00% 25.00 4588 0 0.00% 20.00 99.59 0&gt;, 用时 0.06900405883789062 秒.
+2019-06-14 15:18:38,410 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.3321335315704346 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_8' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_008_Platformassessment_year</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_8: 2019-06-14 15:18:38,410 - root - INFO - 开始用例： test_008_Platformassessment_year , 参数选择： 服务商年度查询
+2019-06-14 15:18:38,858 - root - INFO - SUCCESS    刷新页面，用时0.44602537155151367
+2019-06-14 15:18:38,977 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.11600661277770996 秒.
+2019-06-14 15:18:41,978 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:18:41,988 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(3) &gt; ul').style.display='block', 用时 0.009000539779663086 秒.
+2019-06-14 15:18:42,991 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:43,099 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_providerRank']/a/span[contains(text(),'服务商考核排名')]， 用时 0.10700631141662598 秒.
+2019-06-14 15:18:43,549 - root - INFO - SUCCESS    元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text1_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.4480259418487549 秒.
+2019-06-14 15:18:43,979 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.42902445793151855 秒.
+2019-06-14 15:18:44,046 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.06600379943847656 秒.
+2019-06-14 15:18:44,155 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'年度考核')]， 用时 0.10800600051879883 秒.
+2019-06-14 15:18:44,278 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 湖南省, 用时 0.12000679969787598 秒.
+2019-06-14 15:18:44,715 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4370250701904297 秒.
+2019-06-14 15:18:45,862 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:45,902 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_date1_txt&gt; 输入: 2018, 用时 1.1870677471160889 秒.
+2019-06-14 15:18:45,973 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.07000422477722168 秒.
+2019-06-14 15:18:46,044 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.07100415229797363 秒.
+2019-06-14 15:18:46,164 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_button0_btn， 用时 0.11700654029846191 秒.
+2019-06-14 15:18:53,045 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 31536000 31442818 99.70% 19.94 4572 4572 100.00% 10.00 303993067.25 299971649.03 98.68% 24.67 1731907009 1731696966 99.99% 25.00 4572 9 0.20% 19.96 99.57&gt;, 用时 0.06000351905822754 秒.
+2019-06-14 15:18:53,046 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 6.8803935050964355 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_9' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_009_Platformassessment_day</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_9: 2019-06-14 15:18:53,048 - root - INFO - 开始用例： test_009_Platformassessment_day , 参数选择： 服务商当月实时查询
+2019-06-14 15:18:53,055 - root - INFO - SUCCESS    刷新页面，用时0.0060007572174072266
+2019-06-14 15:18:53,539 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.4820277690887451 秒.
+2019-06-14 15:18:56,541 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:18:56,554 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(3) &gt; ul').style.display='block', 用时 0.012000799179077148 秒.
+2019-06-14 15:18:57,554 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:18:57,639 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_providerRank']/a/span[contains(text(),'服务商考核排名')]， 用时 0.08500504493713379 秒.
+2019-06-14 15:18:58,072 - root - INFO - SUCCESS    元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text1_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.43102455139160156 秒.
+2019-06-14 15:18:58,488 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.41602349281311035 秒.
+2019-06-14 15:18:58,555 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.06600356101989746 秒.
+2019-06-14 15:18:58,673 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'当月实时考核')]， 用时 0.11700701713562012 秒.
+2019-06-14 15:18:58,812 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 湖南省, 用时 0.13800764083862305 秒.
+2019-06-14 15:18:59,290 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.47702741622924805 秒.
+2019-06-14 15:19:00,444 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:00,477 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-08, 用时 1.186068058013916 秒.
+2019-06-14 15:19:01,608 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:01,638 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1610665321350098 秒.
+2019-06-14 15:19:01,720 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.08100438117980957 秒.
+2019-06-14 15:19:01,805 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_providerCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.08400464057922363 秒.
+2019-06-14 15:19:01,932 - root - INFO - SUCCESS    点击元素：css-&gt;#report_providerCheckRank_table_div_tabs0_content_panel0_form0_button0_btn， 用时 0.12500739097595215 秒.
+2019-06-14 15:19:03,374 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 259200 251774 97.14% 19.43 4597 4240 92.23% 9.22 2718900.73 2704711 99.48% 24.87 14959697 14959697 100.00% 25.00 4240 1 0.02% 20.00 98.52&gt;, 用时 0.054003238677978516 秒.
+2019-06-14 15:19:03,375 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 1.44108247756958 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_10' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_010_Details_Install</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_10: 2019-06-14 15:19:03,376 - root - INFO - 开始用例： test_010_Details_Install , 参数选择： 考核明细-入网明细
+2019-06-14 15:19:03,826 - root - INFO - SUCCESS    刷新页面，用时0.4500257968902588
+2019-06-14 15:19:03,943 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.11600661277770996 秒.
+2019-06-14 15:19:06,943 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:06,954 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.010000467300415039 秒.
+2019-06-14 15:19:07,954 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:08,040 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.08600497245788574 秒.
+2019-06-14 15:19:08,273 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_text0_show，内容：‘’输入成功， 用时 0.23301315307617188 秒.
+2019-06-14 15:19:08,409 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_text1_show&gt; 输入: 湖南省, 用时 0.13600802421569824 秒.
+2019-06-14 15:19:08,855 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4450252056121826 秒.
+2019-06-14 15:19:08,921 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_text2_show，内容：‘’输入成功， 用时 0.06500387191772461 秒.
+2019-06-14 15:19:08,990 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_text3_show，内容：‘’输入成功， 用时 0.06700372695922852 秒.
+2019-06-14 15:19:10,175 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:10,207 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_date0_txt&gt; 输入: 2019-04-10, 用时 1.217069387435913 秒.
+2019-06-14 15:19:10,279 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.07000374794006348 秒.
+2019-06-14 15:19:10,370 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.09000492095947266 秒.
+2019-06-14 15:19:10,452 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.08100461959838867 秒.
+2019-06-14 15:19:10,535 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.08300471305847168 秒.
+2019-06-14 15:19:10,614 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select2 &gt; input， 用时 0.0760040283203125 秒.
+2019-06-14 15:19:10,737 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_select2']/ul/li[contains(text(),'已入网')]， 用时 0.12200713157653809 秒.
+2019-06-14 15:19:10,837 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.09900546073913574 秒.
+2019-06-14 15:19:12,878 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicleinstall_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘H27517 黄 赫山区 益阳市 益阳市达安运输有限公司 危险品运输车 湘北斗车联网服务平台 已安装 2019-06-14 15:16:08 危险货物运输(3类)&gt;, 用时 0.05100297927856445 秒.
+2019-06-14 15:19:12,878 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicleinstall_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 2.041116714477539 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_11' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_011_Details_Online</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_11: 2019-06-14 15:19:12,879 - root - INFO - 开始用例： test_011_Details_Online , 参数选择： 考核明细-上线明细
+2019-06-14 15:19:13,421 - root - INFO - SUCCESS    刷新页面，用时0.5400309562683105
+2019-06-14 15:19:13,628 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.20501160621643066 秒.
+2019-06-14 15:19:16,630 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:16,642 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.011000633239746094 秒.
+2019-06-14 15:19:17,642 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:17,730 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.0870053768157959 秒.
+2019-06-14 15:19:17,987 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav1， 用时 0.2560145854949951 秒.
+2019-06-14 15:19:18,051 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_text0_show，内容：‘’输入成功， 用时 0.0630033016204834 秒.
+2019-06-14 15:19:18,180 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_text2_show&gt; 输入: 湖南省, 用时 0.1280074119567871 秒.
+2019-06-14 15:19:18,644 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.46202659606933594 秒.
+2019-06-14 15:19:18,725 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_text1_show，内容：‘’输入成功， 用时 0.08100461959838867 秒.
+2019-06-14 15:19:18,792 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_text3_show，内容：‘’输入成功， 用时 0.0650033950805664 秒.
+2019-06-14 15:19:19,986 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:20,012 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-10, 用时 1.2200698852539062 秒.
+2019-06-14 15:19:21,143 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:21,190 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1770672798156738 秒.
+2019-06-14 15:19:21,260 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_select0 &gt; input， 用时 0.06900405883789062 秒.
+2019-06-14 15:19:21,339 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.07900476455688477 秒.
+2019-06-14 15:19:21,425 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_select1 &gt; input， 用时 0.08400487899780273 秒.
+2019-06-14 15:19:21,512 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_select1']/ul/li[contains(text(),'未上线')]， 用时 0.08600497245788574 秒.
+2019-06-14 15:19:21,624 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel1_form0_button1_btn， 用时 0.11000633239746094 秒.
+2019-06-14 15:19:22,995 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicleuplinerate_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘A8C035 黄 浏阳市 长沙市 浏阳市鼎顺物流集团有限公司 危险品运输车 浏阳北斗智能交通监控系统平台 2019-06-14 15:18:25 危险货物运输(4类3项),危险货物运输(4类1项),危险货物运输(3类),危险货物运输(2类1项),危险货物运输(1类4项),危险货物运输(1类3项),货物专用运输(集装箱),道路普通货物运输&gt;, 用时 0.1000056266784668 秒.
+2019-06-14 15:19:22,995 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicleuplinerate_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 1.3700785636901855 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_12' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_012_Details_Patform</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_12: 2019-06-14 15:19:22,996 - root - INFO - 开始用例： test_012_Details_Patform , 参数选择： 考核明细-平台连通率
+2019-06-14 15:19:23,007 - root - INFO - SUCCESS    刷新页面，用时0.010000467300415039
+2019-06-14 15:19:23,546 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.5380308628082275 秒.
+2019-06-14 15:19:26,547 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:26,558 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.011000871658325195 秒.
+2019-06-14 15:19:27,559 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:27,661 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.1000056266784668 秒.
+2019-06-14 15:19:28,045 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav2， 用时 0.38302159309387207 秒.
+2019-06-14 15:19:28,195 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_text1_show&gt; 输入: 湖南省, 用时 0.14900851249694824 秒.
+2019-06-14 15:19:28,646 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.44902586936950684 秒.
+2019-06-14 15:19:28,964 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_text0_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.31601810455322266 秒.
+2019-06-14 15:19:29,408 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.4430255889892578 秒.
+2019-06-14 15:19:30,580 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:30,614 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-10, 用时 1.204068899154663 秒.
+2019-06-14 15:19:31,762 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:31,793 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1770672798156738 秒.
+2019-06-14 15:19:31,868 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_select0 &gt; input， 用时 0.0740041732788086 秒.
+2019-06-14 15:19:31,958 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.0890052318572998 秒.
+2019-06-14 15:19:32,074 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel2_form0_button1_btn， 用时 0.11400651931762695 秒.
+2019-06-14 15:19:32,879 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicleconnectrate_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 宏地道路运输车辆卫星定位系统监控平台 23.95 24 99.80&gt;, 用时 0.04500246047973633 秒.
+2019-06-14 15:19:32,880 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicleconnectrate_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 0.8040459156036377 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_13' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_013_Details_Trail</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_13'>通过</button>
+    <div id='div_pt3_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_13'>通过</button>
+    <div id='div_pt3_13' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_13: 2019-06-14 15:19:32,880 - root - INFO - 开始用例： test_013_Details_Trail , 参数选择： 考核明细-轨迹完整率
+2019-06-14 15:19:33,277 - root - INFO - SUCCESS    刷新页面，用时0.3960227966308594
+2019-06-14 15:19:33,375 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.09600543975830078 秒.
+2019-06-14 15:19:36,375 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:36,382 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.0070002079010009766 秒.
+2019-06-14 15:19:37,382 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:37,505 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.12100672721862793 秒.
+2019-06-14 15:19:37,830 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav3， 用时 0.32301855087280273 秒.
+2019-06-14 15:19:37,987 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_text2_show&gt; 输入: 湖南省, 用时 0.15500879287719727 秒.
+2019-06-14 15:19:38,428 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.44002509117126465 秒.
+2019-06-14 15:19:38,499 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_text3_show，内容：‘’输入成功， 用时 0.07100415229797363 秒.
+2019-06-14 15:19:38,802 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_text1_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.3020172119140625 秒.
+2019-06-14 15:19:39,226 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.42302393913269043 秒.
+2019-06-14 15:19:40,383 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:40,449 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-12, 用时 1.2230703830718994 秒.
+2019-06-14 15:19:41,607 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:41,631 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-12, 用时 1.1810674667358398 秒.
+2019-06-14 15:19:41,712 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_select0 &gt; input， 用时 0.08000469207763672 秒.
+2019-06-14 15:19:41,796 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.08300495147705078 秒.
+2019-06-14 15:19:41,943 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel3_form0_button1_btn， 用时 0.14500808715820312 秒.
+2019-06-14 15:19:43,196 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicletrail_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘AD4233 黄 长沙市 长沙市 湖南省宾利旅游运输发展有限责任公司 包车客车 宏地道路运输车辆卫星定位系统监控平台 543.22 0 543.22 省际包车客运,市际包车客运,县际包车客运&gt;, 用时 0.06000328063964844 秒.
+2019-06-14 15:19:43,197 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicletrail_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 1.2520716190338135 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_14' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_014_Details_Data</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_14'>通过</button>
+    <div id='div_pt3_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_14'>通过</button>
+    <div id='div_pt3_14' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_14: 2019-06-14 15:19:43,197 - root - INFO - 开始用例： test_014_Details_Data , 参数选择： 考核明细-数据合格率
+2019-06-14 15:19:43,590 - root - INFO - SUCCESS    刷新页面，用时0.3910224437713623
+2019-06-14 15:19:43,691 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.09900569915771484 秒.
+2019-06-14 15:19:46,692 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:46,699 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.007000446319580078 秒.
+2019-06-14 15:19:47,700 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:47,808 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.10600590705871582 秒.
+2019-06-14 15:19:48,104 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav4， 用时 0.29401683807373047 秒.
+2019-06-14 15:19:48,242 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_text2_show&gt; 输入: 湖南省, 用时 0.13600778579711914 秒.
+2019-06-14 15:19:48,674 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.43102455139160156 秒.
+2019-06-14 15:19:48,734 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_text3_show，内容：‘’输入成功， 用时 0.059003353118896484 秒.
+2019-06-14 15:19:49,216 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_text1_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.48102760314941406 秒.
+2019-06-14 15:19:49,634 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.41602373123168945 秒.
+2019-06-14 15:19:50,815 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:50,846 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-10, 用时 1.211069107055664 秒.
+2019-06-14 15:19:51,983 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:52,021 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1740672588348389 秒.
+2019-06-14 15:19:52,129 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_select0 &gt; input， 用时 0.10600614547729492 秒.
+2019-06-14 15:19:52,251 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.12000679969787598 秒.
+2019-06-14 15:19:52,378 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel4_form0_button1_btn， 用时 0.12500715255737305 秒.
+2019-06-14 15:19:54,114 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehiclestandard_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘AD4233 黄 长沙市 长沙市 湖南省宾利旅游运输发展有限责任公司 包车客车 宏地道路运输车辆卫星定位系统监控平台 1376 1376 0 0 0 0 0 0 0 0 省际包车客运,市际包车客运,县际包车客运&gt;, 用时 0.08200478553771973 秒.
+2019-06-14 15:19:54,115 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehiclestandard_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 1.7360994815826416 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_15' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_015_Details_Speeding</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_15'>通过</button>
+    <div id='div_pt3_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_15'>通过</button>
+    <div id='div_pt3_15' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_15: 2019-06-14 15:19:54,116 - root - INFO - 开始用例： test_015_Details_Speeding , 参数选择： 考核明细-超速
+2019-06-14 15:19:54,129 - root - INFO - SUCCESS    刷新页面，用时0.010000228881835938
+2019-06-14 15:19:54,681 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.5500316619873047 秒.
+2019-06-14 15:19:57,681 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:19:57,691 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.01000070571899414 秒.
+2019-06-14 15:19:58,691 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:19:58,775 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.08300471305847168 秒.
+2019-06-14 15:19:59,408 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav5， 用时 0.6330363750457764 秒.
+2019-06-14 15:19:59,623 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_text1_show&gt; 输入: 湖南省, 用时 0.2130119800567627 秒.
+2019-06-14 15:20:00,048 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4240243434906006 秒.
+2019-06-14 15:20:00,102 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_text3_show，内容：‘’输入成功， 用时 0.052002906799316406 秒.
+2019-06-14 15:20:00,508 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_text2_show，内容：‘宏地道路运输车辆卫星定位系统监控平台’输入成功， 用时 0.40502309799194336 秒.
+2019-06-14 15:20:00,971 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'宏地道路运输车辆卫星定位系统监控平台')]， 用时 0.46202635765075684 秒.
+2019-06-14 15:20:02,126 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:02,154 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-10, 用时 1.1830675601959229 秒.
+2019-06-14 15:20:03,287 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:03,310 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-10, 用时 1.1550662517547607 秒.
+2019-06-14 15:20:03,397 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_select0 &gt; input， 用时 0.0870051383972168 秒.
+2019-06-14 15:20:03,490 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.09200525283813477 秒.
+2019-06-14 15:20:03,599 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel5_form0_button1_btn， 用时 0.10700607299804688 秒.
+2019-06-14 15:20:05,226 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicleoverspeed_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘F91818黄 湖南临湘龙鑫运输有限责任公司 宏地道路运输车辆卫星定位系统监控平台 2019-04-10 05:43:24 2019-04-10 05:44:24 00:01:00 100 88 10 临湘市 三类以上班线客车 湖南省&gt;岳阳市&gt;云溪区 南8米(湖南金溪化工有限公司东410米) 湖南省&gt;岳阳市&gt;云溪区 富源路南71米(岳阳金瀚高新技术股份有限公司东南114米) 省际包车客运,市际包车客运,市际班车客运&gt;, 用时 0.05600333213806152 秒.
+2019-06-14 15:20:05,227 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicleoverspeed_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 1.6280932426452637 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_16' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_016_Details_Tired</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_16'>通过</button>
+    <div id='div_pt3_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_16'>通过</button>
+    <div id='div_pt3_16' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_16: 2019-06-14 15:20:05,228 - root - INFO - 开始用例： test_016_Details_Tired , 参数选择： 考核明细-疲驾
+2019-06-14 15:20:05,234 - root - INFO - SUCCESS    刷新页面，用时0.0060002803802490234
+2019-06-14 15:20:05,721 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.4840278625488281 秒.
+2019-06-14 15:20:08,722 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:20:08,731 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.007000446319580078 秒.
+2019-06-14 15:20:09,732 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:09,828 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.09600567817687988 秒.
+2019-06-14 15:20:10,165 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav6， 用时 0.3350193500518799 秒.
+2019-06-14 15:20:10,330 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_text1_show&gt; 输入: 湖南省, 用时 0.1630091667175293 秒.
+2019-06-14 15:20:10,747 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4170238971710205 秒.
+2019-06-14 15:20:10,825 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_text3_show，内容：‘’输入成功， 用时 0.07700443267822266 秒.
+2019-06-14 15:20:10,901 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_text2_show，内容：‘’输入成功， 用时 0.07500457763671875 秒.
+2019-06-14 15:20:12,076 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:12,125 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-01, 用时 1.2230699062347412 秒.
+2019-06-14 15:20:13,380 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:13,409 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-18, 用时 1.2830731868743896 秒.
+2019-06-14 15:20:13,485 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_select0 &gt; input， 用时 0.0760045051574707 秒.
+2019-06-14 15:20:13,574 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.08800482749938965 秒.
+2019-06-14 15:20:13,698 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel6_form0_button1_btn， 用时 0.12200713157653809 秒.
+2019-06-14 15:20:15,522 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicletired_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 武陵源区 湘GY3897黄 包车客车 张家界运兴旅游运输有限责任公司武陵源阳光公司 2019-04-06 11:02:17 2019-04-06 11:13:02 00:10:45 湖南省&gt;张家界市&gt;永定区 北100米(银虎农庄西南638米) 湖南省&gt;张家界市&gt;永定区 武陵山大道西北301米(渔公鱼庄西255米) 湘北斗车联网服务平台 省际包车客运,市际包车客运,县际包车客运,县内包车客运&gt;, 用时 0.06000328063964844 秒.
+2019-06-14 15:20:15,522 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicletired_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 1.8241043090820312 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_17' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_017_Details_Drift</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_17'>通过</button>
+    <div id='div_pt3_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_17'>通过</button>
+    <div id='div_pt3_17' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_17: 2019-06-14 15:20:15,523 - root - INFO - 开始用例： test_017_Details_Drift , 参数选择： 考核明细-漂移
+2019-06-14 15:20:15,529 - root - INFO - SUCCESS    刷新页面，用时0.00500035285949707
+2019-06-14 15:20:16,044 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.5150294303894043 秒.
+2019-06-14 15:20:19,045 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:20:19,057 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.011000394821166992 秒.
+2019-06-14 15:20:20,058 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:20,147 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.0890049934387207 秒.
+2019-06-14 15:20:20,478 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav7， 用时 0.3300189971923828 秒.
+2019-06-14 15:20:20,650 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_text1_show&gt; 输入: 湖南省, 用时 0.17100977897644043 秒.
+2019-06-14 15:20:21,163 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.5120291709899902 秒.
+2019-06-14 15:20:21,227 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_text3_show，内容：‘’输入成功， 用时 0.062003374099731445 秒.
+2019-06-14 15:20:21,341 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_text2_show，内容：‘’输入成功， 用时 0.11100625991821289 秒.
+2019-06-14 15:20:22,574 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:22,601 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-18, 用时 1.2580716609954834 秒.
+2019-06-14 15:20:23,785 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:23,818 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-18, 用时 1.2150695323944092 秒.
+2019-06-14 15:20:23,910 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_select0 &gt; input， 用时 0.09100508689880371 秒.
+2019-06-14 15:20:24,028 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_select0']/ul/li[contains(text(),'全选')]， 用时 0.11800694465637207 秒.
+2019-06-14 15:20:24,145 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel7_form0_button1_btn， 用时 0.11700654029846191 秒.
+2019-06-14 15:20:27,501 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicledrift_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 湘MY3388 黄 冷水滩区 湖南省永州汽车运输总公司 三类以上班线客车 烽火台部标车辆定位调度管理平台 省际班车客运&gt;, 用时 0.07100415229797363 秒.
+2019-06-14 15:20:27,501 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicledrift_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 3.355191946029663 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_18' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_018_Details_Response</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_18'>通过</button>
+    <div id='div_pt3_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_18'>通过</button>
+    <div id='div_pt3_18' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_18: 2019-06-14 15:20:27,502 - root - INFO - 开始用例： test_018_Details_Response , 参数选择： 考核明细-查岗
+2019-06-14 15:20:28,066 - root - INFO - SUCCESS    刷新页面，用时0.5630321502685547
+2019-06-14 15:20:28,199 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.13200759887695312 秒.
+2019-06-14 15:20:31,200 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:20:31,266 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector('#checkmanage-index &gt; div &gt; div.check-manage-title &gt; ul &gt; li:nth-child(5) &gt; ul').style.display='block', 用时 0.06400370597839355 秒.
+2019-06-14 15:20:32,266 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:32,347 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@data-control='checkManage_detail']/ul/li/a/span[contains(text(),'考核明细')]， 用时 0.07900452613830566 秒.
+2019-06-14 15:20:32,720 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_ul_nav8， 用时 0.37302112579345703 秒.
+2019-06-14 15:20:32,926 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_text1_show&gt; 输入: 湖南省, 用时 0.20301175117492676 秒.
+2019-06-14 15:20:33,367 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'湖南省')]， 用时 0.4410250186920166 秒.
+2019-06-14 15:20:33,583 - root - INFO - SUCCESS    元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_text0_show，内容：‘常德驰鑫运输有限公司’输入成功， 用时 0.21401214599609375 秒.
+2019-06-14 15:20:34,073 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德驰鑫运输有限公司')]， 用时 0.48802804946899414 秒.
+2019-06-14 15:20:35,269 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:35,298 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-18, 用时 1.2240698337554932 秒.
+2019-06-14 15:20:36,434 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:36,468 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-18, 用时 1.1700670719146729 秒.
+2019-06-14 15:20:36,550 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_select1 &gt; input， 用时 0.08000445365905762 秒.
+2019-06-14 15:20:36,641 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_select1']/ul/li[contains(text(),'是')]， 用时 0.08800530433654785 秒.
+2019-06-14 15:20:36,713 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_select0 &gt; input， 用时 0.07100391387939453 秒.
+2019-06-14 15:20:36,799 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_select0']/ul/li[contains(text(),'手动')]， 用时 0.08600473403930664 秒.
+2019-06-14 15:20:36,902 - root - INFO - SUCCESS    点击元素：css-&gt;#check_report_vehicleinstall_table_div_tabs0_content_panel8_form0_button1_btn， 用时 0.10300588607788086 秒.
+2019-06-14 15:20:37,110 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;#check_report_vehicleresponse_detail_table_table &gt; tbody &gt; tr&gt; 文本内容：&lt;1 常德驰鑫运输有限公司 柳叶湖区 是 2019-04-18 08:07:26 858-123=? zhucong 湖南省交通运输厅道路运输管理局 2019-04-18 08:08:46 735 zhucong 手动&gt;, 用时 0.06600379943847656 秒.
+2019-06-14 15:20:37,110 - root - INFO - SUCCESS    断言类型：not in  通过  元素: &lt;css-&gt;#check_report_vehicleresponse_detail_table_table &gt; tbody &gt; tr&gt; 断言文本：&lt;没有相关数据&gt;, 用时 0.20701169967651367 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_19' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_019_Zero_Zone_month</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_19'>通过</button>
+    <div id='div_pt3_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_19'>通过</button>
+    <div id='div_pt3_19' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_19: 2019-06-14 15:20:37,111 - root - INFO - 开始用例： test_019_Zero_Zone_month , 参数选择： 隐患清零-地区-月度
+2019-06-14 15:20:37,618 - root - INFO - SUCCESS    刷新页面，用时0.5070290565490723
+2019-06-14 15:20:37,751 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.13100743293762207 秒.
+2019-06-14 15:20:40,753 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:20:40,767 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.014000892639160156 秒.
+2019-06-14 15:20:41,768 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:41,872 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.10400605201721191 秒.
+2019-06-14 15:20:42,145 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.2710154056549072 秒.
+2019-06-14 15:20:42,251 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'月度考核')]， 用时 0.10500597953796387 秒.
+2019-06-14 15:20:42,415 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.16200900077819824 秒.
+2019-06-14 15:20:42,863 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.4470255374908447 秒.
+2019-06-14 15:20:44,022 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:44,103 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_date0_txt&gt; 输入: 2019-03, 用时 1.2390711307525635 秒.
+2019-06-14 15:20:44,186 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.08200454711914062 秒.
+2019-06-14 15:20:44,282 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.09500551223754883 秒.
+2019-06-14 15:20:44,418 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.13500761985778809 秒.
+2019-06-14 15:20:47,119 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 99.43 100.00% 0.00 100.00% 0.00 100.00% 0.00 99.26% 0.07 0.08% 0.04 1.04% 0.42 0.04% 0.04&gt;, 用时 0.05800342559814453 秒.
+2019-06-14 15:20:47,120 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.7011544704437256 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_20' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_020_Zero_Zone_year</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_20'>通过</button>
+    <div id='div_pt3_20' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_20'>通过</button>
+    <div id='div_pt3_20' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_20: 2019-06-14 15:20:47,120 - root - INFO - 开始用例： test_020_Zero_Zone_year , 参数选择： 隐患清零-地区-年度
+2019-06-14 15:20:47,602 - root - INFO - SUCCESS    刷新页面，用时0.482027530670166
+2019-06-14 15:20:47,763 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.15800905227661133 秒.
+2019-06-14 15:20:50,764 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:20:50,771 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.0070002079010009766 秒.
+2019-06-14 15:20:51,772 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:51,888 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.1150064468383789 秒.
+2019-06-14 15:20:52,110 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.22201275825500488 秒.
+2019-06-14 15:20:52,222 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'年度考核')]， 用时 0.11200642585754395 秒.
+2019-06-14 15:20:52,394 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.17000985145568848 秒.
+2019-06-14 15:20:52,792 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.39402246475219727 秒.
+2019-06-14 15:20:53,962 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:20:53,988 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_date1_txt&gt; 输入: 2018, 用时 1.194068193435669 秒.
+2019-06-14 15:20:54,071 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.08300471305847168 秒.
+2019-06-14 15:20:54,163 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.09200549125671387 秒.
+2019-06-14 15:20:54,317 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.1520085334777832 秒.
+2019-06-14 15:21:01,373 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 66.86 100.00% 0.00 100.00% 0.00 99.96% 0.00 98.54% 0.15 4.75% 2.38 69.33% 27.73 2.88% 2.88&gt;, 用时 0.08600473403930664 秒.
+2019-06-14 15:21:01,374 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 7.055403709411621 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_21' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_021_Zero_Zone_day</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_21'>通过</button>
+    <div id='div_pt3_21' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_21'>通过</button>
+    <div id='div_pt3_21' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_21: 2019-06-14 15:21:01,375 - root - INFO - 开始用例： test_021_Zero_Zone_day , 参数选择： 隐患清零-地区-实时
+2019-06-14 15:21:01,783 - root - INFO - SUCCESS    刷新页面，用时0.4060230255126953
+2019-06-14 15:21:01,942 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.15800905227661133 秒.
+2019-06-14 15:21:04,944 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:21:04,953 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.008000612258911133 秒.
+2019-06-14 15:21:05,953 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:06,050 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.09500527381896973 秒.
+2019-06-14 15:21:06,654 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0 &gt; input， 用时 0.6020345687866211 秒.
+2019-06-14 15:21:06,806 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select0']/ul/li[contains(text(),'当月实时考核')]， 用时 0.1500086784362793 秒.
+2019-06-14 15:21:06,956 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_text0_show&gt; 输入: 常德市, 用时 0.14900875091552734 秒.
+2019-06-14 15:21:07,445 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.4870278835296631 秒.
+2019-06-14 15:21:08,631 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:08,657 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-01, 用时 1.2110695838928223 秒.
+2019-06-14 15:21:09,798 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:09,821 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-18, 用时 1.1640665531158447 秒.
+2019-06-14 15:21:09,899 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1 &gt; input， 用时 0.07700419425964355 秒.
+2019-06-14 15:21:09,978 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel0_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.07800436019897461 秒.
+2019-06-14 15:21:10,120 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel0_form0_button1_btn， 用时 0.14200806617736816 秒.
+2019-06-14 15:21:12,887 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 99.77 100.00% 0.00 99.36% 0.06 99.98% 0.00 99.54% 0.05 0.08% 0.04 0.21% 0.08 0.00% 0.00&gt;, 用时 0.052002906799316406 秒.
+2019-06-14 15:21:12,887 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.76615834236145 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_22' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_022_Zero_Company_month</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_22' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_22'>通过</button>
+    <div id='div_pt3_22' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_22' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_22'>通过</button>
+    <div id='div_pt3_22' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_22: 2019-06-14 15:21:12,888 - root - INFO - 开始用例： test_022_Zero_Company_month , 参数选择： 隐患清零-企业-实时
+2019-06-14 15:21:13,482 - root - INFO - SUCCESS    刷新页面，用时0.593034029006958
+2019-06-14 15:21:13,601 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.11800670623779297 秒.
+2019-06-14 15:21:16,603 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:21:16,614 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.01000070571899414 秒.
+2019-06-14 15:21:17,615 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:17,709 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.09300541877746582 秒.
+2019-06-14 15:21:17,963 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_ul_nav1， 用时 0.25101423263549805 秒.
+2019-06-14 15:21:18,034 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0 &gt; input， 用时 0.07100391387939453 秒.
+2019-06-14 15:21:18,132 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0']/ul/li[contains(text(),'月度考核')]， 用时 0.09700560569763184 秒.
+2019-06-14 15:21:18,277 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_text1_show&gt; 输入: 常德市, 用时 0.14400839805603027 秒.
+2019-06-14 15:21:18,720 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.4410250186920166 秒.
+2019-06-14 15:21:19,878 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:19,942 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_date0_txt&gt; 输入: 2019-03, 用时 1.2210698127746582 秒.
+2019-06-14 15:21:20,014 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1 &gt; input， 用时 0.07000398635864258 秒.
+2019-06-14 15:21:20,098 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.08300471305847168 秒.
+2019-06-14 15:21:20,225 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_button1_btn， 用时 0.1260073184967041 秒.
+2019-06-14 15:21:22,981 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 99.43 100.00% 0.00 100.00% 0.00 100.00% 0.00 99.26% 0.07 0.08% 0.04 1.04% 0.42 0.04% 0.04&gt;, 用时 0.05500316619873047 秒.
+2019-06-14 15:21:22,981 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 2.755157470703125 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_23' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_023_Zero_Company_year</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_23' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_23'>通过</button>
+    <div id='div_pt3_23' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_23' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_23'>通过</button>
+    <div id='div_pt3_23' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_23: 2019-06-14 15:21:22,982 - root - INFO - 开始用例： test_023_Zero_Company_year , 参数选择： 隐患清零-企业-实时
+2019-06-14 15:21:22,990 - root - INFO - SUCCESS    刷新页面，用时0.008000612258911133
+2019-06-14 15:21:23,490 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.4980285167694092 秒.
+2019-06-14 15:21:26,491 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:21:26,501 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.010000467300415039 秒.
+2019-06-14 15:21:27,502 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:27,636 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.13300752639770508 秒.
+2019-06-14 15:21:27,920 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_ul_nav1， 用时 0.28401637077331543 秒.
+2019-06-14 15:21:28,006 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0 &gt; input， 用时 0.08500480651855469 秒.
+2019-06-14 15:21:28,125 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0']/ul/li[contains(text(),'年度考核')]， 用时 0.11800694465637207 秒.
+2019-06-14 15:21:28,262 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_text1_show&gt; 输入: 常德市, 用时 0.13600754737854004 秒.
+2019-06-14 15:21:28,738 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.47502708435058594 秒.
+2019-06-14 15:21:29,888 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:29,921 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_date1_txt&gt; 输入: 2018, 用时 1.182067632675171 秒.
+2019-06-14 15:21:30,005 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1 &gt; input， 用时 0.08300471305847168 秒.
+2019-06-14 15:21:30,073 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.06600379943847656 秒.
+2019-06-14 15:21:30,193 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_button1_btn， 用时 0.11800694465637207 秒.
+2019-06-14 15:21:36,984 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 66.86 100.00% 0.00 100.00% 0.00 99.96% 0.00 98.54% 0.15 4.75% 2.38 69.33% 27.73 2.88% 2.88&gt;, 用时 0.049002885818481445 秒.
+2019-06-14 15:21:36,984 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 6.790388107299805 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt3_24' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_024_Zero_Company_day</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_24' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_24'>通过</button>
+    <div id='div_pt3_24' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_24' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_24'>通过</button>
+    <div id='div_pt3_24' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt3_24: 2019-06-14 15:21:36,985 - root - INFO - 开始用例： test_024_Zero_Company_day , 参数选择： 隐患清零-企业-实时
+2019-06-14 15:21:37,389 - root - INFO - SUCCESS    刷新页面，用时0.40302324295043945
+2019-06-14 15:21:37,501 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='home-main']/div[1]/ul[2]/li[1]/a， 用时 0.11000657081604004 秒.
+2019-06-14 15:21:40,501 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-14 15:21:40,508 - root - INFO - SUCCESS    执行 javascript 脚本: document.querySelector("li[data-control='checkManage_transport'] &gt; ul").style.display='block', 用时 0.007000446319580078 秒.
+2019-06-14 15:21:41,509 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:41,629 - root - INFO - SUCCESS    点击元素：xpath-&gt;//li[@data-control='checkManage_transport']/ul/li/a/span[contains(text(),'交通厅隐患清零')]， 用时 0.12000679969787598 秒.
+2019-06-14 15:21:41,855 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_ul_nav1， 用时 0.22501254081726074 秒.
+2019-06-14 15:21:41,934 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0 &gt; input， 用时 0.07700419425964355 秒.
+2019-06-14 15:21:42,028 - root - INFO - SUCCESS    点击元素：xpath-&gt;//*[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select0']/ul/li[contains(text(),'当月实时考核')]， 用时 0.09400534629821777 秒.
+2019-06-14 15:21:42,187 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_text1_show&gt; 输入: 常德市, 用时 0.15800905227661133 秒.
+2019-06-14 15:21:42,619 - root - INFO - SUCCESS    点击元素：xpath-&gt;//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 0.4300246238708496 秒.
+2019-06-14 15:21:43,841 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:43,922 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_datePeriod0_date0_txt&gt; 输入: 2019-04-01, 用时 1.302074670791626 秒.
+2019-06-14 15:21:45,426 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 15:21:45,454 - root - INFO - SUCCESS    清除元素: &lt;css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_datePeriod0_date1_txt&gt; 输入: 2019-04-18, 用时 1.5300877094268799 秒.
+2019-06-14 15:21:45,524 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1 &gt; input， 用时 0.06900405883789062 秒.
+2019-06-14 15:21:45,604 - root - INFO - SUCCESS    点击元素：xpath-&gt;//div[@id='report_transportCheckRank_table_div_tabs0_content_panel1_form0_select1']/ul/li[contains(text(),'全选')]， 用时 0.07900452613830566 秒.
+2019-06-14 15:21:45,732 - root - INFO - SUCCESS    点击元素：css-&gt;#report_transportCheckRank_table_div_tabs0_content_panel1_form0_button1_btn， 用时 0.126007080078125 秒.
+2019-06-14 15:21:49,471 - root - INFO - SUCCESS    获取元素文本 元素: &lt;css-&gt;tfoot &gt; tr&gt; 文本内容：&lt;合计 99.77 100.00% 0.00 99.36% 0.06 99.98% 0.00 99.54% 0.05 0.08% 0.04 0.21% 0.08 0.00% 0.00&gt;, 用时 0.054003238677978516 秒.
+2019-06-14 15:21:49,472 - root - INFO - SUCCESS    断言类型：in  通过  元素: &lt;css-&gt;tfoot &gt; tr&gt; 断言文本：&lt;合计&gt;, 用时 3.739213705062866 秒.
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="">
+            <img   src="" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>29</td>
+    <td>27</td>
+    <td>1</td>
+    <td>1</td>
+    <td>通过率：93.10%</td>
+    <td> <a href="" target="_blank"></a></td>
+</tr>
+</table>
+<script>
+    showCase(1);
+    drawCircle(27, 1, 1);
+</script>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+
+</body>
+</html>

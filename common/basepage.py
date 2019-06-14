@@ -410,7 +410,7 @@ class Retry(object):
                     try:
                         ret = func(*args, **kwargs)
                         if rnum > 1:
-                            logger.info('{0} 重试{1}次成功'.format(success, rnum))
+                            logger.info('{0} 执行次数: {1}次, 成功'.format(success, rnum))
                         return ret
                     except Exception as ex:
                         time.sleep(wait_time)

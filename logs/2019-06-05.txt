@@ -1,0 +1,1271 @@
+2019-06-05 16:52:09,015 - root - INFO - ############################### START ###############################
+2019-06-05 16:52:19,937 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 10.921624660491943 秒.
+2019-06-05 16:52:45,212 - root - INFO - ############################### START ###############################
+2019-06-05 16:52:50,501 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.288302659988403 秒.
+2019-06-05 16:52:50,854 - root - INFO - SUCCESS    成功打开链接：http://111.75.255.103，用时 0.35101985931396484 秒.
+2019-06-05 16:52:50,971 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js001’输入成功， 用时 0.1020057201385498 秒.
+2019-06-05 16:52:51,108 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.1370077133178711 秒.
+2019-06-05 16:52:57,395 - root - INFO - SUCCESS    点击元素：css->#button， 用时 6.285359144210815 秒.
+2019-06-05 16:52:57,396 - root - INFO - 开始用例: test_01_TJFX
+2019-06-05 16:52:59,001 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 1.6020915508270264 秒.
+2019-06-05 16:53:02,359 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.357191801071167 秒.
+2019-06-05 16:53:02,360 - root - INFO - ################################ End ################################
+2019-06-05 16:55:40,629 - root - INFO - ############################### START ###############################
+2019-06-05 16:55:45,905 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.274301767349243 秒.
+2019-06-05 16:55:46,335 - root - INFO - SUCCESS    成功打开链接：http://111.75.255.103，用时 0.42902445793151855 秒.
+2019-06-05 16:55:46,640 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js001’输入成功， 用时 0.3040175437927246 秒.
+2019-06-05 16:55:46,823 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.18101024627685547 秒.
+2019-06-05 16:55:52,507 - root - INFO - SUCCESS    点击元素：css->#button， 用时 5.6833250522613525 秒.
+2019-06-05 16:55:52,598 - root - INFO - SUCCESS    刷新页面，用时0.0890049934387207
+2019-06-05 16:55:52,599 - root - INFO - 开始用例: test_01_TJFX
+2019-06-05 16:55:54,725 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 2.1241211891174316 秒.
+2019-06-05 16:55:55,640 - root - INFO - SUCCESS    刷新页面，用时0.9130520820617676
+2019-06-05 16:55:55,641 - root - INFO - 开始用例: test_02_TJFX
+2019-06-05 16:55:55,927 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.2850162982940674 秒.
+2019-06-05 16:55:59,026 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.098176956176758 秒.
+2019-06-05 16:55:59,027 - root - INFO - ################################ End ################################
+2019-06-05 16:56:39,122 - root - INFO - ############################### START ###############################
+2019-06-05 16:56:44,750 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.627321720123291 秒.
+2019-06-05 16:56:45,887 - root - INFO - SUCCESS    成功打开链接：http://111.75.255.103，用时 1.1360650062561035 秒.
+2019-06-05 16:56:47,022 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1320648193359375 秒.
+2019-06-05 16:56:47,197 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js001’输入成功， 用时 0.17500996589660645 秒.
+2019-06-05 16:56:47,363 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.16400957107543945 秒.
+2019-06-05 16:56:55,435 - root - INFO - SUCCESS    点击元素：css->#button， 用时 8.072461605072021 秒.
+2019-06-05 16:56:55,437 - root - INFO - 开始用例: setUp
+2019-06-05 16:56:56,200 - root - INFO - SUCCESS    刷新页面，用时0.7620437145233154
+2019-06-05 16:56:57,485 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 1.2840733528137207 秒.
+2019-06-05 16:56:57,486 - root - INFO - 开始用例: setUp
+2019-06-05 16:56:58,169 - root - INFO - SUCCESS    刷新页面，用时0.6810388565063477
+2019-06-05 16:56:58,542 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.3720211982727051 秒.
+2019-06-05 16:57:01,601 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0581746101379395 秒.
+2019-06-05 16:57:01,602 - root - INFO - ################################ End ################################
+2019-06-05 16:58:18,658 - root - INFO - ############################### START ###############################
+2019-06-05 16:58:23,559 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.899280309677124 秒.
+2019-06-05 16:58:24,407 - root - INFO - SUCCESS    成功打开链接：http://111.75.255.103，用时 0.8470485210418701 秒.
+2019-06-05 16:58:25,570 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1620666980743408 秒.
+2019-06-05 16:58:25,669 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js001’输入成功， 用时 0.09700536727905273 秒.
+2019-06-05 16:58:25,744 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.07400393486022949 秒.
+2019-06-05 16:58:43,612 - root - INFO - SUCCESS    点击元素：css->#button， 用时 17.867022037506104 秒.
+2019-06-05 16:58:44,293 - root - INFO - SUCCESS    刷新页面，用时0.6780388355255127
+2019-06-05 16:58:44,294 - root - INFO - 开始用例: test_01_TJFX
+2019-06-05 16:58:44,935 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.6400365829467773 秒.
+2019-06-05 16:58:45,173 - root - INFO - SUCCESS    刷新页面，用时0.23501324653625488
+2019-06-05 16:58:45,174 - root - INFO - 开始用例: test_02_TJFX
+2019-06-05 16:58:46,496 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 1.320075511932373 秒.
+2019-06-05 16:58:49,544 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0471739768981934 秒.
+2019-06-05 16:58:49,545 - root - INFO - ################################ End ################################
+2019-06-05 18:04:43,657 - root - INFO - ############################### START ###############################
+2019-06-05 18:04:49,623 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.957340717315674 秒.
+2019-06-05 18:04:50,738 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1150636672973633 秒.
+2019-06-05 18:04:56,697 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8080/，用时 5.958340883255005 秒.
+2019-06-05 18:05:49,801 - root - INFO - ############################### START ###############################
+2019-06-05 18:05:54,870 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.0682899951934814 秒.
+2019-06-05 18:05:56,010 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1380650997161865 秒.
+2019-06-05 18:06:02,504 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.489371299743652 秒.
+2019-06-05 18:06:02,614 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.10900616645812988 秒.
+2019-06-05 18:06:02,683 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.06800365447998047 秒.
+2019-06-05 18:06:02,782 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.09800553321838379 秒.
+2019-06-05 18:06:02,783 - root - INFO - 开始用例: test_01_ky_update
+2019-06-05 18:06:05,784 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 18:06:06,923 - root - INFO - SUCCESS    刷新页面，用时1.1380650997161865
+2019-06-05 18:06:07,085 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(1)， 用时 0.1610095500946045 秒.
+2019-06-05 18:06:07,430 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.34201979637145996 秒.
+2019-06-05 18:06:07,994 - root - INFO - SUCCESS    元素：css->[placeholder="请输入车牌号"]，内容：‘蒙A12348’输入成功， 用时 0.5620322227478027 秒.
+2019-06-05 18:06:08,095 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(7) > div > div > div > input， 用时 0.10100555419921875 秒.
+2019-06-05 18:06:10,116 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:10,270 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.15300893783569336 秒.
+2019-06-05 18:06:12,270 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:12,399 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(2) > div > div > div > input， 用时 0.1280074119567871 秒.
+2019-06-05 18:06:14,399 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:14,521 - root - INFO - SUCCESS    点击元素：xpath->//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li/span[contains(text(),"黄色")]， 用时 0.12100696563720703 秒.
+2019-06-05 18:06:16,521 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:21,615 - root - INFO - FAIL       未能点击元素css->.el-dialog__body > form > div:nth-child(8) > div > div > div > input .
+2019-06-05 18:06:21,638 - root - INFO - 开始用例: test_02_ky_select
+2019-06-05 18:06:23,639 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:24,200 - root - INFO - SUCCESS    刷新页面，用时0.5590322017669678
+2019-06-05 18:06:24,314 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(1)， 用时 0.113006591796875 秒.
+2019-06-05 18:06:24,540 - root - INFO - SUCCESS    元素：css->[placeholder="车牌号"]，内容：‘蒙A12348’输入成功， 用时 0.2260129451751709 秒.
+2019-06-05 18:06:24,789 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.24701404571533203 秒.
+2019-06-05 18:06:24,849 - root - INFO - SUCCESS    元素：css->[placeholder="组别"]，内容：‘3’输入成功， 用时 0.05800342559814453 秒.
+2019-06-05 18:06:26,046 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.196068525314331 秒.
+2019-06-05 18:06:27,256 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-01’输入成功， 用时 1.209069013595581 秒.
+2019-06-05 18:06:27,325 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_header > div > div.el-col.el-col-4 > div > div > div > input， 用时 0.06900405883789062 秒.
+2019-06-05 18:06:29,326 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:29,483 - root - INFO - SUCCESS    点击元素：xpath->//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li/span[contains(text(),"敖汉旗")]， 用时 0.15500879287719727 秒.
+2019-06-05 18:06:31,484 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:31,575 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_header > div > div:nth-child(6) > div > div > div.el-input.el-input--suffix > input， 用时 0.0890049934387207 秒.
+2019-06-05 18:06:33,576 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:33,674 - root - INFO - SUCCESS    点击元素：xpath->//li[@class="el-select-dropdown__item"]/span[contains(text(),"未反馈")]， 用时 0.09600520133972168 秒.
+2019-06-05 18:06:35,674 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:06:35,765 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.0890054702758789 秒.
+2019-06-05 18:06:40,933 - root - INFO - FAIL       无法获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)>, 用时 5.0942912101745605 秒.
+2019-06-05 18:06:40,942 - root - INFO - 开始用例: test_03_wh_update
+2019-06-05 18:15:35,916 - root - INFO - ############################### START ###############################
+2019-06-05 18:15:41,127 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.21029806137085 秒.
+2019-06-05 18:15:42,284 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1560661792755127 秒.
+2019-06-05 18:15:48,722 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.435368061065674 秒.
+2019-06-05 18:15:48,898 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.17501020431518555 秒.
+2019-06-05 18:15:48,981 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.08200454711914062 秒.
+2019-06-05 18:15:49,067 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.08600497245788574 秒.
+2019-06-05 18:15:49,069 - root - INFO - 开始用例: test_01_ky_update
+2019-06-05 18:15:52,074 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 18:15:53,212 - root - INFO - SUCCESS    刷新页面，用时1.1360652446746826
+2019-06-05 18:15:53,308 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(1)， 用时 0.09500503540039062 秒.
+2019-06-05 18:15:53,465 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.15500903129577637 秒.
+2019-06-05 18:15:53,913 - root - INFO - SUCCESS    元素：css->[placeholder="请输入车牌号"]，内容：‘蒙A12348’输入成功， 用时 0.44702577590942383 秒.
+2019-06-05 18:15:53,991 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(7) > div > div > div > input， 用时 0.0760042667388916 秒.
+2019-06-05 18:15:55,992 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:15:56,106 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.11000609397888184 秒.
+2019-06-05 18:15:58,108 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:15:58,215 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(2) > div > div > div > input， 用时 0.10500574111938477 秒.
+2019-06-05 18:16:00,217 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:16:00,364 - root - INFO - SUCCESS    点击元素：xpath->//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li/span[contains(text(),"黄色")]， 用时 0.14200806617736816 秒.
+2019-06-05 18:16:02,366 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 18:16:07,483 - root - INFO - FAIL       未能点击元素css->.el-dialog__body > form > div:nth-child(8) > div > div > div > input .
+2019-06-05 18:16:10,586 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.089176654815674 秒.
+2019-06-05 18:16:10,587 - root - INFO - ################################ End ################################
+2019-06-05 18:56:18,357 - root - INFO - ############################### START ###############################
+2019-06-05 18:56:24,495 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 6.136350870132446 秒.
+2019-06-05 18:56:25,638 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1430652141571045 秒.
+2019-06-05 18:56:46,841 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 21.201212644577026 秒.
+2019-06-05 18:56:51,971 - root - INFO - FAIL       元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入是吧， 用时 5.128293514251709 秒.
+2019-06-05 19:02:36,505 - root - INFO - ############################### START ###############################
+2019-06-05 19:02:41,710 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.2032976150512695 秒.
+2019-06-05 19:02:42,877 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1650664806365967 秒.
+2019-06-05 19:02:49,405 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.525373220443726 秒.
+2019-06-05 19:02:49,557 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.1500086784362793 秒.
+2019-06-05 19:02:49,640 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.08200454711914062 秒.
+2019-06-05 19:02:49,738 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.09600567817687988 秒.
+2019-06-05 19:02:49,741 - root - INFO - 开始用例: test_05_cz_update
+2019-06-05 19:02:51,742 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:02:53,283 - root - INFO - SUCCESS    刷新页面，用时1.5370879173278809
+2019-06-05 19:02:53,428 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(3)， 用时 0.14300799369812012 秒.
+2019-06-05 19:02:53,581 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.1520082950592041 秒.
+2019-06-05 19:02:53,880 - root - INFO - SUCCESS    元素：css->[placeholder="请输入车牌号"]，内容：‘蒙A12348’输入成功， 用时 0.29701662063598633 秒.
+2019-06-05 19:02:53,970 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div > input， 用时 0.08800506591796875 秒.
+2019-06-05 19:02:55,971 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:02:56,087 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.11400651931762695 秒.
+2019-06-05 19:02:58,090 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:02:58,183 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(2) > div > div > div > input， 用时 0.09000539779663086 秒.
+2019-06-05 19:03:00,184 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:00,275 - root - INFO - SUCCESS    点击元素：xpath->//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li/span[contains(text(),"黄色")]， 用时 0.0890049934387207 秒.
+2019-06-05 19:03:02,276 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:03,551 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(4) > div > div > input，内容：‘2019-05-01’输入成功， 用时 1.2740731239318848 秒.
+2019-06-05 19:03:03,654 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.1020059585571289 秒.
+2019-06-05 19:03:04,055 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441235’输入成功， 用时 0.4000232219696045 秒.
+2019-06-05 19:03:04,335 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.27701568603515625 秒.
+2019-06-05 19:03:04,491 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.1540088653564453 秒.
+2019-06-05 19:03:04,579 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.08400487899780273 秒.
+2019-06-05 19:03:06,582 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:06,685 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.06700396537780762 秒.
+2019-06-05 19:03:06,687 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.10100579261779785 秒.
+2019-06-05 19:03:08,689 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:09,290 - root - INFO - SUCCESS    刷新页面，用时0.598034143447876
+2019-06-05 19:03:09,438 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(3)， 用时 0.14600825309753418 秒.
+2019-06-05 19:03:09,637 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.19801115989685059 秒.
+2019-06-05 19:03:10,212 - root - INFO - SUCCESS    元素：css->[placeholder="请输入车牌号"]，内容：‘蒙A12349’输入成功， 用时 0.5720326900482178 秒.
+2019-06-05 19:03:10,321 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div > input， 用时 0.10700607299804688 秒.
+2019-06-05 19:03:12,323 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:12,479 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"元宝山区")]， 用时 0.1540086269378662 秒.
+2019-06-05 19:03:14,481 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:14,564 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(2) > div > div > div > input， 用时 0.08200478553771973 秒.
+2019-06-05 19:03:16,566 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:16,685 - root - INFO - SUCCESS    点击元素：xpath->//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li/span[contains(text(),"黄色")]， 用时 0.11800694465637207 秒.
+2019-06-05 19:03:18,687 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:19,998 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(4) > div > div > input，内容：‘2019-05-01’输入成功， 用时 1.308074951171875 秒.
+2019-06-05 19:03:20,075 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.0760047435760498 秒.
+2019-06-05 19:03:20,434 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441236’输入成功， 用时 0.358020544052124 秒.
+2019-06-05 19:03:20,671 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.23401331901550293 秒.
+2019-06-05 19:03:20,810 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.1370077133178711 秒.
+2019-06-05 19:03:20,894 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.08200478553771973 秒.
+2019-06-05 19:03:22,895 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:22,944 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.034002065658569336 秒.
+2019-06-05 19:03:22,945 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.04800295829772949 秒.
+2019-06-05 19:03:22,947 - root - INFO - 开始用例: test_06_cz_select
+2019-06-05 19:03:24,948 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:25,573 - root - INFO - SUCCESS    刷新页面，用时0.6220357418060303
+2019-06-05 19:03:25,695 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(3)， 用时 0.11900711059570312 秒.
+2019-06-05 19:03:25,928 - root - INFO - SUCCESS    元素：css->[placeholder="车牌号"]，内容：‘蒙A12348’输入成功， 用时 0.23101305961608887 秒.
+2019-06-05 19:03:26,292 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.363020658493042 秒.
+2019-06-05 19:03:27,494 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.200068473815918 秒.
+2019-06-05 19:03:28,673 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-01’输入成功， 用时 1.1770670413970947 秒.
+2019-06-05 19:03:30,673 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:30,787 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.11200618743896484 秒.
+2019-06-05 19:03:34,791 - root - INFO - SUCCESS    等待 4 秒钟
+2019-06-05 19:03:34,889 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<蒙A12348
+黄色
+2019-05-01
+3
+136884002441235
+敖汉旗
+有车运行但人员脱岗
+备注001>, 用时 0.0500030517578125 秒.
+2019-06-05 19:03:34,890 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<蒙A12348>, 用时 0.09600543975830078 秒.
+2019-06-05 19:03:36,892 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:37,508 - root - INFO - SUCCESS    刷新页面，用时0.6120350360870361
+2019-06-05 19:03:37,633 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li.el-submenu.is-active.is-opened > ul > li > ul > li:nth-child(3)， 用时 0.1240072250366211 秒.
+2019-06-05 19:03:37,849 - root - INFO - SUCCESS    元素：css->[placeholder="车牌号"]，内容：‘蒙A12349’输入成功， 用时 0.2130119800567627 秒.
+2019-06-05 19:03:38,126 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441236’输入成功， 用时 0.27501583099365234 秒.
+2019-06-05 19:03:39,332 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.204068899154663 秒.
+2019-06-05 19:03:40,502 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-02’输入成功， 用时 1.1680667400360107 秒.
+2019-06-05 19:03:42,504 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:03:42,588 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.08300495147705078 秒.
+2019-06-05 19:03:46,590 - root - INFO - SUCCESS    等待 4 秒钟
+2019-06-05 19:03:46,657 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<蒙A12349
+黄色
+2019-05-01
+组
+136884002441236
+元宝山区
+轨迹完成率不足70%
+备注002>, 用时 0.051003217697143555 秒.
+2019-06-05 19:03:46,658 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<蒙A12349>, 用时 0.06600379943847656 秒.
+2019-06-05 19:03:49,753 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.091176748275757 秒.
+2019-06-05 19:03:49,757 - root - INFO - ################################ End ################################
+2019-06-05 19:03:54,282 - root - INFO - ############################### START ###############################
+2019-06-05 19:04:00,257 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.973341703414917 秒.
+2019-06-05 19:04:01,388 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1300647258758545 秒.
+2019-06-05 19:04:07,748 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.357363700866699 秒.
+2019-06-05 19:04:07,906 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.15600895881652832 秒.
+2019-06-05 19:04:08,007 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.1000056266784668 秒.
+2019-06-05 19:04:08,108 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.09900522232055664 秒.
+2019-06-05 19:04:08,113 - root - INFO - 开始用例: test_01_kyqy_update
+2019-06-05 19:04:11,114 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:04:12,533 - root - INFO - SUCCESS    刷新页面，用时1.4170811176300049
+2019-06-05 19:04:12,604 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(2)， 用时 0.07000422477722168 秒.
+2019-06-05 19:04:14,605 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:14,784 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(2) > ul > li > ul > li:nth-child(1)， 用时 0.17701029777526855 秒.
+2019-06-05 19:04:15,264 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.47802734375 秒.
+2019-06-05 19:04:15,907 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441235’输入成功， 用时 0.6410367488861084 秒.
+2019-06-05 19:04:16,018 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.11000633239746094 秒.
+2019-06-05 19:04:16,251 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘公司1’输入成功， 用时 0.2300128936767578 秒.
+2019-06-05 19:04:16,666 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.41202354431152344 秒.
+2019-06-05 19:04:16,876 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.20701193809509277 秒.
+2019-06-05 19:04:16,986 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(7) > div > div > div > input， 用时 0.10700607299804688 秒.
+2019-06-05 19:04:18,987 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:19,110 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.12100696563720703 秒.
+2019-06-05 19:04:21,113 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:22,425 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(4) > div > div > input，内容：‘2019-05-01’输入成功， 用时 1.305074691772461 秒.
+2019-06-05 19:04:23,742 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(5) > div > div > input，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.3150749206542969 秒.
+2019-06-05 19:04:26,075 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > input:nth-child(2)，内容：‘2019-05-15 13:00:00’输入成功， 用时 2.3311333656311035 秒.
+2019-06-05 19:04:28,294 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > input:nth-child(4)，内容：‘2019-05-15 16:00:00’输入成功， 用时 2.2181267738342285 秒.
+2019-06-05 19:04:28,479 - root - INFO - SUCCESS    点击元素：css->div.el-dialog__body > form > div:nth-child(10) > div > div > div.el-input.el-input--suffix > input， 用时 0.18301057815551758 秒.
+2019-06-05 19:04:30,481 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:30,630 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div/div[1]/div[1]/ul/li/span[contains(text(),"未反馈")]， 用时 0.14700841903686523 秒.
+2019-06-05 19:04:32,631 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:34,634 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:04:34,789 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.1500086784362793 秒.
+2019-06-05 19:04:35,947 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03000164031982422 秒.
+2019-06-05 19:04:35,948 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1570663452148438 秒.
+2019-06-05 19:04:38,950 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:05:00,178 - root - INFO - SUCCESS    刷新页面，用时21.22321391105652
+2019-06-05 19:05:05,319 - root - INFO - FAIL       未能点击元素css->#app > div > section > aside > ul > li:nth-child(2).
+2019-06-05 19:05:05,347 - root - INFO - 开始用例: test_02_kyqy_select
+2019-06-05 19:05:08,352 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:05:29,450 - root - INFO - SUCCESS    刷新页面，用时21.09320616722107
+2019-06-05 19:05:34,539 - root - INFO - FAIL       未能点击元素css->#app > div > section > aside > ul > li:nth-child(2).
+2019-06-05 19:05:34,557 - root - INFO - 开始用例: test_03_whqy_update
+2019-06-05 19:05:37,559 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:05:55,206 - root - INFO - ############################### START ###############################
+2019-06-05 19:06:00,124 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.916281223297119 秒.
+2019-06-05 19:06:01,244 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1200640201568604 秒.
+2019-06-05 19:06:22,496 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 21.25121545791626 秒.
+2019-06-05 19:06:27,558 - root - INFO - FAIL       元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入是吧， 用时 5.058289289474487 秒.
+2019-06-05 19:07:00,386 - root - INFO - ############################### START ###############################
+2019-06-05 19:07:06,234 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.845334053039551 秒.
+2019-06-05 19:07:07,361 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1260643005371094 秒.
+2019-06-05 19:07:13,896 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.534373760223389 秒.
+2019-06-05 19:07:14,116 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.21801233291625977 秒.
+2019-06-05 19:07:14,231 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.11400651931762695 秒.
+2019-06-05 19:07:14,365 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.13300776481628418 秒.
+2019-06-05 19:07:14,369 - root - INFO - 开始用例: test_01_jyxs_update
+2019-06-05 19:07:17,372 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:07:19,133 - root - INFO - SUCCESS    刷新页面，用时1.7551000118255615
+2019-06-05 19:07:19,235 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.09800553321838379 秒.
+2019-06-05 19:07:21,236 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:21,392 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(1)， 用时 0.15300893783569336 秒.
+2019-06-05 19:07:21,798 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.4020228385925293 秒.
+2019-06-05 19:07:22,476 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441235’输入成功， 用时 0.6750388145446777 秒.
+2019-06-05 19:07:22,562 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.08400487899780273 秒.
+2019-06-05 19:07:22,901 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.33801960945129395 秒.
+2019-06-05 19:07:23,062 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.16000914573669434 秒.
+2019-06-05 19:07:23,233 - root - INFO - SUCCESS    元素：css->[placeholder="请输入人员姓名"]，内容：‘js002’输入成功， 用时 0.17000961303710938 秒.
+2019-06-05 19:07:23,616 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(5) > div > div > input，内容：‘136884002441235’输入成功， 用时 0.38102149963378906 秒.
+2019-06-05 19:07:24,970 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(2)，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.3510773181915283 秒.
+2019-06-05 19:07:26,235 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(4)，内容：‘2019-05-15 16:00:00’输入成功， 用时 1.2620723247528076 秒.
+2019-06-05 19:07:26,351 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div.el-input.el-input--suffix > input， 用时 0.1150064468383789 秒.
+2019-06-05 19:07:28,352 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:28,539 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.18401074409484863 秒.
+2019-06-05 19:07:30,540 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:30,707 - root - INFO - SUCCESS    元素：css->[placeholder="请输入所用平台"]，内容：‘公司1’输入成功， 用时 0.1630094051361084 秒.
+2019-06-05 19:07:32,708 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:32,807 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09500503540039062 秒.
+2019-06-05 19:07:33,934 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.07900452613830566 秒.
+2019-06-05 19:07:33,936 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1270644664764404 秒.
+2019-06-05 19:07:36,938 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:07:38,179 - root - INFO - SUCCESS    刷新页面，用时1.2390708923339844
+2019-06-05 19:07:38,252 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.07000398635864258 秒.
+2019-06-05 19:07:40,253 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:40,322 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(1)， 用时 0.06900382041931152 秒.
+2019-06-05 19:07:40,529 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.20501160621643066 秒.
+2019-06-05 19:07:41,104 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441236’输入成功， 用时 0.5730326175689697 秒.
+2019-06-05 19:07:41,170 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.06500387191772461 秒.
+2019-06-05 19:07:41,499 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.32701873779296875 秒.
+2019-06-05 19:07:41,657 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.15600895881652832 秒.
+2019-06-05 19:07:41,821 - root - INFO - SUCCESS    元素：css->[placeholder="请输入人员姓名"]，内容：‘js002’输入成功， 用时 0.16200900077819824 秒.
+2019-06-05 19:07:42,176 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(5) > div > div > input，内容：‘136884002441236’输入成功， 用时 0.3540201187133789 秒.
+2019-06-05 19:07:43,477 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(2)，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.2990741729736328 秒.
+2019-06-05 19:07:44,729 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(4)，内容：‘2019-05-15 16:00:01’输入成功， 用时 1.2480714321136475 秒.
+2019-06-05 19:07:44,838 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div.el-input.el-input--suffix > input， 用时 0.10800600051879883 秒.
+2019-06-05 19:07:46,841 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:46,969 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"元宝山区")]， 用时 0.12500715255737305 秒.
+2019-06-05 19:07:48,970 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:49,167 - root - INFO - SUCCESS    元素：css->[placeholder="请输入所用平台"]，内容：‘公司2’输入成功， 用时 0.19401121139526367 秒.
+2019-06-05 19:07:51,170 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:51,271 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09900569915771484 秒.
+2019-06-05 19:07:52,327 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03500223159790039 秒.
+2019-06-05 19:07:52,329 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0560603141784668 秒.
+2019-06-05 19:07:52,332 - root - INFO - 开始用例: test_02_jyxs_select
+2019-06-05 19:07:55,334 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:07:56,321 - root - INFO - SUCCESS    刷新页面，用时0.9840562343597412
+2019-06-05 19:07:56,396 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.07300424575805664 秒.
+2019-06-05 19:07:58,396 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:07:58,494 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(1)， 用时 0.09600543975830078 秒.
+2019-06-05 19:07:58,860 - root - INFO - SUCCESS    元素：css->[placeholder="请输入证件号码"]，内容：‘136884002441235’输入成功， 用时 0.3650209903717041 秒.
+2019-06-05 19:07:59,128 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.26601529121398926 秒.
+2019-06-05 19:08:00,365 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.2350704669952393 秒.
+2019-06-05 19:08:01,554 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-01’输入成功， 用时 1.188068151473999 秒.
+2019-06-05 19:08:01,692 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.13600802421569824 秒.
+2019-06-05 19:08:01,847 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441235
+3
+2019-05-15 13:00:00
+2019-05-15 16:00:00
+js002
+136884002441235
+敖汉旗
+有车运行但人员脱岗
+公司1
+备注001>, 用时 0.13500761985778809 秒.
+2019-06-05 19:08:01,851 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<公司1>, 用时 0.15700888633728027 秒.
+2019-06-05 19:08:04,854 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:08:05,466 - root - INFO - SUCCESS    刷新页面，用时0.6070346832275391
+2019-06-05 19:08:05,651 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.18401050567626953 秒.
+2019-06-05 19:08:07,652 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:07,732 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(1)， 用时 0.07700419425964355 秒.
+2019-06-05 19:08:08,151 - root - INFO - SUCCESS    元素：css->[placeholder="请输入证件号码"]，内容：‘136884002441236’输入成功， 用时 0.41802382469177246 秒.
+2019-06-05 19:08:08,394 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441236’输入成功， 用时 0.24001383781433105 秒.
+2019-06-05 19:08:09,600 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.205068826675415 秒.
+2019-06-05 19:08:10,801 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-02’输入成功， 用时 1.1990687847137451 秒.
+2019-06-05 19:08:10,931 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.1280074119567871 秒.
+2019-06-05 19:08:11,100 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441236
+组
+2019-05-15 13:00:01
+2019-05-15 16:00:01
+js002
+136884002441236
+元宝山区
+轨迹完成率不足70%
+公司2
+备注002>, 用时 0.15500879287719727 秒.
+2019-06-05 19:08:11,103 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<公司2>, 用时 0.16900968551635742 秒.
+2019-06-05 19:08:11,108 - root - INFO - 开始用例: test_03_jsyxs_update
+2019-06-05 19:08:14,110 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:08:14,697 - root - INFO - SUCCESS    刷新页面，用时0.5850334167480469
+2019-06-05 19:08:14,850 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.1500084400177002 秒.
+2019-06-05 19:08:16,851 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:17,167 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(2)， 用时 0.3150179386138916 秒.
+2019-06-05 19:08:17,469 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2980172634124756 秒.
+2019-06-05 19:08:18,003 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441235’输入成功， 用时 0.5320303440093994 秒.
+2019-06-05 19:08:18,075 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.07000398635864258 秒.
+2019-06-05 19:08:18,375 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.2980170249938965 秒.
+2019-06-05 19:08:18,533 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.15600895881652832 秒.
+2019-06-05 19:08:18,712 - root - INFO - SUCCESS    元素：css->[placeholder="请输入人员姓名"]，内容：‘js002’输入成功， 用时 0.1780102252960205 秒.
+2019-06-05 19:08:19,133 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(5) > div > div > input，内容：‘136884002441235’输入成功， 用时 0.4190239906311035 秒.
+2019-06-05 19:08:20,570 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(2)，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.43408203125 秒.
+2019-06-05 19:08:21,837 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(4)，内容：‘2019-05-15 16:00:00’输入成功， 用时 1.2660722732543945 秒.
+2019-06-05 19:08:21,969 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div.el-input.el-input--suffix > input， 用时 0.13100743293762207 秒.
+2019-06-05 19:08:23,970 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:24,069 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"敖汉旗")]， 用时 0.09500551223754883 秒.
+2019-06-05 19:08:26,070 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:26,186 - root - INFO - SUCCESS    元素：css->[placeholder="请输入所用平台"]，内容：‘公司1’输入成功， 用时 0.11400651931762695 秒.
+2019-06-05 19:08:28,187 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:28,273 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.08500480651855469 秒.
+2019-06-05 19:08:29,374 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04600262641906738 秒.
+2019-06-05 19:08:29,375 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0990629196166992 秒.
+2019-06-05 19:08:32,376 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:08:33,117 - root - INFO - SUCCESS    刷新页面，用时0.7390422821044922
+2019-06-05 19:08:33,225 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.10700631141662598 秒.
+2019-06-05 19:08:35,227 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:35,286 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(2)， 用时 0.05800342559814453 秒.
+2019-06-05 19:08:35,518 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.23001337051391602 秒.
+2019-06-05 19:08:36,134 - root - INFO - SUCCESS    元素：css->[placeholder="请输入编号"]，内容：‘136884002441236’输入成功， 用时 0.6150350570678711 秒.
+2019-06-05 19:08:36,190 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.05500316619873047 秒.
+2019-06-05 19:08:36,499 - root - INFO - SUCCESS    元素：css->[placeholder="请输入问题"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.3080177307128906 秒.
+2019-06-05 19:08:36,638 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.1370077133178711 秒.
+2019-06-05 19:08:36,823 - root - INFO - SUCCESS    元素：css->[placeholder="请输入人员姓名"]，内容：‘js002’输入成功， 用时 0.18301057815551758 秒.
+2019-06-05 19:08:37,240 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(5) > div > div > input，内容：‘136884002441236’输入成功， 用时 0.4150235652923584 秒.
+2019-06-05 19:08:38,560 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(2)，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.319075345993042 秒.
+2019-06-05 19:08:39,828 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input:nth-child(4)，内容：‘2019-05-15 16:00:01’输入成功， 用时 1.2650721073150635 秒.
+2019-06-05 19:08:39,972 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(6) > div > div > div.el-input.el-input--suffix > input， 用时 0.14000797271728516 秒.
+2019-06-05 19:08:41,973 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:42,095 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li/span[contains(text(),"元宝山区")]， 用时 0.11900663375854492 秒.
+2019-06-05 19:08:44,097 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:44,244 - root - INFO - SUCCESS    元素：css->[placeholder="请输入所用平台"]，内容：‘公司2’输入成功， 用时 0.14500856399536133 秒.
+2019-06-05 19:08:46,245 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:46,330 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.08200430870056152 秒.
+2019-06-05 19:08:47,419 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04000234603881836 秒.
+2019-06-05 19:08:47,420 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.090062141418457 秒.
+2019-06-05 19:08:47,421 - root - INFO - 开始用例: test_04_jyxs_select
+2019-06-05 19:08:50,424 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:08:50,955 - root - INFO - SUCCESS    刷新页面，用时0.5290303230285645
+2019-06-05 19:08:51,094 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > div， 用时 0.13800764083862305 秒.
+2019-06-05 19:08:53,095 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:08:53,183 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(3) > ul > li > ul > li:nth-child(2)， 用时 0.0870053768157959 秒.
+2019-06-05 19:08:53,578 - root - INFO - SUCCESS    元素：css->[placeholder="请输入证件号码"]，内容：‘136884002441235’输入成功， 用时 0.3930222988128662 秒.
+2019-06-05 19:08:53,795 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.2150125503540039 秒.
+2019-06-05 19:08:55,010 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-01’输入成功， 用时 1.213069200515747 秒.
+2019-06-05 19:08:56,241 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-06-01’输入成功， 用时 1.2290704250335693 秒.
+2019-06-05 19:08:56,360 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.11700654029846191 秒.
+2019-06-05 19:08:56,523 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441235
+3
+2019-05-15 13:00:00
+2019-05-15 16:00:00
+js002
+136884002441235
+敖汉旗
+有车运行但人员脱岗
+公司1
+备注001>, 用时 0.14700818061828613 秒.
+2019-06-05 19:08:56,524 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<公司1>, 用时 0.1630091667175293 秒.
+2019-06-05 19:08:59,526 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:09:20,697 - root - INFO - SUCCESS    刷新页面，用时21.168210744857788
+2019-06-05 19:09:25,824 - root - INFO - FAIL       未能点击元素css->#app > div > section > aside > ul > li:nth-child(3) > div.
+2019-06-05 19:09:28,916 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.079176187515259 秒.
+2019-06-05 19:09:28,917 - root - INFO - ################################ End ################################
+2019-06-05 19:10:31,211 - root - INFO - ############################### START ###############################
+2019-06-05 19:10:35,914 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.702268838882446 秒.
+2019-06-05 19:10:37,084 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.169067144393921 秒.
+2019-06-05 19:10:58,336 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 21.25121545791626 秒.
+2019-06-05 19:11:03,467 - root - INFO - FAIL       元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入是吧， 用时 5.129293441772461 秒.
+2019-06-05 19:12:15,338 - root - INFO - ############################### START ###############################
+2019-06-05 19:12:20,834 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.495314121246338 秒.
+2019-06-05 19:12:22,012 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.177067518234253 秒.
+2019-06-05 19:12:28,528 - root - INFO - SUCCESS    成功打开链接：http://10.50.83.188:8081/，用时 6.5143725872039795 秒.
+2019-06-05 19:12:28,703 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(1) > input，内容：‘js002’输入成功， 用时 0.17300987243652344 秒.
+2019-06-05 19:12:28,793 - root - INFO - SUCCESS    元素：css->#app > div > div > div > div:nth-child(4) > form > div:nth-child(3) > input，内容：‘123456’输入成功， 用时 0.0890049934387207 秒.
+2019-06-05 19:12:28,887 - root - INFO - SUCCESS    点击元素：css->#app > div > div > div > div:nth-child(4) > form > div.el-form-item > div > button， 用时 0.09300541877746582 秒.
+2019-06-05 19:12:28,889 - root - INFO - 开始用例: test_01_jyxs_update
+2019-06-05 19:12:31,891 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:12:33,358 - root - INFO - SUCCESS    刷新页面，用时1.4650835990905762
+2019-06-05 19:12:33,433 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.07400393486022949 秒.
+2019-06-05 19:12:35,436 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:12:35,600 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.1610090732574463 秒.
+2019-06-05 19:12:35,899 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.29701709747314453 秒.
+2019-06-05 19:12:36,313 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441235’输入成功， 用时 0.4130237102508545 秒.
+2019-06-05 19:12:36,375 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.06200361251831055 秒.
+2019-06-05 19:12:37,657 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.2810733318328857 秒.
+2019-06-05 19:12:37,901 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.24201393127441406 秒.
+2019-06-05 19:12:38,113 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.2110121250152588 秒.
+2019-06-05 19:12:38,264 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.1500086784362793 秒.
+2019-06-05 19:12:40,265 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:12:40,363 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09600520133972168 秒.
+2019-06-05 19:12:41,517 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04600262641906738 秒.
+2019-06-05 19:12:41,517 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1530659198760986 秒.
+2019-06-05 19:12:44,519 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:12:45,235 - root - INFO - SUCCESS    刷新页面，用时0.7150406837463379
+2019-06-05 19:12:45,398 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.16200900077819824 秒.
+2019-06-05 19:12:47,400 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:12:47,490 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.08800482749938965 秒.
+2019-06-05 19:12:47,702 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2110121250152588 秒.
+2019-06-05 19:12:48,299 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441236’输入成功， 用时 0.5960342884063721 秒.
+2019-06-05 19:12:48,371 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.07000422477722168 秒.
+2019-06-05 19:12:49,718 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.3460769653320312 秒.
+2019-06-05 19:12:50,038 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.3190181255340576 秒.
+2019-06-05 19:12:50,305 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.26601529121398926 秒.
+2019-06-05 19:12:50,486 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.17701029777526855 秒.
+2019-06-05 19:12:52,488 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:12:52,561 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.07100415229797363 秒.
+2019-06-05 19:12:53,647 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.05500292778015137 秒.
+2019-06-05 19:12:53,648 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0870623588562012 秒.
+2019-06-05 19:12:56,648 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:12:57,234 - root - INFO - SUCCESS    刷新页面，用时0.585033655166626
+2019-06-05 19:12:57,375 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1390078067779541 秒.
+2019-06-05 19:12:59,376 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:12:59,506 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.1280074119567871 秒.
+2019-06-05 19:12:59,664 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.15600895881652832 秒.
+2019-06-05 19:13:00,133 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441237’输入成功， 用时 0.467026948928833 秒.
+2019-06-05 19:13:00,185 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘1’输入成功， 用时 0.05100274085998535 秒.
+2019-06-05 19:13:01,517 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.330075979232788 秒.
+2019-06-05 19:13:01,685 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.16800951957702637 秒.
+2019-06-05 19:13:01,823 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.1370079517364502 秒.
+2019-06-05 19:13:01,985 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注003’输入成功， 用时 0.16000914573669434 秒.
+2019-06-05 19:13:03,986 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:04,064 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.0760047435760498 秒.
+2019-06-05 19:13:05,129 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.029001712799072266 秒.
+2019-06-05 19:13:05,130 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0650608539581299 秒.
+2019-06-05 19:13:08,134 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:13:08,663 - root - INFO - SUCCESS    刷新页面，用时0.5260300636291504
+2019-06-05 19:13:08,860 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.19701123237609863 秒.
+2019-06-05 19:13:10,862 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:10,944 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.08100461959838867 秒.
+2019-06-05 19:13:11,129 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.18401050567626953 秒.
+2019-06-05 19:13:11,579 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441238’输入成功， 用时 0.4480254650115967 秒.
+2019-06-05 19:13:11,637 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘A’输入成功， 用时 0.05700325965881348 秒.
+2019-06-05 19:13:12,994 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.3570778369903564 秒.
+2019-06-05 19:13:13,335 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.33801937103271484 秒.
+2019-06-05 19:13:13,580 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.24401378631591797 秒.
+2019-06-05 19:13:13,724 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注004’输入成功， 用时 0.14200806617736816 秒.
+2019-06-05 19:13:15,726 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:15,832 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10300588607788086 秒.
+2019-06-05 19:13:16,901 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.034001827239990234 秒.
+2019-06-05 19:13:16,902 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.069061279296875 秒.
+2019-06-05 19:13:19,903 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:13:20,458 - root - INFO - SUCCESS    刷新页面，用时0.5530316829681396
+2019-06-05 19:13:20,629 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.17000961303710938 秒.
+2019-06-05 19:13:22,629 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:22,690 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.06100344657897949 秒.
+2019-06-05 19:13:22,885 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.19301080703735352 秒.
+2019-06-05 19:13:23,340 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441239’输入成功， 用时 0.4540257453918457 秒.
+2019-06-05 19:13:23,394 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘ ’输入成功， 用时 0.05300307273864746 秒.
+2019-06-05 19:13:24,710 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.315075397491455 秒.
+2019-06-05 19:13:25,033 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.3220183849334717 秒.
+2019-06-05 19:13:25,350 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.31401801109313965 秒.
+2019-06-05 19:13:25,499 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注005’输入成功， 用时 0.14800810813903809 秒.
+2019-06-05 19:13:27,503 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:27,617 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.11100602149963379 秒.
+2019-06-05 19:13:28,702 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.042002201080322266 秒.
+2019-06-05 19:13:28,703 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.085062026977539 秒.
+2019-06-05 19:13:31,704 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:13:32,291 - root - INFO - SUCCESS    刷新页面，用时0.5850334167480469
+2019-06-05 19:13:32,432 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.13800787925720215 秒.
+2019-06-05 19:13:34,432 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:34,498 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.06600379943847656 秒.
+2019-06-05 19:13:34,669 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.17000985145568848 秒.
+2019-06-05 19:13:35,137 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441240’输入成功， 用时 0.4670267105102539 秒.
+2019-06-05 19:13:35,218 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘@'’输入成功， 用时 0.07700443267822266 秒.
+2019-06-05 19:13:36,548 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.330075979232788 秒.
+2019-06-05 19:13:36,715 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.16600966453552246 秒.
+2019-06-05 19:13:36,867 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.15100884437561035 秒.
+2019-06-05 19:13:37,116 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注006’输入成功， 用时 0.24701404571533203 秒.
+2019-06-05 19:13:39,119 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:39,220 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09900569915771484 秒.
+2019-06-05 19:13:40,281 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03500199317932129 秒.
+2019-06-05 19:13:40,282 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0620605945587158 秒.
+2019-06-05 19:13:43,283 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:13:43,896 - root - INFO - SUCCESS    刷新页面，用时0.6110348701477051
+2019-06-05 19:13:44,004 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.10800600051879883 秒.
+2019-06-05 19:13:46,005 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:46,103 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.09700560569763184 秒.
+2019-06-05 19:13:46,315 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2110121250152588 秒.
+2019-06-05 19:13:46,749 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441241’输入成功， 用时 0.43302488327026367 秒.
+2019-06-05 19:13:46,874 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘js001’输入成功， 用时 0.12300705909729004 秒.
+2019-06-05 19:13:48,194 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.319075345993042 秒.
+2019-06-05 19:13:48,356 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.16200900077819824 秒.
+2019-06-05 19:13:48,504 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.14500856399536133 秒.
+2019-06-05 19:13:48,656 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注007’输入成功， 用时 0.1500084400177002 秒.
+2019-06-05 19:13:50,657 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:50,764 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10500621795654297 秒.
+2019-06-05 19:13:51,826 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04000234603881836 秒.
+2019-06-05 19:13:51,826 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.062060832977295 秒.
+2019-06-05 19:13:54,828 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:13:55,715 - root - INFO - SUCCESS    刷新页面，用时0.8850507736206055
+2019-06-05 19:13:55,823 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.10800600051879883 秒.
+2019-06-05 19:13:57,825 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:13:57,941 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.1150064468383789 秒.
+2019-06-05 19:13:58,183 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.24001359939575195 秒.
+2019-06-05 19:13:58,693 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441242’输入成功， 用时 0.5100290775299072 秒.
+2019-06-05 19:13:58,753 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.05800318717956543 秒.
+2019-06-05 19:14:00,075 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.322075366973877 秒.
+2019-06-05 19:14:00,244 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.16700959205627441 秒.
+2019-06-05 19:14:00,425 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.18001031875610352 秒.
+2019-06-05 19:14:00,605 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注008’输入成功， 用时 0.1760098934173584 秒.
+2019-06-05 19:14:02,607 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:02,715 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10400605201721191 秒.
+2019-06-05 19:14:03,857 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.049002647399902344 秒.
+2019-06-05 19:14:03,857 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1420655250549316 秒.
+2019-06-05 19:14:06,860 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:14:07,598 - root - INFO - SUCCESS    刷新页面，用时0.7360420227050781
+2019-06-05 19:14:07,746 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.14700841903686523 秒.
+2019-06-05 19:14:09,747 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:09,844 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.09600543975830078 秒.
+2019-06-05 19:14:10,129 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2830162048339844 秒.
+2019-06-05 19:14:10,706 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441243’输入成功， 用时 0.5770328044891357 秒.
+2019-06-05 19:14:10,774 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.06600379943847656 秒.
+2019-06-05 19:14:12,101 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.3270759582519531 秒.
+2019-06-05 19:14:12,342 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.24001383781433105 秒.
+2019-06-05 19:14:12,548 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.20501160621643066 秒.
+2019-06-05 19:14:12,706 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注009’输入成功， 用时 0.15600895881652832 秒.
+2019-06-05 19:14:14,708 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:14,812 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10200619697570801 秒.
+2019-06-05 19:14:15,930 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.07900452613830566 秒.
+2019-06-05 19:14:15,931 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1180639266967773 秒.
+2019-06-05 19:14:15,932 - root - INFO - 开始用例: test_02_jyxs_select
+2019-06-05 19:14:18,936 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:14:19,699 - root - INFO - SUCCESS    刷新页面，用时0.7620434761047363
+2019-06-05 19:14:19,831 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.13200759887695312 秒.
+2019-06-05 19:14:21,834 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:21,965 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.12900733947753906 秒.
+2019-06-05 19:14:22,380 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.4130234718322754 秒.
+2019-06-05 19:14:23,781 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.4000802040100098 秒.
+2019-06-05 19:14:25,027 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.2440707683563232 秒.
+2019-06-05 19:14:27,028 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:27,122 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.09200501441955566 秒.
+2019-06-05 19:14:27,271 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441235
+3
+2019-05-15 13:00:00
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注001>, 用时 0.06400370597839355 秒.
+2019-06-05 19:14:27,272 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441235>, 用时 0.1500086784362793 秒.
+2019-06-05 19:14:30,274 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:14:30,836 - root - INFO - SUCCESS    刷新页面，用时0.5600321292877197
+2019-06-05 19:14:31,061 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.2240128517150879 秒.
+2019-06-05 19:14:33,064 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:33,151 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.08600497245788574 秒.
+2019-06-05 19:14:33,535 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441236’输入成功， 用时 0.3830220699310303 秒.
+2019-06-05 19:14:34,883 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.3470771312713623 秒.
+2019-06-05 19:14:36,164 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.2780730724334717 秒.
+2019-06-05 19:14:38,166 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:38,280 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.11100602149963379 秒.
+2019-06-05 19:14:38,410 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441236
+组
+2019-05-15 13:00:01
+轨迹完成率不足70%
+轨迹完成率不足70%
+备注002>, 用时 0.11200642585754395 秒.
+2019-06-05 19:14:38,411 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441236>, 用时 0.13000750541687012 秒.
+2019-06-05 19:14:41,412 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:14:42,028 - root - INFO - SUCCESS    刷新页面，用时0.6140353679656982
+2019-06-05 19:14:42,159 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.13100743293762207 秒.
+2019-06-05 19:14:44,161 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:44,254 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.09100532531738281 秒.
+2019-06-05 19:14:44,625 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441237’输入成功， 用时 0.3700215816497803 秒.
+2019-06-05 19:14:45,990 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.3640778064727783 秒.
+2019-06-05 19:14:47,349 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.3590776920318604 秒.
+2019-06-05 19:14:49,350 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:49,489 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.13800764083862305 秒.
+2019-06-05 19:14:49,631 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441237
+1
+2019-05-15 13:00:02
+查岗未响应
+查岗未响应
+备注003>, 用时 0.04300260543823242 秒.
+2019-06-05 19:14:49,632 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441237>, 用时 0.1410081386566162 秒.
+2019-06-05 19:14:52,632 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:14:53,247 - root - INFO - SUCCESS    刷新页面，用时0.6130349636077881
+2019-06-05 19:14:53,412 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1650094985961914 秒.
+2019-06-05 19:14:55,415 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:14:55,479 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.0630035400390625 秒.
+2019-06-05 19:14:55,852 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441238’输入成功， 用时 0.3720211982727051 秒.
+2019-06-05 19:14:57,261 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.4090807437896729 秒.
+2019-06-05 19:14:58,497 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.2340705394744873 秒.
+2019-06-05 19:15:00,498 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:00,579 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.08000469207763672 秒.
+2019-06-05 19:15:00,703 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441238
+A
+2019-05-15 13:00:03
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注004>, 用时 0.04000234603881836 秒.
+2019-06-05 19:15:00,704 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441238>, 用时 0.12200713157653809 秒.
+2019-06-05 19:15:03,704 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:15:04,389 - root - INFO - SUCCESS    刷新页面，用时0.6830391883850098
+2019-06-05 19:15:04,556 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1670091152191162 秒.
+2019-06-05 19:15:06,558 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:06,640 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.08100461959838867 秒.
+2019-06-05 19:15:07,069 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441239’输入成功， 用时 0.4280245304107666 秒.
+2019-06-05 19:15:08,527 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.4550831317901611 秒.
+2019-06-05 19:15:09,793 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.2660722732543945 秒.
+2019-06-05 19:15:11,795 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:11,896 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.1000056266784668 秒.
+2019-06-05 19:15:12,025 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441239
+2019-05-15 13:00:04
+轨迹完成率不足70%
+轨迹完成率不足70%
+备注005>, 用时 0.11500668525695801 秒.
+2019-06-05 19:15:12,026 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441239>, 用时 0.12900710105895996 秒.
+2019-06-05 19:15:15,026 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:15:15,635 - root - INFO - SUCCESS    刷新页面，用时0.6070349216461182
+2019-06-05 19:15:15,782 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.14600825309753418 秒.
+2019-06-05 19:15:17,782 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:17,850 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.06600379943847656 秒.
+2019-06-05 19:15:18,231 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441240’输入成功， 用时 0.38102173805236816 秒.
+2019-06-05 19:15:19,568 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.3350763320922852 秒.
+2019-06-05 19:15:20,837 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.2680728435516357 秒.
+2019-06-05 19:15:22,838 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:22,956 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.11700654029846191 秒.
+2019-06-05 19:15:23,130 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441240
+@'
+2019-05-15 13:00:05
+报警未处置
+报警未处置
+备注006>, 用时 0.15900921821594238 秒.
+2019-06-05 19:15:23,132 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441240>, 用时 0.1760101318359375 秒.
+2019-06-05 19:15:26,135 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:15:26,768 - root - INFO - SUCCESS    刷新页面，用时0.6310358047485352
+2019-06-05 19:15:26,920 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.15100836753845215 秒.
+2019-06-05 19:15:28,922 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:29,013 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.09000515937805176 秒.
+2019-06-05 19:15:29,396 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441241’输入成功， 用时 0.3820216655731201 秒.
+2019-06-05 19:15:30,770 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.3730785846710205 秒.
+2019-06-05 19:15:32,152 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.3800787925720215 秒.
+2019-06-05 19:15:34,152 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:34,245 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.09200525283813477 秒.
+2019-06-05 19:15:34,402 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441241
+js001
+2019-05-15 13:00:06
+报警未处置
+报警未处置
+备注007>, 用时 0.08100438117980957 秒.
+2019-06-05 19:15:34,402 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441241>, 用时 0.15700936317443848 秒.
+2019-06-05 19:15:37,403 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:15:37,988 - root - INFO - SUCCESS    刷新页面，用时0.5850334167480469
+2019-06-05 19:15:38,140 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1500086784362793 秒.
+2019-06-05 19:15:40,140 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:40,208 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.06800413131713867 秒.
+2019-06-05 19:15:40,671 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441242’输入成功， 用时 0.46202611923217773 秒.
+2019-06-05 19:15:42,009 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.3370766639709473 秒.
+2019-06-05 19:15:43,292 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.2820732593536377 秒.
+2019-06-05 19:15:45,295 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:45,388 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.09100532531738281 秒.
+2019-06-05 19:15:45,514 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441242
+3
+2019-05-15 13:00:07
+查岗未响应
+查岗未响应
+备注008>, 用时 0.05500316619873047 秒.
+2019-06-05 19:15:45,515 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441242>, 用时 0.12500739097595215 秒.
+2019-06-05 19:15:48,517 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:15:49,303 - root - INFO - SUCCESS    刷新页面，用时0.7850451469421387
+2019-06-05 19:15:49,407 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.10300588607788086 秒.
+2019-06-05 19:15:51,409 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:51,508 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(1)， 用时 0.09800577163696289 秒.
+2019-06-05 19:15:51,941 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441243’输入成功， 用时 0.43102431297302246 秒.
+2019-06-05 19:15:53,385 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.443082332611084 秒.
+2019-06-05 19:15:54,655 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.2690725326538086 秒.
+2019-06-05 19:15:56,655 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:15:56,732 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.07700419425964355 秒.
+2019-06-05 19:15:56,860 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441243
+组
+2019-05-15 13:00:08
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注009>, 用时 0.11500668525695801 秒.
+2019-06-05 19:15:56,862 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441243>, 用时 0.128007173538208 秒.
+2019-06-05 19:15:56,864 - root - INFO - 开始用例: test_03_jyxs_update
+2019-06-05 19:15:59,866 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:00,488 - root - INFO - SUCCESS    刷新页面，用时0.6200356483459473
+2019-06-05 19:16:00,608 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.11800670623779297 秒.
+2019-06-05 19:16:02,609 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:02,902 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.2910168170928955 秒.
+2019-06-05 19:16:03,239 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.3350191116333008 秒.
+2019-06-05 19:16:03,744 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441235’输入成功， 用时 0.5030286312103271 秒.
+2019-06-05 19:16:03,814 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.06900405883789062 秒.
+2019-06-05 19:16:05,278 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.4640839099884033 秒.
+2019-06-05 19:16:05,553 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.2720158100128174 秒.
+2019-06-05 19:16:05,811 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.25701475143432617 秒.
+2019-06-05 19:16:05,990 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.17701029777526855 秒.
+2019-06-05 19:16:07,994 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:08,100 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10500597953796387 秒.
+2019-06-05 19:16:09,183 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04700279235839844 秒.
+2019-06-05 19:16:09,183 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.082062005996704 秒.
+2019-06-05 19:16:12,186 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:12,702 - root - INFO - SUCCESS    刷新页面，用时0.5140295028686523
+2019-06-05 19:16:12,851 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1480083465576172 秒.
+2019-06-05 19:16:14,854 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:14,942 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.08400487899780273 秒.
+2019-06-05 19:16:15,086 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.14200806617736816 秒.
+2019-06-05 19:16:15,567 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441236’输入成功， 用时 0.47902703285217285 秒.
+2019-06-05 19:16:15,628 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.06100344657897949 秒.
+2019-06-05 19:16:16,950 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.320075273513794 秒.
+2019-06-05 19:16:17,196 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.24501395225524902 秒.
+2019-06-05 19:16:17,416 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.21801280975341797 秒.
+2019-06-05 19:16:17,566 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.14900827407836914 秒.
+2019-06-05 19:16:19,568 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:19,663 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09300518035888672 秒.
+2019-06-05 19:16:20,740 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04200267791748047 秒.
+2019-06-05 19:16:20,741 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.077061653137207 秒.
+2019-06-05 19:16:23,742 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:24,276 - root - INFO - SUCCESS    刷新页面，用时0.5330302715301514
+2019-06-05 19:16:24,438 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.16000938415527344 秒.
+2019-06-05 19:16:26,440 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:26,524 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.08200478553771973 秒.
+2019-06-05 19:16:26,705 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.18101000785827637 秒.
+2019-06-05 19:16:27,183 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441237’输入成功， 用时 0.4760270118713379 秒.
+2019-06-05 19:16:27,240 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘1’输入成功， 用时 0.05700325965881348 秒.
+2019-06-05 19:16:28,535 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.2940740585327148 秒.
+2019-06-05 19:16:28,702 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.1650094985961914 秒.
+2019-06-05 19:16:28,841 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.13800811767578125 秒.
+2019-06-05 19:16:28,988 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注003’输入成功， 用时 0.14600825309753418 秒.
+2019-06-05 19:16:30,989 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:31,079 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.0890052318572998 秒.
+2019-06-05 19:16:31,538 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.38102197647094727 秒.
+2019-06-05 19:16:31,539 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.4580261707305908 秒.
+2019-06-05 19:16:34,539 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:35,148 - root - INFO - SUCCESS    刷新页面，用时0.6080343723297119
+2019-06-05 19:16:35,320 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.17000985145568848 秒.
+2019-06-05 19:16:37,321 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:37,388 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.06600356101989746 秒.
+2019-06-05 19:16:37,542 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.15300893783569336 秒.
+2019-06-05 19:16:37,994 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441238’输入成功， 用时 0.4500257968902588 秒.
+2019-06-05 19:16:38,053 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘A’输入成功， 用时 0.05800342559814453 秒.
+2019-06-05 19:16:39,383 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.3270761966705322 秒.
+2019-06-05 19:16:39,622 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.239013671875 秒.
+2019-06-05 19:16:39,829 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.20501160621643066 秒.
+2019-06-05 19:16:40,064 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注004’输入成功， 用时 0.23201346397399902 秒.
+2019-06-05 19:16:42,067 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:42,182 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.11400628089904785 秒.
+2019-06-05 19:16:43,238 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.036002159118652344 秒.
+2019-06-05 19:16:43,239 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.056060552597046 秒.
+2019-06-05 19:16:46,239 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:46,972 - root - INFO - SUCCESS    刷新页面，用时0.7320418357849121
+2019-06-05 19:16:47,073 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.09900569915771484 秒.
+2019-06-05 19:16:49,073 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:49,145 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.07000398635864258 秒.
+2019-06-05 19:16:49,344 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.1980113983154297 秒.
+2019-06-05 19:16:49,864 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441239’输入成功， 用时 0.5180296897888184 秒.
+2019-06-05 19:16:49,919 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘ ’输入成功， 用时 0.05500292778015137 秒.
+2019-06-05 19:16:51,231 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.31107497215271 秒.
+2019-06-05 19:16:51,479 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.24601387977600098 秒.
+2019-06-05 19:16:51,714 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.23401355743408203 秒.
+2019-06-05 19:16:51,910 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注005’输入成功， 用时 0.19301104545593262 秒.
+2019-06-05 19:16:53,911 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:16:53,982 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.06900405883789062 秒.
+2019-06-05 19:16:55,039 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.034001827239990234 秒.
+2019-06-05 19:16:55,040 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0560603141784668 秒.
+2019-06-05 19:16:58,041 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:16:58,769 - root - INFO - SUCCESS    刷新页面，用时0.727041482925415
+2019-06-05 19:16:58,877 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.10600614547729492 秒.
+2019-06-05 19:17:00,904 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:01,013 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.10500597953796387 秒.
+2019-06-05 19:17:01,198 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.18401050567626953 秒.
+2019-06-05 19:17:01,684 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441240’输入成功， 用时 0.484027624130249 秒.
+2019-06-05 19:17:01,762 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘@'’输入成功， 用时 0.07700419425964355 秒.
+2019-06-05 19:17:03,095 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.3320763111114502 秒.
+2019-06-05 19:17:03,264 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.16800975799560547 秒.
+2019-06-05 19:17:03,401 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.13500738143920898 秒.
+2019-06-05 19:17:03,551 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注006’输入成功， 用时 0.14900827407836914 秒.
+2019-06-05 19:17:05,552 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:05,641 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.08800506591796875 秒.
+2019-06-05 19:17:06,765 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03800225257873535 秒.
+2019-06-05 19:17:06,765 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.1230645179748535 秒.
+2019-06-05 19:17:09,767 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:17:10,676 - root - INFO - SUCCESS    刷新页面，用时0.9080519676208496
+2019-06-05 19:17:10,737 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.059003353118896484 秒.
+2019-06-05 19:17:12,738 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:12,820 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.08100438117980957 秒.
+2019-06-05 19:17:13,048 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.22701287269592285 秒.
+2019-06-05 19:17:13,618 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441241’输入成功， 用时 0.5670325756072998 秒.
+2019-06-05 19:17:13,735 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘js001’输入成功， 用时 0.1150064468383789 秒.
+2019-06-05 19:17:15,019 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.2830731868743896 秒.
+2019-06-05 19:17:15,192 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.17100977897644043 秒.
+2019-06-05 19:17:15,334 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.1410079002380371 秒.
+2019-06-05 19:17:15,485 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注007’输入成功， 用时 0.1500084400177002 秒.
+2019-06-05 19:17:17,488 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:17,600 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.11000633239746094 秒.
+2019-06-05 19:17:18,693 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.05500316619873047 秒.
+2019-06-05 19:17:18,693 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0920624732971191 秒.
+2019-06-05 19:17:21,695 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:17:22,606 - root - INFO - SUCCESS    刷新页面，用时0.9090518951416016
+2019-06-05 19:17:22,721 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.11400651931762695 秒.
+2019-06-05 19:17:24,722 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:24,815 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.09100532531738281 秒.
+2019-06-05 19:17:24,998 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.18201041221618652 秒.
+2019-06-05 19:17:25,523 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441242’输入成功， 用时 0.5240297317504883 秒.
+2019-06-05 19:17:25,583 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.05900311470031738 秒.
+2019-06-05 19:17:26,894 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.308074712753296 秒.
+2019-06-05 19:17:27,078 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.18201065063476562 秒.
+2019-06-05 19:17:27,222 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.14400815963745117 秒.
+2019-06-05 19:17:27,372 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注008’输入成功， 用时 0.1480085849761963 秒.
+2019-06-05 19:17:29,373 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:29,483 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.10600614547729492 秒.
+2019-06-05 19:17:30,530 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03000164031982422 秒.
+2019-06-05 19:17:30,531 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0480599403381348 秒.
+2019-06-05 19:17:33,534 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:17:34,364 - root - INFO - SUCCESS    刷新页面，用时0.8280477523803711
+2019-06-05 19:17:34,439 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.07500410079956055 秒.
+2019-06-05 19:17:36,441 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:36,514 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.07200407981872559 秒.
+2019-06-05 19:17:36,657 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.1410081386566162 秒.
+2019-06-05 19:17:37,220 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441243’输入成功， 用时 0.5620322227478027 秒.
+2019-06-05 19:17:37,295 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.07300424575805664 秒.
+2019-06-05 19:17:38,696 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.4010801315307617 秒.
+2019-06-05 19:17:38,942 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.24401402473449707 秒.
+2019-06-05 19:17:39,156 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.2130122184753418 秒.
+2019-06-05 19:17:39,334 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注009’输入成功， 用时 0.1760103702545166 秒.
+2019-06-05 19:17:41,335 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:41,433 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09600543975830078 秒.
+2019-06-05 19:17:42,505 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.044002532958984375 秒.
+2019-06-05 19:17:42,506 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0720610618591309 秒.
+2019-06-05 19:17:42,507 - root - INFO - 开始用例: test_04_jyxs_select
+2019-06-05 19:17:45,509 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:17:46,449 - root - INFO - SUCCESS    刷新页面，用时0.9380536079406738
+2019-06-05 19:17:46,561 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.11000633239746094 秒.
+2019-06-05 19:17:48,562 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:48,673 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.10800623893737793 秒.
+2019-06-05 19:17:49,062 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.38602185249328613 秒.
+2019-06-05 19:17:50,485 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.422081708908081 秒.
+2019-06-05 19:17:51,743 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:00’输入成功， 用时 1.2550716400146484 秒.
+2019-06-05 19:17:53,743 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:53,857 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.113006591796875 秒.
+2019-06-05 19:17:53,986 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441235
+3
+2019-05-15 13:00:00
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注001>, 用时 0.03800201416015625 秒.
+2019-06-05 19:17:53,987 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441235>, 用时 0.128007173538208 秒.
+2019-06-05 19:17:56,988 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:17:57,575 - root - INFO - SUCCESS    刷新页面，用时0.5850334167480469
+2019-06-05 19:17:57,763 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1870110034942627 秒.
+2019-06-05 19:17:59,764 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:17:59,836 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.07000398635864258 秒.
+2019-06-05 19:18:00,176 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441236’输入成功， 用时 0.3390192985534668 秒.
+2019-06-05 19:18:01,500 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.323075532913208 秒.
+2019-06-05 19:18:02,744 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:01’输入成功， 用时 1.2440714836120605 秒.
+2019-06-05 19:18:04,745 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:04,835 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.08800506591796875 秒.
+2019-06-05 19:18:04,968 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441236
+组
+2019-05-15 13:00:01
+轨迹完成率不足70%
+轨迹完成率不足70%
+备注002>, 用时 0.11900663375854492 秒.
+2019-06-05 19:18:04,969 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441236>, 用时 0.13200759887695312 秒.
+2019-06-05 19:18:07,970 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:18:08,616 - root - INFO - SUCCESS    刷新页面，用时0.6450366973876953
+2019-06-05 19:18:08,782 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1650094985961914 秒.
+2019-06-05 19:18:10,783 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:10,835 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.05100297927856445 秒.
+2019-06-05 19:18:11,184 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441237’输入成功， 用时 0.34901976585388184 秒.
+2019-06-05 19:18:12,550 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.3650782108306885 秒.
+2019-06-05 19:18:13,854 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:02’输入成功， 用时 1.304074764251709 秒.
+2019-06-05 19:18:15,857 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:16,003 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.14500832557678223 秒.
+2019-06-05 19:18:16,140 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441237
+1
+2019-05-15 13:00:02
+查岗未响应
+查岗未响应
+备注003>, 用时 0.11800694465637207 秒.
+2019-06-05 19:18:16,141 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441237>, 用时 0.1370079517364502 秒.
+2019-06-05 19:18:19,142 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:18:19,888 - root - INFO - SUCCESS    刷新页面，用时0.7450425624847412
+2019-06-05 19:18:20,005 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.11700654029846191 秒.
+2019-06-05 19:18:22,006 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:22,071 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.06400394439697266 秒.
+2019-06-05 19:18:22,492 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441238’输入成功， 用时 0.4210238456726074 秒.
+2019-06-05 19:18:23,869 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.3750786781311035 秒.
+2019-06-05 19:18:25,112 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:03’输入成功， 用时 1.2410709857940674 秒.
+2019-06-05 19:18:27,115 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:27,217 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.09900569915771484 秒.
+2019-06-05 19:18:27,334 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441238
+A
+2019-05-15 13:00:03
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注004>, 用时 0.1020057201385498 秒.
+2019-06-05 19:18:27,335 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441238>, 用时 0.11700677871704102 秒.
+2019-06-05 19:18:30,336 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:18:30,731 - root - INFO - SUCCESS    刷新页面，用时0.39402270317077637
+2019-06-05 19:18:31,145 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.4130237102508545 秒.
+2019-06-05 19:18:33,146 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:33,225 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.0760045051574707 秒.
+2019-06-05 19:18:33,595 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441239’输入成功， 用时 0.36802101135253906 秒.
+2019-06-05 19:18:35,008 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.4120805263519287 秒.
+2019-06-05 19:18:36,281 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:04’输入成功， 用时 1.2720727920532227 秒.
+2019-06-05 19:18:38,283 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:38,388 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.10300612449645996 秒.
+2019-06-05 19:18:38,564 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441239
+2019-05-15 13:00:04
+轨迹完成率不足70%
+轨迹完成率不足70%
+备注005>, 用时 0.06500387191772461 秒.
+2019-06-05 19:18:38,565 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441239>, 用时 0.1740097999572754 秒.
+2019-06-05 19:18:41,568 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:18:42,341 - root - INFO - SUCCESS    刷新页面，用时0.7720441818237305
+2019-06-05 19:18:42,565 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.22301292419433594 秒.
+2019-06-05 19:18:44,566 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:44,657 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.0890049934387207 秒.
+2019-06-05 19:18:45,192 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441240’输入成功， 用时 0.5330305099487305 秒.
+2019-06-05 19:18:46,729 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.536087989807129 秒.
+2019-06-05 19:18:48,158 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:05’输入成功， 用时 1.428081750869751 秒.
+2019-06-05 19:18:50,164 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:50,317 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.15100860595703125 秒.
+2019-06-05 19:18:50,540 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441240
+@'
+2019-05-15 13:00:05
+报警未处置
+报警未处置
+备注006>, 用时 0.20101141929626465 秒.
+2019-06-05 19:18:50,543 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441240>, 用时 0.22201275825500488 秒.
+2019-06-05 19:18:53,543 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:18:54,164 - root - INFO - SUCCESS    刷新页面，用时0.6190352439880371
+2019-06-05 19:18:54,333 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.16800975799560547 秒.
+2019-06-05 19:18:56,333 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:18:56,391 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.05600309371948242 秒.
+2019-06-05 19:18:56,829 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441241’输入成功， 用时 0.43602490425109863 秒.
+2019-06-05 19:18:58,239 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.4070806503295898 秒.
+2019-06-05 19:18:59,628 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:06’输入成功， 用时 1.3860790729522705 秒.
+2019-06-05 19:19:01,630 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:01,775 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.14300799369812012 秒.
+2019-06-05 19:19:01,864 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441241
+js001
+2019-05-15 13:00:06
+报警未处置
+报警未处置
+备注007>, 用时 0.0500028133392334 秒.
+2019-06-05 19:19:01,865 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441241>, 用时 0.0890049934387207 秒.
+2019-06-05 19:19:04,867 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:19:05,497 - root - INFO - SUCCESS    刷新页面，用时0.6260356903076172
+2019-06-05 19:19:05,635 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1370079517364502 秒.
+2019-06-05 19:19:07,636 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:07,690 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.052002906799316406 秒.
+2019-06-05 19:19:08,024 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441242’输入成功， 用时 0.33301877975463867 秒.
+2019-06-05 19:19:09,372 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.3470771312713623 秒.
+2019-06-05 19:19:10,633 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:07’输入成功， 用时 1.2590723037719727 秒.
+2019-06-05 19:19:12,638 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:12,813 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.16700983047485352 秒.
+2019-06-05 19:19:13,054 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441242
+3
+2019-05-15 13:00:07
+查岗未响应
+查岗未响应
+备注008>, 用时 0.10900592803955078 秒.
+2019-06-05 19:19:13,056 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441242>, 用时 0.241013765335083 秒.
+2019-06-05 19:19:16,058 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:19:16,976 - root - INFO - SUCCESS    刷新页面，用时0.9170527458190918
+2019-06-05 19:19:17,176 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1980113983154297 秒.
+2019-06-05 19:19:19,177 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:19,382 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(2)， 用时 0.20301151275634766 秒.
+2019-06-05 19:19:19,928 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441243’输入成功， 用时 0.5440311431884766 秒.
+2019-06-05 19:19:21,471 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.540088176727295 秒.
+2019-06-05 19:19:22,767 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 16:00:08’输入成功， 用时 1.2940740585327148 秒.
+2019-06-05 19:19:24,771 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:24,910 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.1350078582763672 秒.
+2019-06-05 19:19:25,101 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441243
+组
+2019-05-15 13:00:08
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注009>, 用时 0.09100508689880371 秒.
+2019-06-05 19:19:25,103 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441243>, 用时 0.19001102447509766 秒.
+2019-06-05 19:19:25,107 - root - INFO - 开始用例: test_05_jyxs_update
+2019-06-05 19:19:28,108 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:19:29,270 - root - INFO - SUCCESS    刷新页面，用时1.1600661277770996
+2019-06-05 19:19:29,365 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.09200525283813477 秒.
+2019-06-05 19:19:31,370 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:31,845 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.47302699089050293 秒.
+2019-06-05 19:19:32,291 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.44402527809143066 秒.
+2019-06-05 19:19:33,094 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441235’输入成功， 用时 0.8010458946228027 秒.
+2019-06-05 19:19:33,169 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.07200407981872559 秒.
+2019-06-05 19:19:34,534 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.3610780239105225 秒.
+2019-06-05 19:19:34,848 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.3110177516937256 秒.
+2019-06-05 19:19:35,102 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.2520143985748291 秒.
+2019-06-05 19:19:35,283 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注001’输入成功， 用时 0.1780104637145996 秒.
+2019-06-05 19:19:37,289 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:37,450 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.15800905227661133 秒.
+2019-06-05 19:19:37,981 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.43302464485168457 秒.
+2019-06-05 19:19:37,983 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.5310301780700684 秒.
+2019-06-05 19:19:41,000 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:19:41,637 - root - INFO - SUCCESS    刷新页面，用时0.6360363960266113
+2019-06-05 19:19:41,816 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1780099868774414 秒.
+2019-06-05 19:19:43,817 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:43,900 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.08200454711914062 秒.
+2019-06-05 19:19:44,117 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2150123119354248 秒.
+2019-06-05 19:19:44,836 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441236’输入成功， 用时 0.716041088104248 秒.
+2019-06-05 19:19:44,928 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.09000515937805176 秒.
+2019-06-05 19:19:46,462 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.5280873775482178 秒.
+2019-06-05 19:19:46,868 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.4000229835510254 秒.
+2019-06-05 19:19:47,220 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.3500199317932129 秒.
+2019-06-05 19:19:47,393 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注002’输入成功， 用时 0.16900944709777832 秒.
+2019-06-05 19:19:49,397 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:49,644 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.24201369285583496 秒.
+2019-06-05 19:19:50,418 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.6140353679656982 秒.
+2019-06-05 19:19:50,420 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.7740445137023926 秒.
+2019-06-05 19:19:53,423 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:19:55,310 - root - INFO - SUCCESS    刷新页面，用时1.8861079216003418
+2019-06-05 19:19:55,535 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.22201251983642578 秒.
+2019-06-05 19:19:57,536 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:19:57,638 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.1000056266784668 秒.
+2019-06-05 19:19:57,989 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.3500199317932129 秒.
+2019-06-05 19:19:59,100 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441237’输入成功， 用时 1.1080634593963623 秒.
+2019-06-05 19:19:59,222 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘1’输入成功， 用时 0.12100672721862793 秒.
+2019-06-05 19:20:01,658 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:02’输入成功， 用时 2.4321391582489014 秒.
+2019-06-05 19:20:02,320 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.6590375900268555 秒.
+2019-06-05 19:20:02,870 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.5460309982299805 秒.
+2019-06-05 19:20:03,242 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注003’输入成功， 用时 0.3690211772918701 秒.
+2019-06-05 19:20:05,245 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:05,557 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.31001782417297363 秒.
+2019-06-05 19:20:06,574 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.09100532531738281 秒.
+2019-06-05 19:20:06,575 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0150578022003174 秒.
+2019-06-05 19:20:09,579 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:20:11,592 - root - INFO - SUCCESS    刷新页面，用时2.006114959716797
+2019-06-05 19:20:11,729 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.13300752639770508 秒.
+2019-06-05 19:20:13,735 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:13,825 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.08600497245788574 秒.
+2019-06-05 19:20:14,063 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.237013578414917 秒.
+2019-06-05 19:20:14,841 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441238’输入成功， 用时 0.7750444412231445 秒.
+2019-06-05 19:20:14,961 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘A’输入成功， 用时 0.11700654029846191 秒.
+2019-06-05 19:20:16,652 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.688096523284912 秒.
+2019-06-05 19:20:17,496 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.84004807472229 秒.
+2019-06-05 19:20:17,921 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.42002415657043457 秒.
+2019-06-05 19:20:18,160 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注004’输入成功， 用时 0.23801374435424805 秒.
+2019-06-05 19:20:20,162 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:20,282 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.11600661277770996 秒.
+2019-06-05 19:20:21,112 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.6820392608642578 秒.
+2019-06-05 19:20:21,119 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.832047700881958 秒.
+2019-06-05 19:20:24,124 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:20:25,184 - root - INFO - SUCCESS    刷新页面，用时1.0570604801177979
+2019-06-05 19:20:25,471 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.28101611137390137 秒.
+2019-06-05 19:20:27,473 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:27,571 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.09600543975830078 秒.
+2019-06-05 19:20:28,083 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.5100293159484863 秒.
+2019-06-05 19:20:29,014 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441239’输入成功， 用时 0.9280531406402588 秒.
+2019-06-05 19:20:29,114 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘ ’输入成功， 用时 0.09900546073913574 秒.
+2019-06-05 19:20:30,935 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:04’输入成功， 用时 1.8161039352416992 秒.
+2019-06-05 19:20:32,250 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘轨迹完成率不足70%’输入成功， 用时 1.3120753765106201 秒.
+2019-06-05 19:20:32,916 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘轨迹完成率不足70%’输入成功， 用时 0.6630380153656006 秒.
+2019-06-05 19:20:33,224 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注005’输入成功， 用时 0.3040173053741455 秒.
+2019-06-05 19:20:35,227 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:35,348 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.11900663375854492 秒.
+2019-06-05 19:20:36,417 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.03500175476074219 秒.
+2019-06-05 19:20:36,418 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0680608749389648 秒.
+2019-06-05 19:20:39,422 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:20:40,372 - root - INFO - SUCCESS    刷新页面，用时0.9450540542602539
+2019-06-05 19:20:40,501 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.12700724601745605 秒.
+2019-06-05 19:20:42,504 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:42,591 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.08200454711914062 秒.
+2019-06-05 19:20:42,742 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.14900851249694824 秒.
+2019-06-05 19:20:43,421 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441240’输入成功， 用时 0.6770389080047607 秒.
+2019-06-05 19:20:43,511 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘@'’输入成功， 用时 0.0890049934387207 秒.
+2019-06-05 19:20:44,820 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:05’输入成功， 用时 1.306074619293213 秒.
+2019-06-05 19:20:45,076 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.254014253616333 秒.
+2019-06-05 19:20:45,372 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.29201650619506836 秒.
+2019-06-05 19:20:45,532 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注006’输入成功， 用时 0.15700888633728027 秒.
+2019-06-05 19:20:47,535 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:47,633 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.09500551223754883 秒.
+2019-06-05 19:20:48,716 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.04200243949890137 秒.
+2019-06-05 19:20:48,717 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.082061767578125 秒.
+2019-06-05 19:20:51,717 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:20:52,362 - root - INFO - SUCCESS    刷新页面，用时0.6430368423461914
+2019-06-05 19:20:52,852 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.4870281219482422 秒.
+2019-06-05 19:20:54,854 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:54,989 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.13100743293762207 秒.
+2019-06-05 19:20:55,224 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.23401331901550293 秒.
+2019-06-05 19:20:55,735 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441241’输入成功， 用时 0.5080292224884033 秒.
+2019-06-05 19:20:55,853 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘js001’输入成功， 用时 0.11700677871704102 秒.
+2019-06-05 19:20:57,171 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:06’输入成功， 用时 1.317075490951538 秒.
+2019-06-05 19:20:57,326 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘报警未处置’输入成功， 用时 0.15300869941711426 秒.
+2019-06-05 19:20:57,472 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘报警未处置’输入成功， 用时 0.14300823211669922 秒.
+2019-06-05 19:20:57,623 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注007’输入成功， 用时 0.1500086784362793 秒.
+2019-06-05 19:20:59,624 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:20:59,695 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.07000398635864258 秒.
+2019-06-05 19:21:00,756 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.037001848220825195 秒.
+2019-06-05 19:21:00,757 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.0600605010986328 秒.
+2019-06-05 19:21:03,758 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:21:04,726 - root - INFO - SUCCESS    刷新页面，用时0.966055154800415
+2019-06-05 19:21:04,794 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.0650033950805664 秒.
+2019-06-05 19:21:06,796 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:06,929 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.12900757789611816 秒.
+2019-06-05 19:21:07,155 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.2240126132965088 秒.
+2019-06-05 19:21:07,671 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441242’输入成功， 用时 0.5150294303894043 秒.
+2019-06-05 19:21:07,738 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘3’输入成功， 用时 0.06500387191772461 秒.
+2019-06-05 19:21:09,037 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:07’输入成功， 用时 1.2970740795135498 秒.
+2019-06-05 19:21:09,222 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘查岗未响应’输入成功， 用时 0.18201041221618652 秒.
+2019-06-05 19:21:09,377 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘查岗未响应’输入成功， 用时 0.1540088653564453 秒.
+2019-06-05 19:21:09,529 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注008’输入成功， 用时 0.1500086784362793 秒.
+2019-06-05 19:21:11,531 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:11,758 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.2260129451751709 秒.
+2019-06-05 19:21:13,240 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.1480083465576172 秒.
+2019-06-05 19:21:13,241 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 1.4810845851898193 秒.
+2019-06-05 19:21:16,242 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:21:17,742 - root - INFO - SUCCESS    刷新页面，用时1.4980857372283936
+2019-06-05 19:21:17,898 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.15500903129577637 秒.
+2019-06-05 19:21:19,904 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:20,131 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.2240128517150879 秒.
+2019-06-05 19:21:20,292 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(4)， 用时 0.15900897979736328 秒.
+2019-06-05 19:21:20,906 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(1) > div > div > input，内容：‘136884002441243’输入成功， 用时 0.6120352745056152 秒.
+2019-06-05 19:21:20,962 - root - INFO - SUCCESS    元素：css->[placeholder="请输入组别"]，内容：‘组’输入成功， 用时 0.05500316619873047 秒.
+2019-06-05 19:21:22,264 - root - INFO - SUCCESS    元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__body > form > div:nth-child(3) > div > div > input，内容：‘2019-05-15 13:00:08’输入成功， 用时 1.3010742664337158 秒.
+2019-06-05 19:21:22,581 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布内容"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.31601810455322266 秒.
+2019-06-05 19:21:22,829 - root - INFO - SUCCESS    元素：css->[placeholder="请输入发布范围"]，内容：‘有车运行但人员脱岗’输入成功， 用时 0.24701404571533203 秒.
+2019-06-05 19:21:22,976 - root - INFO - SUCCESS    元素：css->[placeholder="请输入备注"]，内容：‘备注009’输入成功， 用时 0.14300823211669922 秒.
+2019-06-05 19:21:24,977 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:25,183 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div:nth-child(3) > div > div.el-dialog__footer > div > button.el-button.el-button--primary， 用时 0.20301151275634766 秒.
+2019-06-05 19:21:25,698 - root - INFO - SUCCESS    获取元素文本 元素: <css->body > div.el-message.el-message--success > p> 文本内容：<录入信息成功！>, 用时 0.367020845413208 秒.
+2019-06-05 19:21:25,699 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->body > div.el-message.el-message--success > p> 断言文本：<录入信息成功！>, 用时 0.5120291709899902 秒.
+2019-06-05 19:21:25,701 - root - INFO - 开始用例: test_06_jyxs_select
+2019-06-05 19:21:28,703 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:21:29,238 - root - INFO - SUCCESS    刷新页面，用时0.5340306758880615
+2019-06-05 19:21:29,380 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.14000797271728516 秒.
+2019-06-05 19:21:31,381 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:31,449 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.06700396537780762 秒.
+2019-06-05 19:21:31,826 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441235’输入成功， 用时 0.37502145767211914 秒.
+2019-06-05 19:21:33,394 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.5670897960662842 秒.
+2019-06-05 19:21:34,907 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:00’输入成功， 用时 1.5110862255096436 秒.
+2019-06-05 19:21:36,911 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:37,010 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.09800553321838379 秒.
+2019-06-05 19:21:37,232 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441235
+3
+2019-05-15 13:00:00
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注001>, 用时 0.09700560569763184 秒.
+2019-06-05 19:21:37,234 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441235>, 用时 0.22201251983642578 秒.
+2019-06-05 19:21:40,235 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:21:41,011 - root - INFO - SUCCESS    刷新页面，用时0.7740442752838135
+2019-06-05 19:21:41,115 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.1020057201385498 秒.
+2019-06-05 19:21:43,116 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:43,181 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.0630035400390625 秒.
+2019-06-05 19:21:43,696 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441236’输入成功， 用时 0.5130295753479004 秒.
+2019-06-05 19:21:45,143 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.4440827369689941 秒.
+2019-06-05 19:21:46,404 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:01’输入成功， 用时 1.2600717544555664 秒.
+2019-06-05 19:21:48,406 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:48,492 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.08400487899780273 秒.
+2019-06-05 19:21:48,636 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441236
+组
+2019-05-15 13:00:01
+轨迹完成率不足70%
+轨迹完成率不足70%
+备注002>, 用时 0.04600262641906738 秒.
+2019-06-05 19:21:48,638 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441236>, 用时 0.14500832557678223 秒.
+2019-06-05 19:21:51,640 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:21:52,721 - root - INFO - SUCCESS    刷新页面，用时1.075061559677124
+2019-06-05 19:21:52,785 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.06100344657897949 秒.
+2019-06-05 19:21:54,786 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:21:54,960 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.17100977897644043 秒.
+2019-06-05 19:21:55,735 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441237’输入成功， 用时 0.7730441093444824 秒.
+2019-06-05 19:21:57,403 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.666095495223999 秒.
+2019-06-05 19:21:58,656 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:02’输入成功， 用时 1.2520716190338135 秒.
+2019-06-05 19:22:00,657 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:22:00,771 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.11200642585754395 秒.
+2019-06-05 19:22:00,939 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441237
+1
+2019-05-15 13:00:02
+查岗未响应
+查岗未响应
+备注003>, 用时 0.1500086784362793 秒.
+2019-06-05 19:22:00,941 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441237>, 用时 0.16700959205627441 秒.
+2019-06-05 19:22:03,942 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:22:04,661 - root - INFO - SUCCESS    刷新页面，用时0.7180407047271729
+2019-06-05 19:22:04,822 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > div， 用时 0.15900921821594238 秒.
+2019-06-05 19:22:06,823 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:22:07,050 - root - INFO - SUCCESS    点击元素：css->#app > div > section > aside > ul > li:nth-child(4) > ul > li > ul > li:nth-child(3)， 用时 0.22501254081726074 秒.
+2019-06-05 19:22:07,632 - root - INFO - SUCCESS    元素：css->[placeholder="编号"]，内容：‘136884002441238’输入成功， 用时 0.5780329704284668 秒.
+2019-06-05 19:22:09,377 - root - INFO - SUCCESS    元素：css->[placeholder="开始日期"]，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.7420995235443115 秒.
+2019-06-05 19:22:10,814 - root - INFO - SUCCESS    元素：css->[placeholder="结束日期"]，内容：‘2019-05-15 13:00:03’输入成功， 用时 1.43408203125 秒.
+2019-06-05 19:22:12,818 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-05 19:22:12,960 - root - INFO - SUCCESS    点击元素：css->#app > div > section > section > main > div > div.bus_body > div.bus_event > button:nth-child(1)， 用时 0.14000797271728516 秒.
+2019-06-05 19:22:13,145 - root - INFO - SUCCESS    获取元素文本 元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 文本内容：<136884002441238
+A
+2019-05-15 13:00:03
+有车运行但人员脱岗
+有车运行但人员脱岗
+备注004>, 用时 0.0740041732788086 秒.
+2019-06-05 19:22:13,147 - root - INFO - SUCCESS    断言类型：in  通过  元素: <css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)> 断言文本：<136884002441238>, 用时 0.18401050567626953 秒.
+2019-06-05 19:22:16,148 - root - INFO - SUCCESS    等待 3 秒钟
+2019-06-05 19:22:37,389 - root - INFO - SUCCESS    刷新页面，用时21.23821449279785
+2019-06-05 19:22:42,525 - root - INFO - FAIL       未能点击元素css->#app > div > section > aside > ul > li:nth-child(4) > div.
+2019-06-05 19:22:45,626 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0841763019561768 秒.
+2019-06-05 19:22:45,630 - root - INFO - ################################ End ################################

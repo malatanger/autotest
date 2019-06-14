@@ -10,6 +10,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Hunan_datas.xlsx", "Statistic")
 param = data.get_data()
@@ -39,6 +40,7 @@ class Hunan_Statistic_test(unittest.TestCase):
         cls.index.quit()
         logger.info('################################ End ################################')
 
+    @Retry.retry()
     def test_001_CarStatistic(self):
         logger.info("开始用例： {0}".format(sys._getframe().f_code.co_name))
         self.index = Hunan_pages.Hunan_pages_Statistic(driver)

@@ -7,6 +7,7 @@ import sys
 import time
 from config import datas_path
 from common.get_parameter import Data
+from common.basepage import Retry
 
 data = Data(datas_path + "Chifeng_datas.xlsx", "客车抽验")
 param = data.get_data()
@@ -38,6 +39,7 @@ class Chifeng_ky_test(unittest.TestCase):
         cls.index.quit()
         logger.info('################################ End ################################')
 
+    @Retry.retry()
     def test_01_jyxs_update(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
@@ -64,6 +66,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 css='css->body > div.el-message.el-message--success > p',
             )
 
+    @Retry.retry()
     def test_02_jyxs_select(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
@@ -86,6 +89,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 css='css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)'
             )
 
+    @Retry.retry()
     def test_03_jyxs_update(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
@@ -112,6 +116,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 css='css->body > div.el-message.el-message--success > p',
             )
 
+    @Retry.retry()
     def test_04_jyxs_select(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
@@ -134,6 +139,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 css='css->div.bus_content > div.el-table.el-table--fit.el-table--fluid-height.el-table--scrollable-x.el-table--enable-row-transition > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)'
             )
 
+    @Retry.retry()
     def test_05_jyxs_update(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
@@ -160,6 +166,7 @@ class Chifeng_ky_test(unittest.TestCase):
                 css='css->body > div.el-message.el-message--success > p',
             )
 
+    @Retry.retry()
     def test_06_jyxs_select(self):
         """时间参数中开始时间必须大于结束时间"""
         i = 1
