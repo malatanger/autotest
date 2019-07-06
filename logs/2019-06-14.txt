@@ -1416,3 +1416,182 @@ selenium.common.exceptions.TimeoutException: Message: 5秒内，未能找到元�
 2019-06-14 15:43:09,759 - root - INFO - FAIL       执行次数: 3次, 全部失败
 2019-06-14 15:43:12,871 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.110177993774414 秒.
 2019-06-14 15:43:12,872 - root - INFO - ################################ End ################################
+2019-06-14 16:15:37,973 - root - INFO - ############################### START ###############################
+2019-06-14 16:15:43,006 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.031287908554077 秒.
+2019-06-14 16:18:19,764 - root - INFO - ############################### START ###############################
+2019-06-14 16:21:16,052 - root - INFO - ############################### START ###############################
+2019-06-14 16:21:23,241 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 7.187411069869995 秒.
+2019-06-14 16:21:24,394 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1510658264160156 秒.
+2019-06-14 16:21:24,807 - root - INFO - SUCCESS    成功打开链接：http://www.hunanlwlk.com/，用时 0.41202354431152344 秒.
+2019-06-14 16:21:24,991 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js002’输入成功， 用时 0.17901039123535156 秒.
+2019-06-14 16:21:25,231 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe123456’输入成功， 用时 0.23601317405700684 秒.
+2019-06-14 16:21:26,747 - root - INFO - SUCCESS    点击元素：css->.login-btn， 用时 1.5110862255096436 秒.
+2019-06-14 16:21:26,750 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:21:27,206 - root - INFO - SUCCESS    刷新页面，用时0.4540259838104248
+2019-06-14 16:21:27,337 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.13100743293762207 秒.
+2019-06-14 16:21:27,500 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.1610093116760254 秒.
+2019-06-14 16:21:27,501 - root - ERROR - 参数错误:'zone1'
+2019-06-14 16:21:32,502 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:21:32,920 - root - INFO - SUCCESS    刷新页面，用时0.4170238971710205
+2019-06-14 16:21:32,991 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.07000398635864258 秒.
+2019-06-14 16:21:33,042 - root - INFO - FAIL       未能点击元素css->#base_info_level.
+2019-06-14 16:21:38,044 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:21:38,056 - root - INFO - SUCCESS    刷新页面，用时0.012000799179077148
+2019-06-14 16:21:38,483 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.4260244369506836 秒.
+2019-06-14 16:21:38,567 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.08300471305847168 秒.
+2019-06-14 16:21:38,568 - root - ERROR - 参数错误:'zone1'
+2019-06-14 16:21:43,569 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:21:43,574 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:21:43,599 - root - INFO - SUCCESS    刷新页面，用时0.024001359939575195
+2019-06-14 16:21:44,030 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.4300243854522705 秒.
+2019-06-14 16:21:44,121 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09000539779663086 秒.
+2019-06-14 16:21:49,122 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:21:49,152 - root - INFO - SUCCESS    刷新页面，用时0.02800154685974121
+2019-06-14 16:21:49,680 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.5270302295684814 秒.
+2019-06-14 16:21:49,821 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.14000821113586426 秒.
+2019-06-14 16:21:54,823 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:21:55,267 - root - INFO - SUCCESS    刷新页面，用时0.4430253505706787
+2019-06-14 16:21:55,333 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.06600379943847656 秒.
+2019-06-14 16:21:55,430 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09500551223754883 秒.
+2019-06-14 16:22:00,430 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:22:00,432 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:22:01,193 - root - INFO - SUCCESS    刷新页面，用时0.7610435485839844
+2019-06-14 16:22:01,253 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.05800342559814453 秒.
+2019-06-14 16:22:01,346 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09300541877746582 秒.
+2019-06-14 16:22:06,347 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:22:06,386 - root - INFO - SUCCESS    刷新页面，用时0.036002159118652344
+2019-06-14 16:22:06,852 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.4650263786315918 秒.
+2019-06-14 16:22:06,943 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09100508689880371 秒.
+2019-06-14 16:22:11,946 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:22:12,522 - root - INFO - SUCCESS    刷新页面，用时0.5730326175689697
+2019-06-14 16:22:12,573 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.0500030517578125 秒.
+2019-06-14 16:22:12,681 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.10300588607788086 秒.
+2019-06-14 16:22:17,686 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:22:17,688 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 16:22:18,166 - root - INFO - SUCCESS    刷新页面，用时0.4760274887084961
+2019-06-14 16:22:18,230 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.06000351905822754 秒.
+2019-06-14 16:22:18,335 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.10500621795654297 秒.
+2019-06-14 16:22:19,458 - root - INFO - SUCCESS    元素：css->#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.1220641136169434 秒.
+2019-06-14 16:22:19,581 - root - INFO - SUCCESS    点击元素：css->#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.12100696563720703 秒.
+2019-06-14 16:22:20,659 - root - INFO - SUCCESS    获取元素文本 元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 文本内容：<没有相关数据!>, 用时 0.0370020866394043 秒.
+2019-06-14 16:22:20,660 - root - INFO - FAIL       断言类型：in  未通过  元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 断言文本：<湘E98363>, 用时 1.07906174659729 秒.
+2019-06-14 16:22:21,098 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.4370250701904297 秒.
+2019-06-14 16:22:26,098 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 16:22:26,504 - root - INFO - SUCCESS    刷新页面，用时0.40302276611328125
+2019-06-14 16:22:26,566 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.06000328063964844 秒.
+2019-06-14 16:22:26,675 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.10900616645812988 秒.
+2019-06-14 16:22:27,834 - root - INFO - SUCCESS    元素：css->#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.1570661067962646 秒.
+2019-06-14 16:22:27,949 - root - INFO - SUCCESS    点击元素：css->#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.1150064468383789 秒.
+2019-06-14 16:22:29,008 - root - INFO - SUCCESS    获取元素文本 元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 文本内容：<没有相关数据!>, 用时 0.03500175476074219 秒.
+2019-06-14 16:22:29,009 - root - INFO - FAIL       断言类型：in  未通过  元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 断言文本：<湘E98363>, 用时 1.0590605735778809 秒.
+2019-06-14 16:22:29,414 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.4040231704711914 秒.
+2019-06-14 16:22:34,414 - root - INFO - 开始用例: test_004_SelectTheCar_Synch
+2019-06-14 16:22:34,964 - root - INFO - SUCCESS    刷新页面，用时0.5480315685272217
+2019-06-14 16:22:35,020 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.05500316619873047 秒.
+2019-06-14 16:22:35,118 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09700560569763184 秒.
+2019-06-14 16:22:36,384 - root - INFO - SUCCESS    元素：css->#vehicleManage_tables_div_queyFrom0_form0_text0_show，内容：‘湘E98363’输入成功， 用时 1.2660722732543945 秒.
+2019-06-14 16:22:36,501 - root - INFO - SUCCESS    点击元素：css->#vehicleManage_tables_div_queyFrom0_form1_button0_btn， 用时 0.11500668525695801 秒.
+2019-06-14 16:22:37,577 - root - INFO - SUCCESS    获取元素文本 元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 文本内容：<没有相关数据!>, 用时 0.04000234603881836 秒.
+2019-06-14 16:22:37,578 - root - INFO - FAIL       断言类型：in  未通过  元素: <css->#vehicleManage_tables_table > tbody > tr:nth-child(1)> 断言文本：<湘E98363>, 用时 1.077061653137207 秒.
+2019-06-14 16:22:37,989 - root - INFO - SUCCESS    截图保存成功，地址为E:/autotest/report/2019-06-14/image/， 用时 0.41002345085144043 秒.
+2019-06-14 16:22:42,989 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:22:46,050 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0571751594543457 秒.
+2019-06-14 16:22:46,052 - root - INFO - ################################ End ################################
+2019-06-14 16:22:46,053 - root - INFO - ############################### START ###############################
+2019-06-14 16:22:49,262 - root - INFO - ############################### START ###############################
+2019-06-14 16:22:51,336 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.281302452087402 秒.
+2019-06-14 16:22:52,472 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1350650787353516 秒.
+2019-06-14 16:22:53,166 - root - INFO - SUCCESS    成功打开链接：http://www.hunanlwlk.com/，用时 0.6900391578674316 秒.
+2019-06-14 16:22:53,356 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js002’输入成功， 用时 0.1870107650756836 秒.
+2019-06-14 16:22:53,506 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe123456’输入成功， 用时 0.14600825309753418 秒.
+2019-06-14 16:22:54,913 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.650323390960693 秒.
+2019-06-14 16:22:56,075 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1600666046142578 秒.
+2019-06-14 16:22:56,316 - root - INFO - SUCCESS    点击元素：css->.login-btn， 用时 2.8071603775024414 秒.
+2019-06-14 16:22:56,318 - root - INFO - 开始用例： test_001_CarStatistic
+2019-06-14 16:22:56,864 - root - INFO - SUCCESS    成功打开链接：http://www.hunanlwlk.com/，用时 0.7860448360443115 秒.
+2019-06-14 16:22:57,121 - root - INFO - SUCCESS    刷新页面，用时0.8020458221435547
+2019-06-14 16:22:57,328 - root - INFO - SUCCESS    点击元素：xpath->//*[@id='home-main']/div[1]/ul[2]/li[4]/a， 用时 0.20601201057434082 秒.
+2019-06-14 16:22:57,415 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js002’输入成功， 用时 0.5480315685272217 秒.
+2019-06-14 16:22:57,729 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe123456’输入成功， 用时 0.31201791763305664 秒.
+2019-06-14 16:22:59,736 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_text0_show> 输入: 常德市, 用时 2.406137466430664 秒.
+2019-06-14 16:23:00,090 - root - INFO - SUCCESS    点击元素：css->.login-btn， 用时 2.3591349124908447 秒.
+2019-06-14 16:23:00,091 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:23:00,669 - root - INFO - SUCCESS    刷新页面，用时0.5760328769683838
+2019-06-14 16:23:00,769 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.09900569915771484 秒.
+2019-06-14 16:23:01,034 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.2630152702331543 秒.
+2019-06-14 16:23:01,035 - root - ERROR - 参数错误:'zone1'
+2019-06-14 16:23:01,053 - root - INFO - SUCCESS    点击元素：xpath->//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 1.3170750141143799 秒.
+2019-06-14 16:23:02,411 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:02,443 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt> 输入: 2019-04-08, 用时 1.3870792388916016 秒.
+2019-06-14 16:23:04,443 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-14 16:23:05,649 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:05,676 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt> 输入: 2019-04-10, 用时 1.2320706844329834 秒.
+2019-06-14 16:23:05,767 - root - INFO - FAIL       未能点击元素css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_vehicleTypeTree0 > input.
+2019-06-14 16:23:06,037 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:23:06,587 - root - INFO - SUCCESS    刷新页面，用时0.5480310916900635
+2019-06-14 16:23:06,691 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.10200619697570801 秒.
+2019-06-14 16:23:06,830 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.13800787925720215 秒.
+2019-06-14 16:23:06,833 - root - ERROR - 参数错误:'zone1'
+2019-06-14 16:23:10,767 - root - INFO - 开始用例： test_001_CarStatistic
+2019-06-14 16:23:11,208 - root - INFO - SUCCESS    刷新页面，用时0.4390251636505127
+2019-06-14 16:23:11,297 - root - INFO - SUCCESS    点击元素：xpath->//*[@id='home-main']/div[1]/ul[2]/li[4]/a， 用时 0.08800506591796875 秒.
+2019-06-14 16:23:11,836 - root - INFO - 开始用例: test_001_SelectTheCar_area
+2019-06-14 16:23:11,845 - root - INFO - SUCCESS    刷新页面，用时0.009000539779663086
+2019-06-14 16:23:12,426 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.5800330638885498 秒.
+2019-06-14 16:23:12,558 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.13000726699829102 秒.
+2019-06-14 16:23:12,559 - root - ERROR - 参数错误:'zone1'
+2019-06-14 16:23:12,863 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_text0_show> 输入: 常德市, 用时 1.5650897026062012 秒.
+2019-06-14 16:23:13,958 - root - INFO - SUCCESS    点击元素：xpath->//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 1.095062494277954 秒.
+2019-06-14 16:23:15,150 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:15,179 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt> 输入: 2019-04-08, 用时 1.2210700511932373 秒.
+2019-06-14 16:23:17,181 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-14 16:23:17,560 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:23:17,564 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:23:17,961 - root - INFO - SUCCESS    刷新页面，用时0.3950226306915283
+2019-06-14 16:23:18,055 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.09400534629821777 秒.
+2019-06-14 16:23:18,150 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.09300518035888672 秒.
+2019-06-14 16:23:18,316 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:18,347 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt> 输入: 2019-04-10, 用时 1.1660666465759277 秒.
+2019-06-14 16:23:18,440 - root - INFO - FAIL       未能点击元素css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_vehicleTypeTree0 > input.
+2019-06-14 16:23:23,154 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:23:23,442 - root - INFO - 开始用例： test_001_CarStatistic
+2019-06-14 16:23:23,809 - root - INFO - SUCCESS    刷新页面，用时0.6530373096466064
+2019-06-14 16:23:23,977 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.16700983047485352 秒.
+2019-06-14 16:23:24,097 - root - INFO - SUCCESS    刷新页面，用时0.6520373821258545
+2019-06-14 16:23:24,180 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.20101141929626465 秒.
+2019-06-14 16:23:24,294 - root - INFO - SUCCESS    点击元素：xpath->//*[@id='home-main']/div[1]/ul[2]/li[4]/a， 用时 0.19501137733459473 秒.
+2019-06-14 16:23:26,368 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_text0_show> 输入: 常德市, 用时 2.0711185932159424 秒.
+2019-06-14 16:23:27,499 - root - INFO - SUCCESS    点击元素：xpath->//*[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[contains(text(),'常德市')]， 用时 1.1310648918151855 秒.
+2019-06-14 16:23:28,766 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:28,801 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date0_txt> 输入: 2019-04-08, 用时 1.300074577331543 秒.
+2019-06-14 16:23:29,181 - root - INFO - 开始用例: test_002_SelectTheCar_platform
+2019-06-14 16:23:29,803 - root - INFO - SUCCESS    刷新页面，用时0.6180353164672852
+2019-06-14 16:23:30,015 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.20601177215576172 秒.
+2019-06-14 16:23:30,156 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.1390080451965332 秒.
+2019-06-14 16:23:30,802 - root - INFO - SUCCESS    等待 2 秒钟
+2019-06-14 16:23:32,103 - root - INFO - SUCCESS    等待 1 秒钟
+2019-06-14 16:23:32,131 - root - INFO - SUCCESS    清除元素: <css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_datePeriod0_date1_txt> 输入: 2019-04-10, 用时 1.3290760517120361 秒.
+2019-06-14 16:23:32,198 - root - INFO - FAIL       未能点击元素css->#report_vehicleinstall_table_div_tabs0_content_panel0_form0_vehicleTypeTree0 > input.
+2019-06-14 16:23:35,158 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:23:35,160 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:23:35,826 - root - INFO - SUCCESS    刷新页面，用时0.6600379943847656
+2019-06-14 16:23:35,928 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.1000056266784668 秒.
+2019-06-14 16:23:36,197 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.26801514625549316 秒.
+2019-06-14 16:23:37,201 - root - INFO - FAIL       执行次数: 3次, 全部失败
+2019-06-14 16:23:40,481 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.092176675796509 秒.
+2019-06-14 16:23:40,483 - root - INFO - ################################ End ################################
+2019-06-14 16:23:40,484 - root - INFO - ############################### START ###############################
+2019-06-14 16:23:41,200 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:23:41,740 - root - INFO - SUCCESS    刷新页面，用时0.5390310287475586
+2019-06-14 16:23:41,906 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 0.1650092601776123 秒.
+2019-06-14 16:23:42,103 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.18401050567626953 秒.
+2019-06-14 16:23:45,964 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.479313373565674 秒.
+2019-06-14 16:23:45,970 - root - INFO - SUCCESS    等待 30 秒钟
+2019-06-14 16:23:47,104 - root - INFO - 开始用例: test_003_SelectTheCar_company
+2019-06-14 16:23:47,105 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1340646743774414 秒.
+2019-06-14 16:23:47,151 - root - INFO - SUCCESS    刷新页面，用时0.04500269889831543
+2019-06-14 16:23:48,116 - root - INFO - SUCCESS    成功打开链接：http://www.hunanlwlk.com/，用时 1.0080578327178955 秒.
+2019-06-14 16:23:48,357 - root - INFO - SUCCESS    移动到元素: <css->#home-down-icon-level>, 用时 1.204068899154663 秒.
+2019-06-14 16:23:48,494 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js002’输入成功， 用时 0.3580207824707031 秒.
+2019-06-14 16:23:48,589 - root - INFO - SUCCESS    点击元素：css->#base_info_level， 用时 0.23001313209533691 秒.
+2019-06-14 17:08:40,129 - root - INFO - ############################### START ###############################

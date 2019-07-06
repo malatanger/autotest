@@ -48,9 +48,12 @@ class Browser_engine(object):
 
 
 class pyselenium(Browser_engine):
+
     def __init__(self, driver):
         self.driver = driver
         # self.driver = webdriver.Chrome()  # 调试模式
+
+
 
     def open(self, url):
         """打开网址"""
@@ -108,9 +111,11 @@ class pyselenium(Browser_engine):
                 "输入获取元素方法'id','name','class','link_text','xpath','css'."
             )
 
+    #global element
+
     def get_element(self, css):
         """获取元素"""
-        global element
+
         if "->" not in css:
             raise NameError("请在定位方法以及路径之间输入“->”")
 
@@ -136,12 +141,105 @@ class pyselenium(Browser_engine):
             )
         return element
 
-    def input_and_enter(self, css, text, sec=1):
+    def get_elements(self, css):
+        """
+        Judge element positioning way, and returns the element.
+        批量获取元素。
+        Usage:
+        driver.get_elements('id->kw')
+        """
+        if "->" not in css:
+            raise NameError("请在定位方法以及路径之间输入“->”")
+
+        by = css.split("->")[0].strip()
+        value = css.split("->")[1].strip()
+
+        if by == "id":
+            elements = self.driver.find_elements_by_id(value)
+        elif by == "name":
+            elements = self.driver.find_elements_by_name(value)
+        elif by == "class":
+            elements = self.driver.find_elements_by_class_name(value)
+        elif by == "link_text":
+            elements = self.driver.find_elements_by_link_text(value)
+        elif by == "xpath":
+            elements = self.driver.find_elements_by_xpath(value)
+        elif by == "css":
+            elements = self.driver.find_elements_by_css_selector(value)
+        else:
+            raise NameError(
+                "输入获取元素方法'id','name','class','link_text','xpath','css'."
+            )
+        return elements
+
+    @staticmethod
+    def levels_get_elements(ele,css):
+
+        """层级定位"""
+
+        if "->" not in css:
+            raise NameError("请在定位方法以及路径之间输入“->”")
+
+        by = css.split("->")[0].strip()
+        value = css.split("->")[1].strip()
+
+        if by == "id":
+            elements = ele.find_elements_by_id(value)
+        elif by == "name":
+            elements = ele.find_elements_by_name(value)
+        elif by == "class":
+            elements = ele.find_elements_by_class_name(value)
+        elif by == "link_text":
+            elements = ele.find_elements_by_link_text(value)
+        elif by == "xpath":
+            elements = ele.find_elements_by_xpath(value)
+        elif by == "css":
+            elements = ele.find_elements_by_css_selector(value)
+        else:
+            raise NameError(
+                "输入获取元素方法'id','name','class','link_text','xpath','css'."
+            )
+        return elements
+
+    @staticmethod
+    def levels_get_element(ele,css):
+        """获取元素"""
+
+        if "->" not in css:
+            raise NameError("请在定位方法以及路径之间输入“->”")
+
+        by = css.split("->")[0].strip()
+        value = css.split("->")[1].strip()
+        # if css == "id":
+        #     WebDriverWait(self.driver,5).until(lambda x:x.find_element_by_id(value))
+        if by == "id":
+            element = ele.find_element_by_id(value)
+        elif by == "name":
+            element = ele.find_element_by_name(value)
+        elif by == "class":
+            element = ele.find_element_by_class_name(value)
+        elif by == "link_text":
+            element = ele.find_element_by_link_text(value)
+        elif by == "xpath":
+            element = ele.find_element_by_xpath(value)
+        elif by == "css":
+            element = ele.find_element_by_css_selector(value)
+        else:
+            raise NameError(
+                "输入获取元素方法'id','name','class','link_text','xpath','css'."
+            )
+        return element
+
+    def input_and_enter(self, ele,css, text, sec=1,types="ordinary"):
         """输入并敲击回车"""
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
-            el = self.get_element(css)
+            if types == "ordinary":
+                el = self.get_element(css)
+            elif types == "level":
+                el = self.levels_get_element(ele, css)
             el.send_keys(text)
             time.sleep(sec)
             el.send_keys(Keys.ENTER)
@@ -155,6 +253,7 @@ class pyselenium(Browser_engine):
             raise
 
     def clear_input_enter(self, css, text, sec=1):
+        global el
         """清除默认内容，并输入新内容"""
         t1 = time.time()
         try:
@@ -169,6 +268,19 @@ class pyselenium(Browser_engine):
             self.my_print("{0} 无法清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(fail, css, text, time.time() - t1))
             raise
 
+    # def Enter(self,css):
+    #
+    #     """清除默认内容，并输入新内容"""
+    #     t1 = time.time()
+    #     try:
+    #         self.element_wait(css)
+    #         el = self.get_element(css)
+    #         el.send_keys(Keys.ENTER)
+    #         self.my_print("{0} 清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(success, css, time.time() - t1))
+    #     except Exception:
+    #         self.my_print("{0} 无法清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(fail, css, time.time() - t1))
+    #         raise
+
     def input(self, css, text):
         """输入"""
         t1 = time.time()
@@ -181,7 +293,22 @@ class pyselenium(Browser_engine):
             )
         except Exception:
             self.my_print(
-                "{0} 元素：{1}，内容：‘{2}’输入是吧， 用时 {3} 秒.".format(fail, css, text, time.time() - t1)
+                "{0} 元素：{1}，内容：‘{2}’输入失败， 用时 {3} 秒.".format(fail, css, text, time.time() - t1)
+            )
+            raise
+
+    def levels_input(self,ele,css,text):
+        t1 = time.time()
+        try:
+            self.element_wait(css)
+            el = self.levels_get_element(ele,css)
+            el.send_keys(text)
+            self.my_print(
+                "{0} 元素：{1}，内容：‘{2}’输入成功， 用时 {3} 秒.".format(success, css, text, time.time() - t1)
+            )
+        except Exception:
+            self.my_print(
+                "{0} 元素：{1}，内容：‘{2}’输入失败， 用时 {3} 秒.".format(fail, css, text, time.time() - t1)
             )
             raise
 
@@ -244,6 +371,37 @@ class pyselenium(Browser_engine):
             )
             raise
 
+    # def click_elements(self,css,num):
+    #     t1 = time.time()
+    #     try:
+    #         self.element_wait(css)
+    #         els = self.get_elements(css)
+    #         els[num].click()
+    #         self.my_print(
+    #             "{0} 点击第{1}元素：{2}， 用时 {3} 秒.".format(success, num+1 ,css, time.time() - t1)
+    #         )
+
+        except Exception:
+            self.my_print(
+                "{0} 未能点击元素{1}.".format(fail, css)
+            )
+            raise
+
+    def levels_click(self, ele,css):
+        """点击"""
+        t1 = time.time()
+        try:
+            self.element_wait(css)
+            el = self.levels_get_element(ele,css)
+            el.click()
+            self.my_print(
+                "{0} 点击元素：{1}， 用时 {2} 秒.".format(success, css, time.time() - t1)
+            )
+        except Exception:
+            self.my_print(
+                "{0} 未能点击元素{1}.".format(fail, css)
+            )
+            raise
     def move_to_element(self, css):
         """悬停元素"""
         t1 = time.time()
@@ -395,6 +553,11 @@ class pyselenium(Browser_engine):
         t1 = time.time()
         self.driver.switch_to.default_content()
         self.my_print("{0} 退出iframe, 用时 {1} 秒".format(success, time.time() - t1))
+
+    def deleteall_cookies(self):
+        t1 = time.time()
+        self.driver.delete_all_cookies()
+        self.my_print("{0} 清除cookies, 用时 {1} 秒".format(success, time.time() - t1))
 
 
 class Retry(object):

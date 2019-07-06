@@ -81,6 +81,7 @@ Version in 0.7.1
 import sys
 import time
 import datetime
+
 PY3K = (sys.version_info[0] > 2)
 if PY3K:
     import io as StringIO
@@ -477,12 +478,12 @@ table       { font-size: 100%; }
     </span></a></div>
     """
 
-
-# -------------------- The end of the Template class -------------------
+    # -------------------- The end of the Template class -------------------
     def __getattribute__(self, item):
         value = object.__getattribute__(self, item)
 
         return value
+
 
 TestResult = unittest.TestResult
 
@@ -631,7 +632,8 @@ class HTMLTestRunner(Template_mixin):
     """
     """
 
-    def __init__(self, stream=sys.stdout, verbosity=2, title=None, description=None, retry=0, save_last_try=False,tester=None):
+    def __init__(self, stream=sys.stdout, verbosity=2, title=None, description=None, retry=0, save_last_try=False,
+                 tester=None):
         self.stream = stream
         self.retry = retry
         self.verbosity = verbosity

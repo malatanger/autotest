@@ -1,7 +1,8 @@
 # coding:utf-8
+
 import sys
 
-sys.path.append("F:/web-autotest/")
+sys.path.append("E:/autotest/")
 
 from common import HTMLTestRunner
 import unittest
@@ -13,7 +14,7 @@ import time
 def run():
     discover = unittest.defaultTestLoader.discover(
         testcase_paht,
-        "test_Hunan*"
+        "test_Ganzhou_01*"
     )
     date = time.strftime('%Y-%m-%d')
     file_path = report_path + date + "/"
@@ -27,7 +28,7 @@ def run():
             stream=f,
             title='测试报告',
             description='执行人： JS',
-            tester='井松'
+            tester='井松',
         )
         runner.run(discover)
 

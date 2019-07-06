@@ -1,10 +1,9 @@
 # coding:utf-8
 import xlrd
-from common.log import Log
 
 
 class Data(object):
-    logger = Log()
+
     def __init__(self, filepath, sheetname):
         self.data = xlrd.open_workbook(filepath)
         self.table = self.data.sheet_by_name(sheetname)
@@ -29,19 +28,17 @@ class Data(object):
         for i in range(len(parameters_dict)):
             i += 1
             keys.append(i)
-            paras = dict(zip(keys, parameters_dict))
-            return paras
+        paras = dict(zip(keys, parameters_dict))
+        return paras
 
 
 
 
 if __name__ == "__main__":
-    filePath = r"E:\autotest\datas\Hunan_datas.xlsx"
-    sheetName = "CarInfo"
+    filePath = "E:/autotest/datas/Chifeng_datas.xlsx"
+    sheetName = "客车抽验"
     d = Data(filePath, sheetName)
     d1 = d.get_data()
-    try:
-        print(d1[1]["zone1"])
-    except KeyError:
-        print("123")
-        raise
+    print(d1)
+    print(d1[2]["username"])
+
