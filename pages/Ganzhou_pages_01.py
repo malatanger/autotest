@@ -17,6 +17,7 @@ class Ganzhou_pages_login(pyselenium):
     def login_click(self):
         self.click("css->#button")
 
+
 class Ganzhou_pages_TJFX(pyselenium):
 
     # 统计分析
@@ -37,23 +38,22 @@ class Ganzhou_pages_TJFX(pyselenium):
         self.click('xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"{0}")]'.format(
             menuname))
 
-    def query_bts(self,num):
-        ele = self.get_elements("css->.el-button.el-button--primary.el-button--small")
-        ele[num].click()
-
-    def header_click(self,header):
-        self.click('xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"{0}")]'.format(
-            header))
-
-    def zone_input(self,num,zone):
+    def query_bts(self, num, bt):
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.levels_get_element(se_menu[num],'css-> div > div.search-wrapper > form')
-        #names_el = self.levels_get_elements(querys[0],'css-> div > label')
-        #diqu = self.levels_get_element(querys[0],'css-> input[placeholder="地区为必填项"]')
-        # self.input('xpath->//*[@id="pane-first"]/div/div[1]/form/div[1]/div',"赣州")
-        #print(len(querys))
-        self.levels_input(querys,'css->input[placeholder="地区为必填项"]',zone)
-        #
+        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        self.click(
+            'xpath->//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"{0}")]'.format(
+                bt), ele=querys, types="level")
+
+    def header_click(self, header):
+        self.click(
+            'xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"{0}")]'.format(
+                header))
+
+    def zone_input(self, num, zone):
+        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
+        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        self.input('css->input[placeholder="地区为必填项"]', zone, ele=querys, types="level")
         self.click('xpath->/html/body/div[2]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(zone))
 
     # def plantform_input(self):
@@ -61,11 +61,13 @@ class Ganzhou_pages_TJFX(pyselenium):
     #     querys = self.levels_get_element(se_menu[num], 'css-> div > div.search-wrapper > form')
     #     self.levels_input(querys, 'css->input[placeholder="地区为必填项"]', zone)
 
-    def timeslot_input(self,num,btime,etime):
+    def timeslot_input(self, num, btime, etime):
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.levels_get_element(se_menu[num],'css-> div > div.search-wrapper > form')
-        self.levels_input(querys, 'css->input[placeholder="开始日期"]', btime)
-        self.levels_input(querys, 'css->input[placeholder="结束日期"]', etime)
+        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        self.click("css->i.el-input__icon.el-range__close-icon", ele=querys, types="level")
+        self.input('css->input[placeholder="开始日期"]', btime, ele=querys, types="level")
+        self.input('css->input[placeholder="结束日期"]', etime, ele=querys, types="level")
+
 
 
 
