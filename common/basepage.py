@@ -9,7 +9,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 from config import report_path
 import os
-import traceback
 
 success = "SUCCESS   "
 fail = "FAIL      "
@@ -48,7 +47,6 @@ class Browser_engine(object):
 
 
 class pyselenium(Browser_engine):
-
 
     def __init__(self, driver):
         self.driver = driver
@@ -112,7 +110,7 @@ class pyselenium(Browser_engine):
 
     # global element
 
-    def get_element(self, css,ele=None,types="ordinary"):
+    def get_element(self, css, ele=None, types="ordinary"):
         """获取元素"""
 
         if "->" not in css:
@@ -122,7 +120,7 @@ class pyselenium(Browser_engine):
         value = css.split("->")[1].strip()
         # if css == "id":
         #     WebDriverWait(self.driver,5).until(lambda x:x.find_element_by_id(value))
-        if types=="ordinary":
+        if types == "ordinary":
             if by == "id":
                 element = self.driver.find_element_by_id(value)
             elif by == "name":
@@ -210,16 +208,16 @@ class pyselenium(Browser_engine):
                 )
             return elements
 
-    def input_and_enter(self, css, text, sec=1, ele= None, types="ordinary"):
+    def input_and_enter(self, css, text, sec=1, ele=None, types="ordinary"):
         """输入并敲击回车"""
-        # global el
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
             if types == "ordinary":
                 el = self.get_element(css)
             else:
-                el = self.get_element(ele, css,types="level")
+                el = self.get_element(ele, css, types="level")
             el.send_keys(text)
             time.sleep(sec)
             el.send_keys(Keys.ENTER)
@@ -243,7 +241,7 @@ class pyselenium(Browser_engine):
                 el = self.get_element(css)
                 el.clear()
             else:
-                el = self.get_element(css,ele ,types="level")
+                el = self.get_element(css, ele, types="level")
                 el.clear()
             el.send_keys(text)
             self.sleep(sec)
@@ -266,20 +264,20 @@ class pyselenium(Browser_engine):
     #         self.my_print("{0} 无法清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(fail, css, time.time() - t1))
     #         raise
 
-    def input(self, css, text,ele=None,types="ordinary"):
+    def input(self, css, text, ele=None, types="ordinary"):
         """输入"""
-
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
-            if types =="ordinary":
+            if types == "ordinary":
                 el = self.get_element(css)
                 el.send_keys(text)
                 self.my_print(
                     "{0} 元素：{1}，内容：‘{2}’输入成功， 用时 {3} 秒.".format(success, css, text, time.time() - t1)
                 )
             else:
-                el = self.get_element(css,ele,types="level")
+                el = self.get_element(css, ele, types="level")
                 el.send_keys(text)
                 self.my_print(
                     "{0} 元素：{1}，内容：‘{2}’输入成功， 用时 {3} 秒.".format(success, css, text, time.time() - t1)
@@ -334,15 +332,16 @@ class pyselenium(Browser_engine):
                 "截图失败"
             )
 
-    def click(self, css,ele = None,types="ordinary"):
+    def click(self, css, ele=None, types="ordinary"):
         """点击"""
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
-            if types=="ordinary":
+            if types == "ordinary":
                 self.get_element(css).click()
             else:
-                el = self.get_element(css,ele,types="level")
+                el = self.get_element(css, ele, types="level")
                 el.click()
             self.my_print(
                 "{0} 点击元素：{1}， 用时 {2} 秒.".format(success, css, time.time() - t1)
@@ -353,25 +352,36 @@ class pyselenium(Browser_engine):
             )
             raise
 
-    def clicks(self, css,num,ele = None,types="ordinary"):
+    def clicks(self, css, num, ele=None, types="ordinary"):
+        """
+        点击元素组中的元素
+        :param css:
+        :param num:
+        :param ele:
+        :param types:
+        :return:
+        """
+        global el
         t1 = time.time()
         try:
-            if types=="ordinary":
+            if types == "ordinary":
                 el = self.get_elements(css)
                 el[num].click()
             else:
-                el = self.get_elements(css,ele,types="level")
+                el = self.get_elements(css, ele, types="level")
                 el[num].click()
             self.my_print(
-                "{0} 点击第{1}元素：{2}， 用时 {3} 秒.".format(success,num+1, css, time.time() - t1)
+                "{0} 点击第{1}元素：{2}， 用时 {3} 秒.".format(success, num + 1, css, time.time() - t1)
             )
         except Exception:
             self.my_print(
                 "{0} 未能点击元素{1}.".format(fail, css)
             )
             raise
+
     def move_to_element(self, css):
         """悬停元素"""
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
@@ -479,6 +489,7 @@ class pyselenium(Browser_engine):
 
     def clear(self, css):
         """清除默认内容"""
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
@@ -489,18 +500,18 @@ class pyselenium(Browser_engine):
             self.my_print("{0} 无法清除元素: <{1}> , 用时 {2} 秒.".format(fail, css, time.time() - t1))
             raise
 
-    def clear_input(self, css, text,ele = None,types="ordinary"):
+    def clear_input(self, css, text, ele=None, types="ordinary"):
         """清除默认内容，并输入新内容"""
-
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
-            if types=="ordinary":
+            if types == "ordinary":
                 el = self.get_element(css)
                 el.clear()
                 el.send_keys(text)
             else:
-                el = self.get_element(css,ele,types="level")
+                el = self.get_element(css, ele, types="level")
                 el.clear()
                 el.send_keys(text)
             self.my_print("{0} 清除元素: <{1}> 输入: {2}, 用时 {3} 秒.".format(success, css, text, time.time() - t1))
@@ -535,6 +546,9 @@ class pyselenium(Browser_engine):
 
 
 class Retry(object):
+    """
+    重新执行
+    """
 
     @staticmethod
     def retry(times=3, wait_time=5):

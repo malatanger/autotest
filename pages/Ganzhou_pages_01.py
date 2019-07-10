@@ -42,7 +42,7 @@ class Ganzhou_pages_TJFX(pyselenium):
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
         querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
         self.click(
-            'xpath->//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"{0}")]'.format(
+            'xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"{}")]'.format(
                 bt), ele=querys, types="level")
 
     def header_click(self, header):
@@ -54,12 +54,7 @@ class Ganzhou_pages_TJFX(pyselenium):
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
         querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
         self.input('css->input[placeholder="地区为必填项"]', zone, ele=querys, types="level")
-        self.click('xpath->/html/body/div[2]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(zone))
-
-    # def plantform_input(self):
-    #     se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-    #     querys = self.levels_get_element(se_menu[num], 'css-> div > div.search-wrapper > form')
-    #     self.levels_input(querys, 'css->input[placeholder="地区为必填项"]', zone)
+        self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(zone))
 
     def timeslot_input(self, num, btime, etime):
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
@@ -68,8 +63,25 @@ class Ganzhou_pages_TJFX(pyselenium):
         self.input('css->input[placeholder="开始日期"]', btime, ele=querys, types="level")
         self.input('css->input[placeholder="结束日期"]', etime, ele=querys, types="level")
 
+    def platform_input(self, num, platform):
+        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
+        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        plat1 = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("接入平台"), ele=querys,
+                                 types="level")
+        plat2 = self.get_element('xpath->.//following-sibling::*', ele=plat1, types="level")
+        self.input('xpath->.//div/div/input', platform, ele=plat2, types="level")
+        self.sleep(3)
+        self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(platform))
 
-
+    def company_input(self, num, company):
+        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
+        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        plat1 = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("运输企业"), ele=querys,
+                                 types="level")
+        plat2 = self.get_element('xpath->.//following-sibling::*', ele=plat1, types="level")
+        self.input('xpath->.//div/div/input', company, ele=plat2, types="level")
+        self.sleep(3)
+        self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(company))
 
 
 class Ganzhou_pages_YHBH(pyselenium):
