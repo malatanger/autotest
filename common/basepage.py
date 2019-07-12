@@ -379,17 +379,24 @@ class pyselenium(Browser_engine):
             )
             raise
 
-    def move_to_element(self, css):
+    def movetoelement(self, css, ele=None, types="ordinary"):
         """悬停元素"""
         global el
         t1 = time.time()
         try:
             self.element_wait(css)
-            el = self.get_element(css)
-            ActionChains(self.driver).move_to_element(el).perform()
-            self.my_print(
-                "{0} 移动到元素: <{1}>, 用时 {2} 秒.".format(success, css, time.time() - t1)
-            )
+            if types == "ordinary":
+                el = self.get_element(css)
+                ActionChains(self.driver).move_to_element(el).perform()
+                self.my_print(
+                    "{0} 移动到元素: <{1}>, 用时 {2} 秒.".format(success, css, time.time() - t1)
+                )
+            else:
+                el = self.get_element(css, ele, types="level")
+                ActionChains(self.driver).move_to_element(el).perform()
+                self.my_print(
+                    "{0} 移动到元素: <{1}>, 用时 {2} 秒.".format(success, css, time.time() - t1)
+                )
         except Exception:
             self.my_print(
                 "{0} 无法移动到元素: <{1}>, 用时 {2} 秒.".format(fail, css, time.time() - t1)

@@ -9,13 +9,18 @@ class Ganzhou_pages_login(pyselenium):
         self.open(url)
 
     def username_input(self, username):
-        self.input("css->#txtUser", username)
+        self.input('css->#app > div > div.login-right > div > div:nth-child(1) > input', username)
+        # self.input("css->#txtUser", username)
 
     def password_input(self, password):
-        self.input("css->#txtPwd", password)
+        self.input(
+            'css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input',
+            password)
+        # self.input("css->#txtPwd", password)
 
     def login_click(self):
-        self.click("css->#button")
+        self.click('css->#app > div > div.login-right > div > div.btn-wrapper > button')
+        # self.click("css->#button")
 
 
 class Ganzhou_pages_TJFX(pyselenium):
@@ -23,7 +28,8 @@ class Ganzhou_pages_TJFX(pyselenium):
     # 统计分析
 
     def TJFX_click(self):
-        self.click('css->[modular-name="统计分析"]')
+        # self.click('css->[modular-name="统计分析"]')
+        self.click('xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"{0}")]'.format("统计分析"))
 
     def iframe_in(self):
         self.switch_to_frame("css->#report_Vue")
@@ -38,49 +44,58 @@ class Ganzhou_pages_TJFX(pyselenium):
         self.click('xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"{0}")]'.format(
             menuname))
 
-    def query_bts(self, num, bt):
+    def getthirdmenu_ele(self, num):
+        """
+        :param num: 第num个表格 0开始
+        :return: 第num个表格的元素
+        """
         se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        ele_menu = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
+        return ele_menu
+
+    def query_bts(self, ele_menu, bt):
         self.click(
             'xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"{}")]'.format(
-                bt), ele=querys, types="level")
+                bt), ele=ele_menu, types="level")
 
     def header_click(self, header):
         self.click(
-            'xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"{0}")]'.format(
-                header))
+            # 'xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"{0}")]'.format(
+            #     header))
+            'xpath->//*[@class="el-tabs__nav is-top"]/div[contains(text(),"{0}")]'.format(
+                 header))
 
-    def zone_input(self, num, zone):
-        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
-        self.input('css->input[placeholder="地区为必填项"]', zone, ele=querys, types="level")
+    def zone_input(self, ele_menu, zone):
+        self.input('css->input[placeholder="地区为必填项"]', zone, ele=ele_menu, types="level")
         self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(zone))
 
-    def timeslot_input(self, num, btime, etime):
-        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
-        self.click("css->i.el-input__icon.el-range__close-icon", ele=querys, types="level")
-        self.input('css->input[placeholder="开始日期"]', btime, ele=querys, types="level")
-        self.input('css->input[placeholder="结束日期"]', etime, ele=querys, types="level")
+    def daysslot_input(self, ele_menu, btime, etime):
+        self.click("css->i.el-input__icon.el-range__close-icon", ele=ele_menu, types="level")
+        self.input('css->input[placeholder="开始日期"]', btime, ele=ele_menu, types="level")
+        self.input('css->input[placeholder="结束日期"]', etime, ele=ele_menu, types="level")
 
-    def platform_input(self, num, platform):
-        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
-        plat1 = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("接入平台"), ele=querys,
+    def day_input(self, ele_menu, time):
+        day = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("选择日期"), ele=ele_menu,
+                               types="level")
+
+        # self.click("css->i.el-input__suffix", ele=ele_menu, types="level")
+        self.clear_input_enter('xpath->.//following-sibling::*//div/input', time, ele=day, types="level")
+
+    def month_input(self, ele_menu, time):
+        month = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("选择月份"), ele=ele_menu,
                                  types="level")
-        plat2 = self.get_element('xpath->.//following-sibling::*', ele=plat1, types="level")
-        self.input('xpath->.//div/div/input', platform, ele=plat2, types="level")
-        self.sleep(3)
+        self.clear_input_enter('xpath->.//following-sibling::*//div/input', time, ele=month, types="level")
+
+    def platform_input(self, ele_menu, platform):
+        plat = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("接入平台"), ele=ele_menu,
+                                types="level")
+        self.input('xpath->.//following-sibling::*//div/div/input', platform, ele=plat, types="level")
         self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(platform))
 
-    def company_input(self, num, company):
-        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        querys = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num], types="level")
-        plat1 = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("运输企业"), ele=querys,
-                                 types="level")
-        plat2 = self.get_element('xpath->.//following-sibling::*', ele=plat1, types="level")
-        self.input('xpath->.//div/div/input', company, ele=plat2, types="level")
-        self.sleep(3)
+    def company_input(self, ele_menu, company):
+        comp = self.get_element('xpath->.//div/label[contains(text(),"{0}")]'.format("运输企业"), ele=ele_menu,
+                                types="level")
+        self.input('xpath->.//following-sibling::*//div/div/input', company, ele=comp, types="level")
         self.click('xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"{0}")]'.format(company))
 
 

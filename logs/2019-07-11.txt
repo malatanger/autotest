@@ -1,0 +1,363 @@
+2019-07-11 09:51:03,926 - root - INFO - ############################### START ###############################
+2019-07-11 09:51:09,562 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.634322166442871 秒.
+2019-07-11 09:51:10,716 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1530659198760986 秒.
+2019-07-11 09:51:11,340 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.6230354309082031 秒.
+2019-07-11 09:51:11,435 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.09400558471679688 秒.
+2019-07-11 09:51:11,548 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.11100649833679199 秒.
+2019-07-11 09:51:14,291 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.741156816482544 秒.
+2019-07-11 09:51:14,293 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 09:51:14,678 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.38302183151245117 秒.
+2019-07-11 09:51:16,306 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.6270928382873535 秒
+2019-07-11 09:51:18,507 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.1991257667541504 秒.
+2019-07-11 09:51:18,942 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.4340250492095947 秒.
+2019-07-11 09:51:21,988 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 09:51:22,143 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.15300893783569336 秒.
+2019-07-11 09:51:23,309 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1650667190551758 秒.
+2019-07-11 09:51:25,310 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 09:51:28,311 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 09:51:28,582 - root - INFO - SUCCESS    元素：xpath->.//div/div/input，内容：‘GBOS’输入成功， 用时 0.19501090049743652 秒.
+2019-07-11 09:51:31,585 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 09:51:31,703 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 0.11700677871704102 秒.
+2019-07-11 09:51:31,848 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.14300823211669922 秒.
+2019-07-11 09:51:34,849 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 09:51:37,924 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0741758346557617 秒.
+2019-07-11 09:51:37,925 - root - INFO - ################################ End ################################
+2019-07-11 10:18:32,835 - root - INFO - ############################### START ###############################
+2019-07-11 10:18:38,719 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.883336544036865 秒.
+2019-07-11 10:18:39,840 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1180639266967773 秒.
+2019-07-11 10:18:40,521 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.6790385246276855 秒.
+2019-07-11 10:18:40,667 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.14500808715820312 秒.
+2019-07-11 10:18:40,852 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.18301057815551758 秒.
+2019-07-11 10:18:43,066 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.2121264934539795 秒.
+2019-07-11 10:18:43,068 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 10:18:43,633 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.5630321502685547 秒.
+2019-07-11 10:18:45,486 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.8511059284210205 秒
+2019-07-11 10:18:47,761 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.274129867553711 秒.
+2019-07-11 10:18:48,280 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.5180294513702393 秒.
+2019-07-11 10:18:51,334 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:18:51,391 - root - INFO - FAIL       元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入失败， 用时 0.05600333213806152 秒.
+2019-07-11 10:18:54,493 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0531744956970215 秒.
+2019-07-11 10:18:54,494 - root - INFO - ################################ End ################################
+2019-07-11 10:19:10,521 - root - INFO - ############################### START ###############################
+2019-07-11 10:19:15,711 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.188296556472778 秒.
+2019-07-11 10:19:16,833 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1210639476776123 秒.
+2019-07-11 10:19:17,090 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.25501465797424316 秒.
+2019-07-11 10:19:17,316 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.2260129451751709 秒.
+2019-07-11 10:19:17,520 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.2020115852355957 秒.
+2019-07-11 10:19:19,770 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.2481284141540527 秒.
+2019-07-11 10:19:19,773 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 10:19:20,143 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.36802124977111816 秒.
+2019-07-11 10:19:21,740 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.5970911979675293 秒
+2019-07-11 10:19:24,128 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.387136697769165 秒.
+2019-07-11 10:19:24,577 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.4470255374908447 秒.
+2019-07-11 10:19:27,618 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:19:27,773 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.1520085334777832 秒.
+2019-07-11 10:19:28,970 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.196068286895752 秒.
+2019-07-11 10:19:30,971 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 10:19:34,084 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0811760425567627 秒.
+2019-07-11 10:19:34,086 - root - INFO - ################################ End ################################
+2019-07-11 10:21:26,408 - root - INFO - ############################### START ###############################
+2019-07-11 10:21:31,315 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.905280590057373 秒.
+2019-07-11 10:21:32,474 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1580660343170166 秒.
+2019-07-11 10:21:32,792 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.31801795959472656 秒.
+2019-07-11 10:21:33,117 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.3220186233520508 秒.
+2019-07-11 10:21:33,286 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.16700983047485352 秒.
+2019-07-11 10:21:35,222 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.934110403060913 秒.
+2019-07-11 10:21:35,224 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 10:21:35,470 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.24501419067382812 秒.
+2019-07-11 10:21:36,979 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.5070860385894775 秒
+2019-07-11 10:21:39,515 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.5351450443267822 秒.
+2019-07-11 10:21:40,079 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.5630319118499756 秒.
+2019-07-11 10:21:43,163 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:21:43,323 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.15800905227661133 秒.
+2019-07-11 10:21:44,576 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.2500712871551514 秒.
+2019-07-11 10:21:46,577 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 10:21:49,664 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0611751079559326 秒.
+2019-07-11 10:21:49,665 - root - INFO - ################################ End ################################
+2019-07-11 10:30:12,490 - root - INFO - ############################### START ###############################
+2019-07-11 10:30:17,236 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.744271278381348 秒.
+2019-07-11 10:30:18,396 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1580662727355957 秒.
+2019-07-11 10:30:18,621 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.22001242637634277 秒.
+2019-07-11 10:30:18,737 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.11200642585754395 秒.
+2019-07-11 10:30:18,849 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.11200642585754395 秒.
+2019-07-11 10:30:21,488 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.637150526046753 秒.
+2019-07-11 10:30:21,490 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 10:30:21,883 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.3910222053527832 秒.
+2019-07-11 10:30:23,362 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.4750840663909912 秒
+2019-07-11 10:30:25,756 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.392136573791504 秒.
+2019-07-11 10:30:26,306 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.5480313301086426 秒.
+2019-07-11 10:30:29,354 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:30:29,501 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.14600825309753418 秒.
+2019-07-11 10:30:30,660 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1580662727355957 秒.
+2019-07-11 10:30:32,663 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 10:30:32,849 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘GBOS’输入成功， 用时 0.15300869941711426 秒.
+2019-07-11 10:30:35,851 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:30:35,958 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 0.10600614547729492 秒.
+2019-07-11 10:30:36,096 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.1370077133178711 秒.
+2019-07-11 10:30:39,097 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:30:42,157 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0581750869750977 秒.
+2019-07-11 10:30:42,160 - root - INFO - ################################ End ################################
+2019-07-11 10:51:43,652 - root - INFO - ############################### START ###############################
+2019-07-11 10:51:48,776 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.123293161392212 秒.
+2019-07-11 10:51:49,939 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1620664596557617 秒.
+2019-07-11 10:51:50,619 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.6790390014648438 秒.
+2019-07-11 10:51:50,709 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.0890049934387207 秒.
+2019-07-11 10:51:50,897 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.1870110034942627 秒.
+2019-07-11 10:51:53,037 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.138122081756592 秒.
+2019-07-11 10:51:53,038 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 10:51:53,342 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.3020172119140625 秒.
+2019-07-11 10:51:53,992 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 0.6490371227264404 秒
+2019-07-11 10:51:55,881 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 1.8881080150604248 秒.
+2019-07-11 10:51:56,626 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"接入平台汇总")]， 用时 0.7430424690246582 秒.
+2019-07-11 10:51:59,689 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:51:59,856 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.16600966453552246 秒.
+2019-07-11 10:52:01,025 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1680667400360107 秒.
+2019-07-11 10:52:03,026 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 10:52:03,260 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘GBOS’输入成功， 用时 0.2170124053955078 秒.
+2019-07-11 10:52:04,445 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 1.1840674877166748 秒.
+2019-07-11 10:52:04,594 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.1480085849761963 秒.
+2019-07-11 10:52:07,595 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 10:52:10,696 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.098177433013916 秒.
+2019-07-11 10:52:10,696 - root - INFO - ################################ End ################################
+2019-07-11 13:45:51,182 - root - INFO - ############################### START ###############################
+2019-07-11 13:45:57,617 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 6.434368133544922 秒.
+2019-07-11 13:45:58,770 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1530656814575195 秒.
+2019-07-11 13:45:59,034 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.26201510429382324 秒.
+2019-07-11 13:45:59,214 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.17900991439819336 秒.
+2019-07-11 13:45:59,426 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.2110121250152588 秒.
+2019-07-11 13:46:01,665 - root - INFO - SUCCESS    点击元素：css->#button， 用时 2.2371280193328857 秒.
+2019-07-11 13:46:01,670 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:46:02,022 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.350020170211792 秒.
+2019-07-11 13:46:04,907 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 2.885165214538574 秒
+2019-07-11 13:46:07,327 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆在线率")]， 用时 2.4191384315490723 秒.
+2019-07-11 13:46:07,814 - root - INFO - FAIL       未能点击元素xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")].
+2019-07-11 13:46:11,089 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.097177028656006 秒.
+2019-07-11 13:46:11,091 - root - INFO - ################################ End ################################
+2019-07-11 13:47:10,297 - root - INFO - ############################### START ###############################
+2019-07-11 13:47:15,858 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.5603179931640625 秒.
+2019-07-11 13:47:16,998 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1370651721954346 秒.
+2019-07-11 13:47:17,157 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.15700912475585938 秒.
+2019-07-11 13:47:17,315 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.15700888633728027 秒.
+2019-07-11 13:47:17,451 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.1350078582763672 秒.
+2019-07-11 13:47:19,414 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.9621121883392334 秒.
+2019-07-11 13:47:19,416 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:47:19,638 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.22101283073425293 秒.
+2019-07-11 13:47:21,349 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.7090978622436523 秒
+2019-07-11 13:47:23,621 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 2.271129846572876 秒.
+2019-07-11 13:47:23,777 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.15500903129577637 秒.
+2019-07-11 13:47:26,837 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:47:26,997 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.15900945663452148 秒.
+2019-07-11 13:47:28,201 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.203068733215332 秒.
+2019-07-11 13:47:30,201 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 13:47:30,239 - root - INFO - FAIL       未能点击元素css->i.el-input__icon.el-range__close-icon.
+2019-07-11 13:47:33,374 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.110177755355835 秒.
+2019-07-11 13:47:33,377 - root - INFO - ################################ End ################################
+2019-07-11 13:48:55,469 - root - INFO - ############################### START ###############################
+2019-07-11 13:49:00,257 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.786273717880249 秒.
+2019-07-11 13:49:01,395 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1370649337768555 秒.
+2019-07-11 13:49:01,656 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.2610151767730713 秒.
+2019-07-11 13:49:01,820 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.16200923919677734 秒.
+2019-07-11 13:49:02,015 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.19301104545593262 秒.
+2019-07-11 13:49:03,782 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.7651007175445557 秒.
+2019-07-11 13:49:03,784 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:49:04,067 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.2830162048339844 秒.
+2019-07-11 13:49:05,279 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.210069179534912 秒
+2019-07-11 13:49:06,589 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 1.310074806213379 秒.
+2019-07-11 13:49:06,732 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.1410081386566162 秒.
+2019-07-11 13:49:09,779 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:49:09,970 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.1890108585357666 秒.
+2019-07-11 13:49:11,160 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.188068151473999 秒.
+2019-07-11 13:49:13,161 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 13:49:13,381 - root - INFO - SUCCESS    点击元素：css->i.el-input__icon， 用时 0.22001290321350098 秒.
+2019-07-11 13:49:13,782 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘2019-07-04’输入成功， 用时 0.37002110481262207 秒.
+2019-07-11 13:49:13,960 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘GBOS’输入成功， 用时 0.15900945663452148 秒.
+2019-07-11 13:49:15,112 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 1.1510658264160156 秒.
+2019-07-11 13:49:15,250 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.13600778579711914 秒.
+2019-07-11 13:49:18,252 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:49:21,329 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0731759071350098 秒.
+2019-07-11 13:49:21,332 - root - INFO - ################################ End ################################
+2019-07-11 13:56:51,789 - root - INFO - ############################### START ###############################
+2019-07-11 13:56:56,518 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.7272703647613525 秒.
+2019-07-11 13:56:57,634 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1160640716552734 秒.
+2019-07-11 13:56:57,835 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.2000112533569336 秒.
+2019-07-11 13:56:57,957 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.12200713157653809 秒.
+2019-07-11 13:56:58,083 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.12400698661804199 秒.
+2019-07-11 13:57:00,082 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.9981141090393066 秒.
+2019-07-11 13:57:00,083 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:57:00,444 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.3610208034515381 秒.
+2019-07-11 13:57:01,909 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.4640836715698242 秒
+2019-07-11 13:57:04,214 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 2.3041319847106934 秒.
+2019-07-11 13:57:04,353 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.13800764083862305 秒.
+2019-07-11 13:57:07,396 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:57:07,586 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.1870105266571045 秒.
+2019-07-11 13:57:08,821 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.2330703735351562 秒.
+2019-07-11 13:57:10,821 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 13:57:16,104 - root - INFO - FAIL       未能点击元素css->i.el-input__suffix.
+2019-07-11 13:57:19,244 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.118178367614746 秒.
+2019-07-11 13:57:19,245 - root - INFO - ################################ End ################################
+2019-07-11 13:58:45,632 - root - INFO - ############################### START ###############################
+2019-07-11 13:58:50,332 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.700268745422363 秒.
+2019-07-11 13:58:51,446 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1140639781951904 秒.
+2019-07-11 13:58:51,672 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.22301244735717773 秒.
+2019-07-11 13:58:51,852 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.1780099868774414 秒.
+2019-07-11 13:58:52,075 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.22201275825500488 秒.
+2019-07-11 13:58:54,046 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.9701128005981445 秒.
+2019-07-11 13:58:54,048 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:58:54,464 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.41402363777160645 秒.
+2019-07-11 13:58:55,585 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.1200642585754395 秒
+2019-07-11 13:58:57,866 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 2.280130624771118 秒.
+2019-07-11 13:58:57,991 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.12200713157653809 秒.
+2019-07-11 13:59:01,042 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:59:01,199 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.15500879287719727 秒.
+2019-07-11 13:59:02,411 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.210069179534912 秒.
+2019-07-11 13:59:04,411 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 13:59:09,497 - root - INFO - FAIL       未能点击元素css->i.el-input__suffix.
+2019-07-11 13:59:12,582 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.081176280975342 秒.
+2019-07-11 13:59:12,583 - root - INFO - ################################ End ################################
+2019-07-11 13:59:22,940 - root - INFO - ############################### START ###############################
+2019-07-11 13:59:28,093 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.152294635772705 秒.
+2019-07-11 13:59:29,260 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1670665740966797 秒.
+2019-07-11 13:59:29,645 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.3840219974517822 秒.
+2019-07-11 13:59:29,888 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.24201369285583496 秒.
+2019-07-11 13:59:30,079 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.19001054763793945 秒.
+2019-07-11 13:59:31,911 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.8301045894622803 秒.
+2019-07-11 13:59:31,913 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 13:59:32,530 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.6170353889465332 秒.
+2019-07-11 13:59:33,164 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 0.6330361366271973 秒
+2019-07-11 13:59:36,232 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 3.0671753883361816 秒.
+2019-07-11 13:59:36,369 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.13500761985778809 秒.
+2019-07-11 13:59:39,413 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:59:39,633 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.21901249885559082 秒.
+2019-07-11 13:59:40,918 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.2830736637115479 秒.
+2019-07-11 13:59:42,921 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 13:59:44,437 - root - INFO - SUCCESS    等待 1 秒钟
+2019-07-11 13:59:44,480 - root - INFO - SUCCESS    清除元素: <xpath->.//following-sibling::*//div/div/input> 输入: 2019-07-04, 用时 1.5230870246887207 秒.
+2019-07-11 13:59:44,781 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘GBOS’输入成功， 用时 0.2710154056549072 秒.
+2019-07-11 13:59:45,999 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 1.2160694599151611 秒.
+2019-07-11 13:59:46,194 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.19401121139526367 秒.
+2019-07-11 13:59:49,195 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 13:59:52,351 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.1541805267333984 秒.
+2019-07-11 13:59:52,352 - root - INFO - ################################ End ################################
+2019-07-11 14:04:42,550 - root - INFO - ############################### START ###############################
+2019-07-11 14:04:48,165 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.613320827484131 秒.
+2019-07-11 14:04:49,317 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1500656604766846 秒.
+2019-07-11 14:04:49,488 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.17000961303710938 秒.
+2019-07-11 14:04:49,611 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.12200665473937988 秒.
+2019-07-11 14:04:49,734 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.12200713157653809 秒.
+2019-07-11 14:04:51,724 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.9901137351989746 秒.
+2019-07-11 14:04:51,726 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:04:52,058 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.33101916313171387 秒.
+2019-07-11 14:04:53,608 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.549088716506958 秒
+2019-07-11 14:04:56,585 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 2.976170301437378 秒.
+2019-07-11 14:04:56,747 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.1610093116760254 秒.
+2019-07-11 14:04:59,794 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 14:04:59,936 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.14200830459594727 秒.
+2019-07-11 14:05:01,099 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1600666046142578 秒.
+2019-07-11 14:05:03,099 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 14:05:03,170 - root - INFO - FAIL       无法清除元素: <xpath->.//following-sibling::*//div/div/input> 输入: 2019-07-04, 用时 0.04300236701965332 秒.
+2019-07-11 14:05:06,231 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0561749935150146 秒.
+2019-07-11 14:05:06,234 - root - INFO - ################################ End ################################
+2019-07-11 14:05:28,038 - root - INFO - ############################### START ###############################
+2019-07-11 14:05:32,724 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.68526816368103 秒.
+2019-07-11 14:05:33,850 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1250641345977783 秒.
+2019-07-11 14:05:34,199 - root - INFO - SUCCESS    成功打开链接：http://10.50.125.61:8081/Home/Index#，用时 0.348020076751709 秒.
+2019-07-11 14:05:34,390 - root - INFO - SUCCESS    元素：css->#txtUser，内容：‘js004’输入成功， 用时 0.1890108585357666 秒.
+2019-07-11 14:05:34,528 - root - INFO - SUCCESS    元素：css->#txtPwd，内容：‘qwe@123..’输入成功， 用时 0.1370079517364502 秒.
+2019-07-11 14:05:36,369 - root - INFO - SUCCESS    点击元素：css->#button， 用时 1.8411054611206055 秒.
+2019-07-11 14:05:36,371 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:05:36,648 - root - INFO - SUCCESS    点击元素：css->[modular-name="统计分析"]， 用时 0.27501559257507324 秒.
+2019-07-11 14:05:38,162 - root - INFO - SUCCESS    切换至iframe: <css->#report_Vue>, 用时 1.5120866298675537 秒
+2019-07-11 14:05:40,412 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 2.2481284141540527 秒.
+2019-07-11 14:05:40,534 - root - INFO - SUCCESS    点击元素：xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")]， 用时 0.12100696563720703 秒.
+2019-07-11 14:05:43,575 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 14:05:43,716 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.1390080451965332 秒.
+2019-07-11 14:05:44,898 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1810674667358398 秒.
+2019-07-11 14:05:46,898 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 14:05:46,985 - root - INFO - FAIL       无法清除元素: <xpath->.//following-sibling::*//div/div/input> 输入: 2019-07-04, 用时 0.049002885818481445 秒.
+2019-07-11 14:05:50,140 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.1511802673339844 秒.
+2019-07-11 14:05:50,141 - root - INFO - ################################ End ################################
+2019-07-11 14:34:44,311 - root - INFO - ############################### START ###############################
+2019-07-11 14:34:49,066 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.75327205657959 秒.
+2019-07-11 14:34:50,212 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1450653076171875 秒.
+2019-07-11 14:34:52,122 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 1.9091088771820068 秒.
+2019-07-11 14:34:52,249 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.12700724601745605 秒.
+2019-07-11 14:34:52,349 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.09800553321838379 秒.
+2019-07-11 14:34:52,451 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.1000056266784668 秒.
+2019-07-11 14:34:52,453 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:34:57,611 - root - INFO - FAIL       未能点击元素css->[modular-name="统计分析"].
+2019-07-11 14:35:00,700 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.084176540374756 秒.
+2019-07-11 14:35:00,702 - root - INFO - ################################ End ################################
+2019-07-11 14:37:20,064 - root - INFO - ############################### START ###############################
+2019-07-11 14:37:24,975 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.91028094291687 秒.
+2019-07-11 14:37:26,141 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1650667190551758 秒.
+2019-07-11 14:37:27,852 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 1.7090981006622314 秒.
+2019-07-11 14:37:28,145 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.2910163402557373 秒.
+2019-07-11 14:37:28,479 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.33401918411254883 秒.
+2019-07-11 14:37:28,596 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.11500668525695801 秒.
+2019-07-11 14:37:28,599 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:37:29,966 - root - INFO - SUCCESS    点击元素：xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"统计分析")]， 用时 1.3630781173706055 秒.
+2019-07-11 14:37:35,621 - root - INFO - FAIL       未能切换至iframe: <css->#report_Vue>, 用时 5.653323411941528 秒
+2019-07-11 14:37:38,706 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0721757411956787 秒.
+2019-07-11 14:37:38,706 - root - INFO - ################################ End ################################
+2019-07-11 14:37:50,575 - root - INFO - ############################### START ###############################
+2019-07-11 14:37:55,773 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 5.1972973346710205 秒.
+2019-07-11 14:37:56,931 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1570663452148438 秒.
+2019-07-11 14:37:58,663 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 1.7300989627838135 秒.
+2019-07-11 14:37:58,864 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.2000112533569336 秒.
+2019-07-11 14:37:59,012 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.14700865745544434 秒.
+2019-07-11 14:37:59,185 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.17200970649719238 秒.
+2019-07-11 14:37:59,187 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:38:00,544 - root - INFO - SUCCESS    点击元素：xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"统计分析")]， 用时 1.3540775775909424 秒.
+2019-07-11 14:38:02,209 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 1.664095163345337 秒.
+2019-07-11 14:38:07,306 - root - INFO - FAIL       未能点击元素xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"车辆安装明细")].
+2019-07-11 14:38:10,446 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.1361794471740723 秒.
+2019-07-11 14:38:10,447 - root - INFO - ################################ End ################################
+2019-07-11 14:42:53,954 - root - INFO - ############################### START ###############################
+2019-07-11 14:42:58,698 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.743271350860596 秒.
+2019-07-11 14:42:59,860 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1610660552978516 秒.
+2019-07-11 14:43:01,502 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 1.6410939693450928 秒.
+2019-07-11 14:43:01,670 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.16800975799560547 秒.
+2019-07-11 14:43:01,799 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.128007173538208 秒.
+2019-07-11 14:43:01,914 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.1130063533782959 秒.
+2019-07-11 14:43:01,916 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:43:03,241 - root - INFO - SUCCESS    点击元素：xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"统计分析")]， 用时 1.322075605392456 秒.
+2019-07-11 14:43:04,857 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 1.6140923500061035 秒.
+2019-07-11 14:43:09,939 - root - INFO - FAIL       未能点击元素xpath->//div[@class="el-tabs__nav-scroll"]/div[contains(text(),"车辆安装明细")].
+2019-07-11 14:43:13,017 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0741758346557617 秒.
+2019-07-11 14:43:13,018 - root - INFO - ################################ End ################################
+2019-07-11 14:43:36,795 - root - INFO - ############################### START ###############################
+2019-07-11 14:43:44,812 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 8.016458511352539 秒.
+2019-07-11 14:43:45,968 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1540660858154297 秒.
+2019-07-11 14:43:48,864 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 2.894165515899658 秒.
+2019-07-11 14:43:48,986 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.12200689315795898 秒.
+2019-07-11 14:43:49,083 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.09700560569763184 秒.
+2019-07-11 14:43:49,205 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.12100696563720703 秒.
+2019-07-11 14:43:49,207 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:43:50,572 - root - INFO - SUCCESS    点击元素：xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"统计分析")]， 用时 1.3630778789520264 秒.
+2019-07-11 14:43:52,481 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 1.907109260559082 秒.
+2019-07-11 14:43:57,827 - root - INFO - FAIL       未能点击元素xpath->//*[@class="el-tabs__nav-scroll"]/div[contains(text(),"车辆安装明细")].
+2019-07-11 14:44:00,890 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.0601747035980225 秒.
+2019-07-11 14:44:00,891 - root - INFO - ################################ End ################################
+2019-07-11 14:44:02,721 - root - INFO - ############################### START ###############################
+2019-07-11 14:44:07,441 - root - INFO - SUCCESS    新建浏览器: chrome, 用时 4.7172698974609375 秒.
+2019-07-11 14:44:08,595 - root - INFO - SUCCESS    浏览器窗口最大化, 用时 1.1530656814575195 秒.
+2019-07-11 14:44:10,027 - root - INFO - SUCCESS    成功打开链接：http://10.50.10.150:7000/#/homeMonitor，用时 1.430081844329834 秒.
+2019-07-11 14:44:10,160 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div:nth-child(1) > input，内容：‘js004’输入成功， 用时 0.13200783729553223 秒.
+2019-07-11 14:44:10,278 - root - INFO - SUCCESS    元素：css->#app > div > div.login-right > div > div.el-input.el-input--medium.el-input--prefix.el-input--suffix > input，内容：‘qwe@123..’输入成功， 用时 0.11700654029846191 秒.
+2019-07-11 14:44:10,419 - root - INFO - SUCCESS    点击元素：css->#app > div > div.login-right > div > div.btn-wrapper > button， 用时 0.14000797271728516 秒.
+2019-07-11 14:44:10,421 - root - INFO - 开始用例: test_01_diquhuizong
+2019-07-11 14:44:11,720 - root - INFO - SUCCESS    点击元素：xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"统计分析")]， 用时 1.2980742454528809 秒.
+2019-07-11 14:44:13,579 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"车辆安装数")]， 用时 1.8581063747406006 秒.
+2019-07-11 14:44:13,688 - root - INFO - SUCCESS    点击元素：xpath->//*[@class="el-tabs__nav is-top"]/div[contains(text(),"车辆安装明细")]， 用时 0.10700607299804688 秒.
+2019-07-11 14:44:16,732 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 14:44:16,886 - root - INFO - SUCCESS    元素：css->input[placeholder="地区为必填项"]，内容：‘赣州’输入成功， 用时 0.15300869941711426 秒.
+2019-07-11 14:44:17,993 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"赣州")]， 用时 1.1040630340576172 秒.
+2019-07-11 14:44:19,994 - root - INFO - SUCCESS    等待 2 秒钟
+2019-07-11 14:44:21,279 - root - INFO - SUCCESS    等待 1 秒钟
+2019-07-11 14:44:21,331 - root - INFO - SUCCESS    清除元素: <xpath->.//following-sibling::*//div/input> 输入: 2019-07-04, 用时 1.304074764251709 秒.
+2019-07-11 14:44:21,496 - root - INFO - SUCCESS    元素：xpath->.//following-sibling::*//div/div/input，内容：‘GBOS’输入成功， 用时 0.1410079002380371 秒.
+2019-07-11 14:44:22,587 - root - INFO - SUCCESS    点击元素：xpath->/html/body/div[last()]/div[1]/div[1]/ul/li[contains(text(),"GBOS")]， 用时 1.090062141418457 秒.
+2019-07-11 14:44:22,702 - root - INFO - SUCCESS    点击元素：xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"查询")]， 用时 0.11400651931762695 秒.
+2019-07-11 14:44:25,703 - root - INFO - SUCCESS    等待 3 秒钟
+2019-07-11 14:44:28,819 - root - INFO - SUCCESS    退出浏览器并清除临时文件， 用时 3.114177942276001 秒.
+2019-07-11 14:44:28,820 - root - INFO - ################################ End ################################
