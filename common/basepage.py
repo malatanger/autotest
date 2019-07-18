@@ -427,9 +427,11 @@ class pyselenium(Browser_engine):
 
     def get_text(self, css):
         """获取元素的文本值"""
+        global el
         t1 = time.time()
         try:
             self.element_wait(css)
+
             text = self.get_element(css).text
             self.my_print(
                 "{0} 获取元素文本 元素: <{1}> 文本内容：<{2}>, 用时 {3} 秒.".format(success, css, text, time.time() - t1)
