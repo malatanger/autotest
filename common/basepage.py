@@ -548,6 +548,16 @@ class pyselenium(Browser_engine):
         self.driver.switch_to.default_content()
         self.my_print("{0} 退出iframe, 用时 {1} 秒".format(success, time.time() - t1))
 
+    def add_cookies(self, cookie):
+        """
+
+        :param cookie:  cookie dict
+        :return:
+        """
+        t1 = time.time()
+        self.driver.add_cookie(cookie)
+        self.my_print("{0} 添加cookies, 用时 {1} 秒".format(success, time.time() - t1))
+
     def deleteall_cookies(self):
         t1 = time.time()
         self.driver.delete_all_cookies()

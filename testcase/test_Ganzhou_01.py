@@ -8,6 +8,7 @@ import time
 from config import datas_path
 from common.get_parameter import Data
 from common.basepage import Retry
+import config
 
 
 
@@ -28,8 +29,9 @@ class Ganzhou_TJFX_test(unittest.TestCase):
         cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
         cls.index.Ganzhou_open(param[1]["url"])
         cls.index.max_window()
-        cls.index.username_input(param[1]["username"])
-        cls.index.password_input(param[1]["password"])
+        cls.index.add_cookies(config.cookies1)
+        # cls.index.username_input(param[1]["username"])
+        # cls.index.password_input(param[1]["password"])
         cls.index.login_click()
 
     @classmethod
