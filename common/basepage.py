@@ -21,8 +21,17 @@ class Browser_engine(object):
     """浏览器引擎"""
 
     @staticmethod
-    def my_print(msg):
-        logger.info(msg)
+    def my_print(msg, level=1):
+
+        if level == 1:
+            logger.info(msg)
+        elif level == 2:
+            logger.debug(msg)
+        elif level == 3:
+            logger.warning(msg)
+        elif level == 4:
+            logger.error(msg)
+
 
     @staticmethod
     def get_browser(browsertype="chrome"):
