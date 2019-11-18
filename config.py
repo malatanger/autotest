@@ -2,7 +2,7 @@
 import os
 
 pro_path = os.path.abspath('..')
-log_path = pro_path + "logs/"
+log_path = pro_path + "/logs/"
 screenshot_path = pro_path + "/image/"
 testcase_paht = pro_path + "/testcase/"
 report_path = pro_path + "/report/"
