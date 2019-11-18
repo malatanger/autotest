@@ -3,10 +3,10 @@ import os
 
 pro_path = os.path.abspath('..')
 log_path = pro_path + "logs/"
-screenshot_path = pro_path + "image/"
-testcase_paht = pro_path + "testcase/"
-report_path = pro_path + "report/"
-datas_path = pro_path + "datas/"
+screenshot_path = pro_path + "/image/"
+testcase_paht = pro_path + "/testcase/"
+report_path = pro_path + "/report/"
+datas_path = pro_path + "/datas/"
 
 cookies_xinjiang = {
     "name": "USER_Token",

@@ -343,7 +343,7 @@ table       { font-size: 100%; }
 .piechart{  
     position:absolute;  ;
     top:20px;  
-    left:300px; 
+    left:600px; 
     width: 200px;
     float: left;
     display:  inline;

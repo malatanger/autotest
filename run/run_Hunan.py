@@ -1,8 +1,8 @@
 # coding:utf-8
 
-import sys
-
-sys.path.append("E:/autotest/")
+# import sys
+#
+# sys.path.append("E:/autotest/")
 
 from common import HTMLTestRunner
 import unittest
@@ -14,7 +14,7 @@ import time
 def run():
     discover = unittest.defaultTestLoader.discover(
         testcase_paht,
-        "test_Ganzhou_01*"
+        "test_Hunan_01*"
     )
     date = time.strftime('%Y-%m-%d')
     file_path = report_path + date + "/"
