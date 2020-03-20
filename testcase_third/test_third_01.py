@@ -273,7 +273,7 @@ class Third_03_clsxtj_test(unittest.TestCase):
         logger = Log()
         logger.info('############################### START ###############################')
         driver = Browser_engine.get_browser()
-        cls.index = Third_pages_01.Third_pages_login(driver)
+        cls.index = Third_pages_01.Third_homepages_login(driver)
         cls.index.max_window()
         cls.index.Third_open(param[1]["url"])
         cls.index.js(login_js)
@@ -282,7 +282,7 @@ class Third_03_clsxtj_test(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        cls.index = Third_pages_01.Third_pages_login(driver)
+        cls.index = Third_pages_01.Third_homepages_login(driver)
         cls.index.quit()
         logger.info('################################ End ################################')
 
@@ -291,7 +291,7 @@ class Third_03_clsxtj_test(unittest.TestCase):
         self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(21, 23):  # 文档中参数序号
             self.index.F5()
-            self.index.TJFX_click()
+            self.index.homepagemenu_click("统计分析")
             self.index.secondmenumenu_click(param[i]["secondmenu"])
             self.index.header_click(param[i]["thirdmenu"])
             ele_menu = self.index.getthirdmenu_ele(1)  # 地区汇总

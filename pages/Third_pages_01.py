@@ -2,50 +2,91 @@
 from common.basepage import pyselenium
 
 
-class Third_pages_login(pyselenium):
+class Third_homepages_login(pyselenium):
 
     # 登录页元素
     def Third_open(self, url):
         self.open(url)
 
+    def homepagemenu_click(self, homepagemenu):
+        # self.click('css->[modular-name="统计分析"]')
+        # self.click('xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"{0}")]'.format("统计分析"))
+        self.click('xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"{0}")]'.format(homepagemenu))
 
-class Third_pages_TJFX(pyselenium):
+
+class Third_pages_TJFX(Third_homepages_login):
     """
     统计分析
     """
 
-    def TJFX_click(self):
-        # self.click('css->[modular-name="统计分析"]')
-        self.click('xpath->//div[@class="menu-wrapper"]/div/span[contains(text(),"{0}")]'.format("统计分析"))
-
     def iframe_in(self):
         self.switch_to_frame("css->#report_Vue")
 
-    def fristmenu_click(self, menuname):
-        # 车辆基本统计
+    def fristmenu_click(self, menuname, second=True):
+        """
+        点击一级菜单
+        :param menuname:
+        :param second: True 或者 False 布尔值判断是否有二级菜单
+        :return:
+        """
+        try:
+            if second is True:
+                self.click(
+                    'xpath->//*[@class="el-menu-vertical-demo el-menu"]//div/span[contains(text(),"{0}")]'.format(
+                        menuname))
+            elif second is False:
+                self.click(
+                    'xpath->//*[@class="el-menu-vertical-demo el-menu"]//div/li/span[contains(text(),"{0}")]'.format(
+                        menuname))
+        except:
+            raise
         # self.js("document.querySelector('#app > div > section > aside > ul > li:nth-child(1) > ul').style.display='block'")
-        self.click('xpath->//*[@class="el-menu-vertical-demo el-menu"]//div/span[contains(text(),"{0}")]'.format(
-            menuname))
 
-    def secondmenumenu_click(self, menuname):
+    def secondmenu_click(self, menuname):
+        """
+        点击二级菜单
+        :param menuname:
+        :return:
+        """
         self.click('xpath->//*[@class="el-menu el-menu--inline"]/li/ul/li/span[contains(text(),"{0}")]'.format(
             menuname))
 
-    def getthirdmenu_ele(self, num):
+    def getheader_ele(self, num=1, third=True):
         """
-        :param num: 第num个表格 0开始
+        获取查询条件元素组
+        :param num: 第num个表格 从1开始
+        :param third: 判断是否有有第三级菜单选项 如:地区汇总,企业汇总等
         :return: 第num个表格的元素
         """
-        se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
-        ele_menu = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num - 1], types="level")
-        return ele_menu
+        try:
+            if third is True:
+                se_menu = self.get_elements('xpath->//*[@class="el-tab-pane"]')
+                ele_menu = self.get_element('css-> div > div.search-wrapper > form', ele=se_menu[num - 1],
+                                            types="level")
+                return ele_menu
+            elif third is False:
+                ele_menu = self.get_element('css-> div > div.search-wrapper > form')
+                return ele_menu
+        except:
+            raise
 
     def query_bts(self, ele_menu, bt):
+        """
+        按钮定位
+        :param ele_menu:
+        :param bt:
+        :return:
+        """
         self.click(
             'xpath->.//button[@class="el-button el-button--primary el-button--small"]/span[contains(text(),"{}")]'.format(
                 bt), ele=ele_menu, types="level")
 
-    def header_click(self, header):
+    def thirdmenu_click(self, header):
+        """
+        点击三级菜单
+        :param header:
+        :return:
+        """
         self.click(
             # 'xpath->//*[@id="app"]/div/section/main/div/div/div[1]/div/div/div/div[contains(text(),"{0}")]'.format(
             #     header))
