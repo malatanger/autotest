@@ -14,7 +14,7 @@ import time
 def run():
     discover = unittest.defaultTestLoader.discover(
         testcase_paht,
-        "test_third_01*"
+        "test_third_02*"
     )
     date = time.strftime('%Y-%m-%d')
     file_path = report_path + date + "/"

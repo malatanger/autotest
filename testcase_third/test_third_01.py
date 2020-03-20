@@ -2,18 +2,17 @@
 import unittest
 from common.basepage import Browser_engine
 from common.log import Log
-from pages import Ganzhou_pages_01
+from pages import Third_pages_01
 import sys
 import time
-from config import datas_path
+from config import *
 from common.get_parameter import Data
 from common.basepage import Retry
 
-data = Data(datas_path + "Ganzhou_datas.xlsx", "车辆基本信息统计")
+data = Data(datas_path + "Third_datas.xls", "山西")
 param = data.get_data()
 
-
-class Ganzhou_01_clazs_test(unittest.TestCase):
+class Third_01_clazs_test(unittest.TestCase):
     """车辆安装数"""
 
     @classmethod
@@ -23,26 +22,22 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
         logger = Log()
         logger.info('############################### START ###############################')
         driver = Browser_engine.get_browser()
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
-        # cls.index.Ganzhou_open("http://10.50.10.117:8080/#/statistics/vehicle_real_situation")
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.max_window()
-        # cls.index.Ganzhou_open(param[1]["url"])
-        cls.index.Ganzhou_open("http://10.50.10.150:7000/#/login")
-        cls.index.username_input(param[1]["username"])
-        cls.index.password_input(param[1]["password"])
-        cls.index.login_click()
+        cls.index.Third_open(param[1]["url"])
+        cls.index.js(login_js)
         cls.index.sleep(3)
 
     @classmethod
     def tearDownClass(cls):
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.quit()
         logger.info('################################ End ################################')
 
     # @Retry.retry(2)
     def test_01_zone(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(1, 3):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -61,13 +56,13 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
             self.index.query_bts(ele_menu, "查询")
             self.index.assert_text(
                 text="合计",
-                css='xpath->//*[@id="pane-first"]/div/div[2]/div[1]/div[3]/table/tbody',
+                css='xpath->//*[@id="pane-RegionalSummary"]/div/div[2]/div[1]/div[3]/table/tbody',
             )
 
     # @Retry.retry(2)
     def test_02_platform(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(3, 5):
             self.index.F5()
             self.index.TJFX_click()
@@ -84,12 +79,12 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
             self.index.sleep(5)
             self.index.assert_text(
                 text="合计",
-                css='xpath->//*[@id="pane-second"]/div/div[2]/div[1]/div[3]/table/tbody'
+                css='xpath->//*[@id="pane-AccessPlatformSummary"]/div/div[2]/div[1]/div[3]/table/tbody'
             )
 
     def test_03_company(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(5, 7):
             self.index.F5()
             self.index.TJFX_click()
@@ -106,12 +101,12 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
             self.index.sleep(5)
             self.index.assert_text(
                 text="合计",
-                css='xpath->//*[@id="pane-third"]/div/div[2]/div[1]/div[3]/table/tbody'
+                css='xpath->//*[@id="pane-EnterpriseSummary"]/div/div[2]/div[1]/div[3]/table/tbody'
             )
 
     def test_04_cars(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(7, 8):
             self.index.F5()
             self.index.TJFX_click()
@@ -131,12 +126,12 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
             self.index.sleep(5)
             self.index.assert_text(
                 text=param[i]["carnum"],
-                css='xpath->//*[@id="pane-fourth"]/div/div[2]/div[1]/div[3]/table/tbody'
+                css='xpath->//*[@id="pane-DetailsOfVehicleInstallation"]/div/div[2]/div[1]/div[3]/table/tbody'
             )
 
     def test_05_newcars(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(7, 13):
             self.index.F5()
             self.index.TJFX_click()
@@ -155,11 +150,11 @@ class Ganzhou_01_clazs_test(unittest.TestCase):
             self.index.sleep(5)
             self.index.assert_text(
                 text="合计",
-                css='xpath->//*[@id="pane-fivth"]/div/div[2]/div[1]/div[3]/table/tbody'
+                css='xpath->//*[@id="pane-InstallationOfNewVehicles"]/div/div[2]/div[1]/div[3]/table/tbody'
             )
 
 
-class Ganzhou_02_clzxl_test(unittest.TestCase):
+class Third_02_clzxl_test(unittest.TestCase):
     """车辆在线率"""
 
     @classmethod
@@ -169,26 +164,23 @@ class Ganzhou_02_clzxl_test(unittest.TestCase):
         logger = Log()
         logger.info('############################### START ###############################')
         driver = Browser_engine.get_browser()
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
-        # cls.index.Ganzhou_open("http://10.50.10.117:8080/#/statistics/vehicle_real_situation")
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.max_window()
-        # cls.index.Ganzhou_open(param[1]["url"])
-        cls.index.Ganzhou_open("http://10.50.10.150:7000/#/login")
-        cls.index.username_input(param[1]["username"])
-        cls.index.password_input(param[1]["password"])
-        cls.index.login_click()
+        cls.index.Third_open(param[1]["url"])
+        cls.index.js(login_js)
         cls.index.sleep(3)
+
 
     @classmethod
     def tearDownClass(cls):
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.quit()
         logger.info('################################ End ################################')
 
     @Retry.retry(2)
     def test_01_zone(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(13, 15):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -208,7 +200,7 @@ class Ganzhou_02_clzxl_test(unittest.TestCase):
 
     def test_02_platform(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(15, 17):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -229,7 +221,7 @@ class Ganzhou_02_clzxl_test(unittest.TestCase):
 
     def test_03_company(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(17, 19):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -250,7 +242,7 @@ class Ganzhou_02_clzxl_test(unittest.TestCase):
 
     def test_04_car(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(19, 21):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -271,7 +263,7 @@ class Ganzhou_02_clzxl_test(unittest.TestCase):
             )
 
 
-class Ganzhou_03_clsxtj_test(unittest.TestCase):
+class Third_03_clsxtj_test(unittest.TestCase):
     """车辆上线统计"""
 
     @classmethod
@@ -281,25 +273,22 @@ class Ganzhou_03_clsxtj_test(unittest.TestCase):
         logger = Log()
         logger.info('############################### START ###############################')
         driver = Browser_engine.get_browser()
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
-        # cls.index.Ganzhou_open("http://10.50.10.117:8080/#/statistics/vehicle_real_situation")
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.max_window()
-        # cls.index.Ganzhou_open(param[1]["url"])
-        cls.index.Ganzhou_open("http://10.50.10.150:7000/#/login")
-        cls.index.username_input(param[1]["username"])
-        cls.index.password_input(param[1]["password"])
-        cls.index.login_click()
+        cls.index.Third_open(param[1]["url"])
+        cls.index.js(login_js)
         cls.index.sleep(3)
+
 
     @classmethod
     def tearDownClass(cls):
-        cls.index = Ganzhou_pages_01.Ganzhou_pages_login(driver)
+        cls.index = Third_pages_01.Third_pages_login(driver)
         cls.index.quit()
         logger.info('################################ End ################################')
 
     def test_01_zone(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(21, 23):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -318,7 +307,7 @@ class Ganzhou_03_clsxtj_test(unittest.TestCase):
             )
     def test_02_platform(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(21, 23):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -338,7 +327,7 @@ class Ganzhou_03_clsxtj_test(unittest.TestCase):
             )
     def test_03_company(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(21, 23):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()
@@ -358,7 +347,7 @@ class Ganzhou_03_clsxtj_test(unittest.TestCase):
             )
     def test_04_car(self):
         logger.info("开始用例: {0}".format(sys._getframe().f_code.co_name))
-        self.index = Ganzhou_pages_01.Ganzhou_pages_TJFX(driver)
+        self.index = Third_pages_01.Third_pages_TJFX(driver)
         for i in range(21, 23):  # 文档中参数序号
             self.index.F5()
             self.index.TJFX_click()

@@ -24,7 +24,7 @@ class Third_pages_TJFX(pyselenium):
     def fristmenu_click(self, menuname):
         # 车辆基本统计
         # self.js("document.querySelector('#app > div > section > aside > ul > li:nth-child(1) > ul').style.display='block'")
-        self.click('xpath->//*[@class="el-menu-vertical-demo el-menu"]/li/div/span[contains(text(),"{0}")]'.format(
+        self.click('xpath->//*[@class="el-menu-vertical-demo el-menu"]//div/span[contains(text(),"{0}")]'.format(
             menuname))
 
     def secondmenumenu_click(self, menuname):
